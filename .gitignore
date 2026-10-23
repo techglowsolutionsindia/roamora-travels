@@ -1,0 +1,37 @@
+# ==================================================
+# ROAMORA TRAVELS — GITIGNORE STARTED
+# ==================================================
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+*.key
+
+# Dependencies
+node_modules/
+
+# Temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+
+# Editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build and cache folders
+dist/
+build/
+.cache/
+
+# ==================================================
+# ROAMORA TRAVELS — GITIGNORE ENDED
+# ==================================================
