@@ -1,0 +1,233 @@
+/* ==================================================
+         CANCELLATION POLICY HERO
+      ================================================== */
+
+.cancellation-hero {
+  padding: 60px 0 60px;
+  background: linear-gradient(
+    135deg,
+    rgba(7, 47, 64, 0.97),
+    rgba(0, 119, 128, 0.9)
+  );
+  color: #ffffff;
+  text-align: center;
+}
+
+.cancellation-hero-content {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.cancellation-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 18px;
+  color: var(--color-secondary);
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.cancellation-eyebrow-mark {
+  color: var(--color-accent);
+  font-size: 15px;
+}
+
+.cancellation-hero h1 {
+  margin: 0 0 20px;
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(42px, 5vw, 64px);
+  line-height: 1.1;
+}
+
+.cancellation-hero-description {
+  max-width: 760px;
+  margin: 0 auto 18px;
+  color: rgba(255, 255, 255, 0.82);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.cancellation-updated {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.65);
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+}
+
+/* ==================================================
+         CANCELLATION POLICY CONTENT
+      ================================================== */
+
+.cancellation-policy {
+  padding: 85px 0 100px;
+  background: #ffffff;
+}
+
+.cancellation-policy-container {
+  max-width: 1050px;
+}
+
+.cancellation-introduction {
+  margin-bottom: 48px;
+  padding: 30px 34px;
+  border-left: 4px solid #f6a619;
+  border-radius: 0 12px 12px 0;
+  background: #f7fafb;
+}
+
+.cancellation-introduction p {
+  margin: 0;
+  color: #52636d;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.cancellation-section {
+  padding: 34px 0;
+  border-bottom: 1px solid #e6ecef;
+}
+
+.cancellation-section:first-of-type {
+  padding-top: 0;
+}
+
+.cancellation-section:last-child {
+  border-bottom: 0;
+}
+
+.cancellation-section h2 {
+  margin: 0 0 17px;
+  color: #0b3548;
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  line-height: 1.3;
+}
+
+.cancellation-section p {
+  margin: 0 0 15px;
+  color: #52636d;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.cancellation-section p:last-child {
+  margin-bottom: 0;
+}
+
+.cancellation-section ul {
+  margin: 17px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cancellation-section li {
+  position: relative;
+  margin-bottom: 12px;
+  padding-left: 25px;
+  color: #52636d;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.cancellation-section li::before {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  color: #07858c;
+  content: "✓";
+  font-weight: 700;
+}
+
+.cancellation-section strong {
+  color: #163e50;
+  font-weight: 600;
+}
+
+.cancellation-section a {
+  color: #07858c;
+  text-decoration: none;
+}
+
+.cancellation-section a:hover {
+  text-decoration: underline;
+}
+
+/* ==================================================
+         IMPORTANT NOTICE BOX
+      ================================================== */
+
+.cancellation-notice {
+  margin-top: 20px;
+  padding: 24px 28px;
+  border: 1px solid rgba(246, 166, 25, 0.25);
+  border-radius: 12px;
+  background: rgba(246, 166, 25, 0.07);
+}
+
+.cancellation-notice p {
+  margin: 0;
+}
+
+/* ==================================================
+         CONTACT BOX
+      ================================================== */
+
+.cancellation-contact-box {
+  margin-top: 20px;
+  padding: 26px 28px;
+  border-radius: 12px;
+  background: #f7fafb;
+}
+
+.cancellation-contact-box p {
+  margin-bottom: 7px;
+}
+
+.cancellation-contact-box a {
+  color: #07858c;
+  text-decoration: none;
+}
+
+.cancellation-contact-box a:hover {
+  text-decoration: underline;
+}
+
+/* ==================================================
+         RESPONSIVE
+      ================================================== */
+
+@media (max-width: 768px) {
+  .cancellation-hero {
+    padding: 125px 0 55px;
+  }
+
+  .cancellation-policy {
+    padding: 60px 0 75px;
+  }
+
+  .cancellation-introduction {
+    padding: 24px;
+  }
+
+  .cancellation-section {
+    padding: 28px 0;
+  }
+
+  .cancellation-section h2 {
+    font-size: 24px;
+  }
+
+  .cancellation-notice,
+  .cancellation-contact-box {
+    padding: 22px;
+  }
+}

@@ -1,0 +1,1489 @@
+/* ==================================================
+   ABOUT PAGE FULL SCREEN FIT FIX STARTED
+================================================== */
+
+/* ==================================================
+   ABOUT PAGE SMART FIT (NO HERO BREAK) STARTED
+================================================== */
+
+.about-page {
+  display: block;
+}
+
+/* Reduce section spacing instead of forcing height */
+.about-story,
+.about-why,
+.about-offer,
+.about-cta {
+  padding: 50px 0 !important;
+}
+
+/* Slight text adjustment (balanced fit) */
+.about-page-hero h1 {
+  font-size: clamp(36px, 4vw, 56px);
+}
+
+.about-story h2,
+.about-section-heading h2,
+.about-offer h2 {
+  font-size: clamp(28px, 3vw, 40px);
+}
+
+/* Reduce image heights slightly */
+.about-story-image,
+.about-offer-image {
+  height: 380px;
+}
+
+/* ==================================================
+   ABOUT PAGE SMART FIT (NO HERO BREAK) ENDED
+================================================== */
+
+/* Reduce overall section spacing */
+.about-story,
+.about-why,
+.about-offer,
+.about-cta {
+  padding: 30px 0 !important;
+}
+
+/* Reduce text sizes slightly */
+.about-page-hero h1 {
+  font-size: clamp(32px, 3.5vw, 48px);
+}
+
+.about-story h2,
+.about-section-heading h2,
+.about-offer h2 {
+  font-size: clamp(26px, 2.5vw, 36px);
+}
+
+/* Reduce gaps in grids */
+.about-story-container,
+.about-offer-container {
+  gap: 30px !important;
+}
+
+.about-why-grid {
+  gap: 12px !important;
+}
+
+/* Reduce image heights */
+.about-story-image {
+  height: 300px !important;
+}
+
+.about-offer-image {
+  height: 280px !important;
+}
+
+/* Reduce CTA height */
+.about-cta {
+  padding: 30px 0 !important;
+}
+
+/* Compact cards */
+.about-why-card {
+  padding: 18px 16px !important;
+}
+
+/* ==================================================
+   ABOUT PAGE FULL SCREEN FIT FIX ENDED
+================================================== */
+
+/* ==================================================
+    1. HERO SECTION STARTED
+================================================== */
+
+/* ==================================================
+   ABOUT PAGE HERO SECTION STARTED (FINAL FIX)
+================================================== */
+
+.about-page-hero {
+  position: relative;
+  height: calc(100vh - 80px); /* full screen minus navbar */
+  min-height: 560px;
+
+  display: flex;
+  align-items: center;
+
+  background-image: url("../../images/about/about-page-hero.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  color: #fff;
+  overflow: hidden;
+}
+
+/* ==================================================
+   ABOUT PAGE HERO SECTION ENDED
+================================================== */
+
+.about-page-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(8, 31, 48, 0.9) 0%,
+    rgba(8, 31, 48, 0.68) 48%,
+    rgba(8, 31, 48, 0.18) 100%
+  );
+}
+
+/* ==================================================
+   ABOUT HERO CONTENT ALIGNMENT STARTED
+================================================== */
+
+.about-page-hero-container {
+  position: relative;
+  z-index: 1;
+
+  /* Keep all hero content inside navbar boundaries */
+  width: min(100% - 40px, 1320px);
+  margin-inline: auto;
+}
+
+/* ==================================================
+   ABOUT HERO CONTENT ALIGNMENT ENDED
+================================================== */
+
+.about-page-hero-content {
+  max-width: 650px;
+
+  /* Small breathing space inside navbar boundaries */
+  margin-left: 8px;
+}
+
+/* TEXT → BLUE */
+
+/* EYEBROW TEXT → BLUE */
+.about-page-eyebrow,
+.about-section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--color-secondary); /* BLUE */
+}
+
+/* EYEBROW ICON → ORANGE */
+.about-page-eyebrow span,
+.about-section-eyebrow span {
+  color: var(--color-accent); /* ORANGE */
+}
+
+.about-page-hero h1,
+.about-story h2,
+.about-section-heading h2,
+.about-offer h2 {
+  font-family: "Playfair Display", serif;
+  line-height: 1.08;
+}
+
+.about-page-hero h1 {
+  max-width: 620px;
+  margin: 0 0 20px;
+  font-size: clamp(42px, 5vw, 68px);
+  color: #fff;
+}
+
+/* ==================================================
+   ABOUT HERO TITLE ACCENT COLOR
+================================================== */
+
+.about-page-hero h1 span {
+  display: block;
+  color: var(--color-secondary-soft);
+}
+
+.about-story h2 span,
+.about-section-heading h2 span,
+.about-offer h2 span {
+  display: block;
+}
+
+.about-page-hero p {
+  max-width: 590px;
+  margin-bottom: 28px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+/* ==================================================
+   ABOUT HERO TRAVEL HIGHLIGHTS STARTED
+================================================== */
+
+.about-page-hero-highlights {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.about-page-hero-highlight {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 14px 18px;
+
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+
+  color: #fff;
+}
+
+.about-page-hero-highlight + .about-page-hero-highlight {
+  border-left: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.about-page-highlight-icon {
+  color: var(--color-accent);
+  font-size: 16px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+/* ==================================================
+   ABOUT HERO CTA STARTED
+================================================== */
+
+.about-page-hero-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  margin-top: 2px;
+  margin-bottom: 38px;
+  padding: 13px 24px;
+
+  color: #082f49;
+  background: var(--color-accent);
+
+  border-radius: 999px;
+
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.about-page-hero-cta span {
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.about-page-hero-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+.about-page-hero-cta:hover span {
+  transform: translateX(4px);
+}
+
+.about-cta h2 span {
+  display: block;
+  color: var(--color-secondary-soft);
+}
+
+/* ==================================================
+   ABOUT HERO CTA ENDED
+================================================== */
+
+/* ==================================================
+   1. HERO SECTION ENDED
+================================================== */
+
+/* ==================================================
+   2. OUR STORY SECTION STARTED
+================================================== */
+
+/* MAIN SECTION */
+.about-story {
+  padding: 38px 0 !important;
+  background: #ffffff;
+}
+
+/* MAIN GRID */
+.about-story-container {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: clamp(30px, 3vw, 48px);
+  align-items: stretch;
+}
+
+/* ==================================================
+   OUR STORY IMAGE
+================================================== */
+
+.about-story-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.about-story-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ==================================================
+   OUR STORY CONTENT
+================================================== */
+
+.about-story-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 0;
+}
+
+/* EYEBROW */
+.about-story-content .about-section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 12px;
+  color: #0799ad;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+
+.about-story-content .about-section-eyebrow span {
+  color: #f5a623;
+}
+
+/* HEADING */
+.about-story-content h2 {
+  margin: 0 0 15px;
+  color: #102f46;
+  font-size: clamp(34px, 3.4vw, 48px);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.8px;
+}
+
+.about-story-content h2 span {
+  display: block;
+  color: #102f46;
+}
+
+/* PARAGRAPHS */
+.about-story-content p {
+  margin: 0 0 12px;
+  color: #64727c;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+/* ==================================================
+   HIGHLIGHTS INTRODUCTION
+================================================== */
+
+.about-story-content .about-story-highlights-intro {
+  margin: 2px 0 12px;
+  color: #435d6e;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* ==================================================
+   FIVE HIGHLIGHTS
+================================================== */
+
+.about-story-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.about-story-highlights li {
+  position: relative;
+  padding-left: 26px;
+  color: #40586a;
+  font-size: 13.5px;
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+/* CHECKMARK */
+.about-story-highlights li::before {
+  content: "✓";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #0799ad;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* ==================================================
+   DISCOVER INDIA DESTINATIONS BUTTON
+================================================== */
+
+.about-story-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 13px 23px;
+  border: 2px solid #f5a623;
+  border-radius: 50px;
+  background: #f5a623;
+  color: #102f46;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.about-story-btn span {
+  font-size: 18px;
+  line-height: 1;
+  transition: transform 0.3s ease;
+}
+
+.about-story-btn:hover {
+  background: #102f46;
+  border-color: #102f46;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(16, 47, 70, 0.14);
+}
+
+.about-story-btn:hover span {
+  transform: translateX(4px);
+}
+
+.about-story-btn:focus-visible {
+  outline: 3px solid #087f8c;
+  outline-offset: 4px;
+}
+
+/* ==================================================
+   DESKTOP SCREEN HEIGHT OPTIMIZATION
+================================================== */
+
+@media (min-width: 1025px) and (min-height: 700px) {
+  .about-story {
+    min-height: calc(100vh - var(--header-height, 88px));
+    display: flex;
+    align-items: center;
+    padding: 24px 0 !important;
+  }
+
+  .about-story-container {
+    width: 100%;
+  }
+}
+
+/* ==================================================
+   SHORT DESKTOP SCREENS
+================================================== */
+
+@media (min-width: 1025px) and (max-height: 850px) {
+  .about-story {
+    padding: 22px 0 !important;
+  }
+
+  .about-story-content h2 {
+    font-size: clamp(32px, 3vw, 43px);
+    margin-bottom: 12px;
+  }
+
+  .about-story-content p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 9px;
+  }
+
+  .about-story-content .about-story-highlights-intro {
+    font-size: 13px;
+    margin-bottom: 9px;
+  }
+
+  .about-story-highlights {
+    gap: 6px;
+    margin-bottom: 14px;
+  }
+
+  .about-story-highlights li {
+    font-size: 13px;
+  }
+
+  .about-story-btn {
+    padding: 11px 20px;
+  }
+}
+
+/* ==================================================
+   TABLET RESPONSIVE
+================================================== */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about-story {
+    padding: 55px 0 !important;
+  }
+
+  .about-story-container {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 30px;
+  }
+
+  .about-story-content h2 {
+    font-size: clamp(30px, 3.5vw, 40px);
+  }
+
+  .about-story-content p {
+    font-size: 13px;
+  }
+}
+
+/* ==================================================
+   MOBILE RESPONSIVE
+================================================== */
+
+@media (max-width: 767px) {
+  .about-story {
+    padding: 50px 0 !important;
+  }
+
+  .about-story-container {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .about-story-image {
+    height: 320px;
+    min-height: 320px;
+  }
+
+  .about-story-content h2 {
+    font-size: clamp(30px, 7vw, 38px);
+    line-height: 1.15;
+  }
+
+  .about-story-content p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .about-story-highlights {
+    gap: 10px;
+  }
+
+  .about-story-highlights li {
+    font-size: 13.5px;
+  }
+
+  .about-story-btn {
+    padding: 13px 20px;
+    font-size: 12.5px;
+  }
+}
+
+/* ==================================================
+   OUR STORY — FINAL DESKTOP LAYOUT CORRECTION
+================================================== */
+
+@media (min-width: 1025px) {
+  .about-story {
+    display: flex;
+    align-items: center;
+    min-height: 0;
+    padding: 35px 0 !important;
+  }
+
+  .about-story .about-story-container {
+    width: calc(100% - 48px);
+    max-width: 1320px;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+    gap: 45px;
+    align-items: stretch;
+  }
+
+  .about-story-image {
+    position: relative;
+    height: auto;
+    min-height: 100%;
+    align-self: stretch;
+    border-radius: 18px;
+    overflow: hidden;
+  }
+
+  .about-story-image img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .about-story-content {
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .about-story-content h2 {
+    font-size: clamp(34px, 3vw, 46px);
+    line-height: 1.08;
+    margin-bottom: 14px;
+  }
+
+  .about-story-content p {
+    font-size: 13.5px;
+    line-height: 1.55;
+    margin-bottom: 10px;
+  }
+
+  .about-story-highlights {
+    gap: 7px;
+    margin-bottom: 16px;
+  }
+
+  .about-story-highlights li {
+    font-size: 13.5px;
+    line-height: 1.4;
+  }
+
+  .about-story-btn {
+    padding: 12px 22px;
+  }
+}
+
+/* ==================================================
+   OUR STORY — FINAL DESKTOP LAYOUT CORRECTION ENDED
+================================================== */
+
+/* ==================================================
+   OUR STORY — HIGHLIGHTS SPACING STARTED
+================================================== */
+
+.about-story-content .about-story-highlights-intro {
+  margin-bottom: 18px;
+}
+
+.about-story-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.about-story-highlights li {
+  line-height: 1.5;
+}
+
+/* ==================================================
+   OUR STORY — HIGHLIGHTS SPACING ENDED
+================================================== */
+
+/* ==================================================
+   OUR STORY — TOP & BOTTOM PADDING STARTED
+================================================== */
+
+@media (min-width: 1025px) {
+  .about-story {
+    padding-top: 75px !important;
+    padding-bottom: 65px !important;
+    min-height: auto;
+  }
+
+  .about-story-container {
+    align-items: stretch;
+  }
+
+  .about-story-image {
+    align-self: stretch;
+  }
+}
+
+/* ==================================================
+   OUR STORY — TOP & BOTTOM PADDING ENDED
+================================================== */
+
+/* ==================================================
+   2. OUR STORY SECTION ENDED
+================================================== */
+
+/* ==================================================
+   3. WHY CHOOSE ROAMORA SECTION STARTED
+================================================== */
+
+/* MAIN SECTION */
+.about-why {
+  padding: 65px 0;
+  background: #f5f8f8;
+}
+
+/* SECTION CONTAINER */
+.about-why-container {
+  width: 100%;
+}
+
+/* SECTION HEADING */
+.about-why .about-section-heading {
+  max-width: 760px;
+  margin-bottom: 38px;
+}
+
+.about-why .about-section-heading h2 {
+  margin-bottom: 16px;
+  color: #102f46;
+  font-size: clamp(34px, 3.5vw, 48px);
+  line-height: 1.15;
+}
+
+.about-why .about-section-heading p {
+  margin: 0;
+  color: #64727c;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* ==================================================
+   CARDS GRID
+================================================== */
+
+.about-why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  align-items: stretch;
+}
+
+/* ==================================================
+   PROFESSIONAL CARD DESIGN
+================================================== */
+
+.about-why-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 28px 24px 22px;
+  background: #ffffff;
+  border: 1px solid #e2eaed;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 5px 22px rgba(16, 47, 70, 0.035);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* TOP ACCENT LINE */
+.about-why-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #f5a623, #0799ad);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+/* CARD HOVER */
+.about-why-card:hover {
+  transform: translateY(-6px);
+  border-color: #c9e0e5;
+  box-shadow: 0 16px 35px rgba(16, 47, 70, 0.09);
+}
+
+.about-why-card:hover::before {
+  transform: scaleX(1);
+}
+
+/* ==================================================
+   CARD TOP — ICON & NUMBER
+================================================== */
+
+.about-why-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+/* ICON */
+.about-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  background: #eaf6f7;
+  color: #078a9a;
+  font-size: 25px;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.about-why-card:hover .about-card-icon {
+  background: #087f8c;
+  color: #ffffff;
+}
+
+/* CARD NUMBER */
+.about-card-number {
+  display: inline-block;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 31px;
+  font-weight: 700;
+  line-height: 1;
+  color: #e8753d;
+  opacity: 0.85;
+}
+
+/* ==================================================
+   CARD HEADING
+================================================== */
+
+.about-why-card h3 {
+  margin: 0 0 15px;
+  color: #102f46;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* ==================================================
+   CARD DESCRIPTION — INCREASED LINE SPACING
+================================================== */
+
+.about-why-card p {
+  margin: 0 0 22px;
+  color: #64727c;
+  font-size: 13.5px;
+  line-height: 1.95;
+}
+
+/* ==================================================
+   CARD FEATURES
+================================================== */
+
+.about-why-card-features {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin: 0 0 26px;
+  padding: 0;
+  list-style: none;
+}
+
+.about-why-card-features li {
+  position: relative;
+  padding-left: 21px;
+  color: #40586a;
+  font-size: 12.5px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* FEATURE CHECKMARK */
+.about-why-card-features li::before {
+  content: "✓";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #0799ad;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* ==================================================
+   CARD FOOTER
+================================================== */
+
+.about-why-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 17px;
+  border-top: 1px solid #e8eef0;
+}
+
+.about-why-card-footer span:first-child {
+  color: #087f8c;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.about-why-card-footer span:last-child {
+  color: #f5a623;
+  font-size: 21px;
+  line-height: 1;
+  transition: transform 0.3s ease;
+}
+
+.about-why-card:hover .about-why-card-footer span:last-child {
+  transform: translate(3px, -3px);
+}
+
+/* ==================================================
+   TABLET RESPONSIVE
+================================================== */
+
+@media (max-width: 1100px) {
+  .about-why-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .about-why {
+    padding: 65px 0;
+  }
+}
+
+/* ==================================================
+   MOBILE RESPONSIVE
+================================================== */
+
+@media (max-width: 767px) {
+  .about-why {
+    padding: 50px 0;
+  }
+
+  .about-why .about-section-heading {
+    margin-bottom: 30px;
+  }
+
+  .about-why .about-section-heading h2 {
+    font-size: clamp(30px, 7vw, 38px);
+  }
+
+  .about-why .about-section-heading p {
+    font-size: 14px;
+  }
+
+  .about-why-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .about-why-card {
+    padding: 26px 24px 22px;
+  }
+
+  .about-why-card p {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+}
+
+/* ==================================================
+   WHY CHOOSE ROAMORA — CONTAINER ALIGNMENT FIX
+================================================== */
+
+.about-why .about-why-container {
+  width: calc(100% - 48px);
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+/* ==================================================
+   WHY CHOOSE ROAMORA — CARD HEIGHT ADJUSTMENT STARTED
+================================================== */
+
+@media (min-width: 1101px) {
+  .about-why-card {
+    padding: 22px 20px 18px;
+  }
+
+  .about-why-card-top {
+    margin-bottom: 6px;
+  }
+
+  .about-why-card h3 {
+    margin-bottom: 10px;
+  }
+
+  .about-why-card p {
+    margin-bottom: 15px;
+  }
+
+  .about-why-card-features {
+    gap: 9px;
+    margin-bottom: 18px;
+  }
+
+  .about-why-card-footer {
+    padding-top: 12px;
+  }
+}
+
+/* ==================================================
+   WHY CHOOSE ROAMORA — CARD HEIGHT ADJUSTMENT ENDED
+================================================== */
+
+/* ==================================================
+   WHY CHOOSE ROAMORA — CONTAINER ALIGNMENT FIX ENDED
+================================================== */
+
+/* ==================================================
+   WHY CHOOSE ROAMORA — SECTION PADDING STARTED
+================================================== */
+
+@media (min-width: 1101px) {
+  .about-why {
+    padding-top: 45px !important;
+    padding-bottom: 55px !important;
+  }
+}
+
+/* ==================================================
+   WHY CHOOSE ROAMORA — SECTION PADDING ENDED
+================================================== */
+
+/* ==================================================
+   3. WHY CHOOSE ROAMORA SECTION ENDED
+================================================== */
+
+/* ==================================================
+   4. WHAT WE OFFER SECTION STARTED
+================================================== */
+
+.about-offer {
+  padding: 90px 0;
+}
+
+.about-offer-container {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.about-offer-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin: 25px 0 30px;
+}
+
+.about-offer-list span {
+  position: relative;
+  padding-left: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #304958;
+}
+
+.about-offer-list span::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #087f8c;
+}
+
+.about-offer-image {
+  height: 450px;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.about-cta {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+
+/* ==================================================
+   4. WHAT WE OFFER SECTION ENDED
+================================================== */
+
+/* ==================================================
+   5. ABOUT CTA BANNER SECTION STARTED
+================================================== */
+
+.about-cta {
+  padding: 65px 0;
+  background: #102f46;
+  color: #fff;
+}
+
+.about-cta-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.about-cta-container > div:first-child {
+  max-width: 650px;
+}
+
+.about-cta-container > div:first-child > span {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: #e8753d;
+}
+
+.about-cta h2 {
+  margin: 0 0 10px;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(30px, 3vw, 42px);
+  color: #fff;
+}
+
+.about-cta p {
+  margin: 0;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.about-cta-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+.about-cta-secondary {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.about-offer {
+  padding-top: 60px !important;
+  padding-bottom: 30px !important;
+}
+
+/* ==================================================
+   5. ABOUT CTA EYEBROW STARTED
+================================================== */
+
+.about-cta-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  color: var(--color-secondary) !important; /* BLUE */
+}
+
+.about-cta-eyebrow-mark {
+  color: var(--color-accent) !important; /* ORANGE */
+}
+
+/* ==================================================
+   ABOUT CTA BUTTON — WHITE STYLE
+================================================== */
+
+.about-cta .about-cta-actions .btn.btn-accent {
+  background: #ffffff !important;
+  color: #0b2f47 !important;
+  border: 1px solid #ffffff !important;
+}
+
+/* HOVER */
+.about-cta .about-cta-actions .btn.btn-accent:hover {
+  background: var(--color-accent) !important;
+  color: #0b2f47 !important;
+  border-color: var(--color-accent) !important;
+}
+
+/* ==================================================
+   ABOUT CTA BUTTON — WHITE STYLE ENDED
+================================================== */
+
+/* ==================================================
+   ABOUT CTA EYEBROW ENDED
+================================================== */
+
+/* ==================================================
+   ABOUT CTA BANNER SECTION ENDED
+================================================== */
+
+/* ==================================================
+   ABOUT PAGE RESPONSIVE STARTED
+================================================== */
+
+@media (max-width: 1000px) {
+  .about-story-container,
+  .about-offer-container {
+    gap: 40px;
+  }
+
+  .about-why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .about-page-hero {
+    min-height: 520px;
+  }
+
+  .about-story-container,
+  .about-offer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-story-image,
+  .about-offer-image {
+    height: 400px;
+  }
+
+  .about-cta-container {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 575px) {
+  .about-page-hero {
+    min-height: 500px;
+  }
+
+  .about-story,
+  .about-offer,
+  .about-why {
+    padding: 65px 0;
+  }
+
+  .about-why-grid,
+  .about-offer-list {
+    grid-template-columns: 1fr;
+  }
+
+  .about-story-image,
+  .about-offer-image {
+    height: 320px;
+  }
+
+  .about-cta-actions {
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .about-page-hero-container {
+    width: calc(100% - 32px);
+  }
+}
+
+/* ==================================================
+   ABOUT PAGE RESPONSIVE ENDED
+================================================== */
+
+/* ==================================================
+   WHAT WE OFFER — BULLET SPACING STARTED
+================================================== */
+
+.about-offer-list {
+  row-gap: 10px;
+}
+
+/* ==================================================
+   WHAT WE OFFER — BULLET SPACING ENDED
+================================================== */
+
+/* ==================================================
+   ABOUT PAGE — SECTION TITLE BLUE COLOR STARTED
+================================================== */
+
+/* 2. OUR STORY */
+.about-story-content h2 span,
+
+/* 3. WHY CHOOSE ROAMORA */
+.about-why .about-section-heading h2 span,
+
+/* 5. WHAT WE OFFER */
+.about-offer-content h2 span {
+  display: block;
+  color: var(--color-primary);
+}
+
+/* ==================================================
+   ABOUT PAGE — SECTION TITLE BLUE COLOR ENDED
+================================================== */
+
+/* ==================================================
+   WHAT WE OFFER — FULL HEIGHT IMAGE STARTED
+================================================== */
+
+@media (min-width: 992px) {
+  .about-offer-container {
+    align-items: stretch;
+  }
+
+  .about-offer-image {
+    position: relative;
+    height: auto;
+    min-height: 100%;
+    align-self: stretch;
+    overflow: hidden;
+    border-radius: 18px;
+  }
+
+  .about-offer-image img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+}
+
+/* ==================================================
+   WHAT WE OFFER — FULL HEIGHT IMAGE ENDED
+================================================== */
+
+/* ==================================================
+   ABOUT CTA — HIGHLIGHTS STARTED
+================================================== */
+
+.about-cta-content {
+  min-width: 0;
+}
+
+.about-cta-highlights {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 28px;
+  padding: 9px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 4px;
+}
+
+.about-cta-highlights > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 17px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.about-cta-highlights > span:not(:last-child) {
+  border-right: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.about-cta-highlight-icon {
+  color: var(--color-accent);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* ==================================================
+   ABOUT CTA — RESPONSIVE HIGHLIGHTS
+================================================== */
+
+@media (max-width: 991px) {
+  .about-cta-highlights {
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-cta-highlights {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: fit-content;
+    max-width: 100%;
+    padding: 8px 12px;
+  }
+
+  .about-cta-highlights > span {
+    white-space: normal;
+    padding: 8px 6px;
+  }
+
+  .about-cta-highlights > span:not(:last-child) {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  }
+}
+
+/* ==================================================
+   ABOUT CTA — HIGHLIGHTS ENDED
+================================================== */
+
+/* ==================================================
+   ABOUT CTA CONTACT BUTTON STARTED
+================================================== */
+.about-cta-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.about-cta-contact-btn {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+
+.about-cta-contact-btn:hover {
+  background: #ffffff;
+  color: #10354a;
+}
+
+/* ==================================================
+   ABOUT CTA CONTACT BUTTON ENDED
+================================================== */

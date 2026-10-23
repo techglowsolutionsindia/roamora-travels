@@ -1,0 +1,1249 @@
+/* ==================================================
+   PACKAGES PAGE STARTED
+================================================== */
+
+/* ==================================================
+   PACKAGES PAGE FONT STANDARDIZATION STARTED
+================================================= */
+
+/* BODY TEXT → POPPINS */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ==================================================
+   PACKAGES PAGE FONT STANDARDIZATION ENDED
+================================================= */
+
+/* ==================================================
+   COMMON PACKAGES STYLES STARTED
+================================================== */
+
+.packages-eyebrow,
+.packages-cta-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  color: #0097a7;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.packages-hero-title,
+.all-packages-heading h2,
+.packages-cta-copy h2,
+.package-card h3 {
+  font-family: "Playfair Display", serif;
+}
+
+/* ==================================================
+   COMMON PACKAGES STYLES ENDED
+================================================== */
+
+/* ==================================================
+   PACKAGES HERO SECTION STARTED
+================================================== */
+
+.packages-hero {
+  position: relative;
+  overflow: hidden;
+  padding-block: 72px;
+  background:
+    radial-gradient(
+      circle at 88% 18%,
+      rgba(26, 178, 190, 0.12),
+      transparent 30%
+    ),
+    linear-gradient(135deg, #f8fcfc 0%, #eef9fb 100%);
+}
+
+.packages-hero-container {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(420px, 0.85fr);
+  align-items: center;
+  gap: clamp(48px, 6vw, 90px);
+}
+
+.packages-hero-content {
+  max-width: 680px;
+}
+
+.packages-hero-title {
+  max-width: 720px;
+  margin-top: 18px;
+  color: #082f49;
+  font-size: clamp(3rem, 4.15vw, 4.5rem);
+  font-weight: 400;
+  line-height: 0.98;
+  letter-spacing: -0.025em;
+}
+
+.packages-hero-title span {
+  display: block;
+  color: #05658b;
+}
+
+.packages-hero-description {
+  max-width: 640px;
+  margin-top: 16px;
+  color: #64748b;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.packages-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-top: 30px;
+}
+
+.packages-hero-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding-block: 12px;
+  color: #083654;
+  border-bottom: 1px solid rgba(8, 54, 84, 0.35);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.packages-hero-trust {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  margin-top: 38px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(8, 54, 84, 0.12);
+}
+
+.packages-hero-trust div {
+  min-width: 135px;
+  padding-right: 30px;
+}
+
+.packages-hero-trust div + div {
+  padding-left: 30px;
+  border-left: 1px solid rgba(8, 54, 84, 0.14);
+}
+
+.packages-hero-trust strong {
+  display: block;
+  color: #082f49;
+  font-family: "Playfair Display", serif;
+  font-size: 1.55rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.packages-hero-trust span {
+  display: block;
+  margin-top: 7px;
+  color: #718096;
+  font-size: 0.7rem;
+}
+
+.packages-hero-visual {
+  position: relative;
+  min-height: 510px;
+}
+
+.packages-hero-visual > img {
+  width: 100%;
+  height: 510px;
+  object-fit: cover;
+  border-radius: 32px;
+  box-shadow: 0 28px 60px rgba(8, 47, 73, 0.15);
+}
+
+.packages-hero-card {
+  position: absolute;
+  left: -36px;
+  bottom: 32px;
+  width: 250px;
+  padding: 20px 22px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 18px;
+  box-shadow: 0 18px 38px rgba(8, 47, 73, 0.16);
+  backdrop-filter: blur(10px);
+}
+
+.packages-hero-card span,
+.packages-hero-card small {
+  display: block;
+}
+
+.packages-hero-card span {
+  color: #0097a7;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.packages-hero-card strong {
+  display: block;
+  margin-top: 7px;
+  color: #082f49;
+  font-family: "Playfair Display", serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.packages-hero-card small {
+  margin-top: 5px;
+  color: #718096;
+  font-size: 0.68rem;
+}
+
+.packages-hero-badge {
+  position: absolute;
+  top: 24px;
+  right: -24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 96px;
+  height: 96px;
+  background: #fca51a;
+  border: 8px solid #f4fbfc;
+  border-radius: 50%;
+  color: #083654;
+  box-shadow: 0 16px 30px rgba(8, 47, 73, 0.12);
+}
+
+.packages-hero-badge strong {
+  font-family: "Playfair Display", serif;
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.packages-hero-badge span {
+  margin-top: 3px;
+  font-size: 0.63rem;
+  font-weight: 600;
+}
+
+/* ==================================================
+   PACKAGES HERO SECTION ENDED
+================================================== */
+
+/* ==================================================
+   ALL PACKAGES SECTION STARTED
+================================================== */
+
+.all-packages {
+  padding-block: 84px 96px;
+  background: #ffffff;
+}
+
+.all-packages-heading {
+  max-width: 780px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.all-packages-heading h2 {
+  margin-top: 15px;
+  color: #082f49;
+  font-size: clamp(2.4rem, 4vw, 4.2rem);
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.all-packages-heading h2 span {
+  display: block;
+  color: #05658b;
+}
+
+.all-packages-heading p {
+  max-width: 690px;
+  margin: 18px auto 0;
+  color: #718096;
+  font-size: 0.94rem;
+  line-height: 1.75;
+}
+
+/* PACKAGE TOOLBAR */
+
+.package-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 46px;
+  padding: 16px 18px;
+  background: #f5fbfc;
+  border: 1px solid #dcecef;
+  border-radius: 18px;
+}
+
+.package-filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.package-filter {
+  min-height: 40px;
+  padding-inline: 17px;
+  color: #526778;
+  background: #ffffff;
+  border: 1px solid #d8e7eb;
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    color 0.25s ease,
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.package-filter:hover,
+.package-filter.is-active {
+  color: #ffffff;
+  background: #0798a5;
+  border-color: #0798a5;
+}
+
+.package-filter:hover {
+  transform: translateY(-1px);
+}
+
+.package-card[hidden] {
+  display: none !important;
+}
+
+.package-count {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+  flex-shrink: 0;
+}
+
+.package-count strong {
+  color: #082f49;
+  font-family: "Playfair Display", serif;
+  font-size: 1.55rem;
+  font-weight: 400;
+}
+
+.package-count span {
+  color: #718096;
+  font-size: 0.72rem;
+}
+
+/* PACKAGES GRID */
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 28px;
+  row-gap: 22px;
+  margin-top: 20px;
+}
+
+.package-card {
+  position: relative;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e1ebee;
+  border-radius: 22px;
+  box-shadow: 0 13px 36px rgba(8, 47, 73, 0.075);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 24px 48px rgba(8, 47, 73, 0.13);
+}
+
+.package-card-image {
+  position: relative;
+  height: 235px;
+  overflow: hidden;
+}
+
+.package-card-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(5, 40, 60, 0.05) 35%,
+    rgba(5, 40, 60, 0.38) 100%
+  );
+}
+
+.package-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.package-card:hover .package-card-image img {
+  transform: scale(1.045);
+}
+
+.package-card-category {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 2;
+  padding: 7px 12px;
+  color: #ffffff;
+  background: rgba(7, 52, 78, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  font-size: 0.63rem;
+  font-weight: 600;
+  backdrop-filter: blur(5px);
+}
+
+.package-card-number {
+  position: absolute;
+  right: 18px;
+  bottom: 4px;
+  z-index: 2;
+  color: rgba(255, 255, 255, 0.76);
+  font-family: "Playfair Display", serif;
+  font-size: 3.1rem;
+  line-height: 1;
+}
+
+.package-card-content {
+  padding: 20px 20px 21px;
+}
+
+.package-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #718096;
+  font-size: 0.67rem;
+}
+
+.package-card-meta span {
+  position: relative;
+}
+
+.package-card-meta span + span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -9px;
+  width: 3px;
+  height: 3px;
+  background: #0798a5;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.package-card h3 {
+  margin-top: 12px;
+  color: #082f49;
+  font-size: 1.45rem;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.package-card-route {
+  margin-top: 5px;
+  color: #0798a5;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.package-card-description {
+  min-height: 63px;
+  margin-top: 12px;
+  color: #718096;
+  font-size: 0.75rem;
+  line-height: 1.55;
+}
+
+.package-card-footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 17px;
+  padding-top: 15px;
+  border-top: 1px solid #e2ecef;
+}
+
+.package-price small {
+  display: block;
+  color: #8593a1;
+  font-size: 0.61rem;
+}
+
+.package-price strong {
+  display: inline-block;
+  margin-top: 3px;
+  color: #082f49;
+  font-family: "Playfair Display", serif;
+  font-size: 1.35rem;
+  font-weight: 400;
+}
+
+.package-price span {
+  margin-left: 3px;
+  color: #8593a1;
+  font-size: 0.57rem;
+}
+
+.package-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 3px;
+  color: #05658b;
+  border-bottom: 1px solid #05658b;
+  font-size: 0.68rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.package-card-link span {
+  transition: transform 0.25s ease;
+}
+
+.package-card-link:hover span {
+  transform: translateX(4px);
+}
+
+/* ==================================================
+   ALL PACKAGES SECTION ENDED
+================================================== */
+
+/* ==================================================
+   CUSTOM TRIP CTA SECTION STARTED
+================================================== */
+
+.packages-cta {
+  /* GAP BETWEEN SECTION 1 AND SECTION 2 */
+  margin-top: 75px;
+
+  /* REDUCED GAP BETWEEN SECTION 2 AND SECTION 3 */
+  margin-bottom: 60px;
+
+  padding-block: 32px;
+
+  background:
+    radial-gradient(
+      circle at 80% 0%,
+      rgba(17, 189, 200, 0.24),
+      transparent 28%
+    ),
+    linear-gradient(120deg, #07354d 0%, #075a6c 100%);
+}
+
+.packages-cta-container {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) auto;
+  align-items: center;
+  gap: 70px;
+}
+
+.packages-cta-eyebrow {
+  color: #5fe0e8;
+}
+
+.packages-cta-copy h2 {
+  max-width: 680px;
+  margin-top: 13px;
+  color: #ffffff;
+  font-size: clamp(2.4rem, 4vw, 4rem);
+  font-weight: 400;
+  line-height: 1.04;
+}
+
+.packages-cta-copy h2 span {
+  display: block;
+  color: #6ee8ee;
+}
+
+.packages-cta-copy p {
+  max-width: 660px;
+  margin-top: 15px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.86rem;
+  line-height: 1.7;
+}
+
+.packages-cta-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.packages-cta-button {
+  min-width: 220px;
+}
+
+.packages-cta-action small {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.62rem;
+}
+
+/* ==================================================
+   CUSTOM TRIP CTA SECTION ENDED
+================================================== */
+
+/* ==================================================
+   PACKAGES FOOTER STARTED
+================================================== */
+
+.packages-footer {
+  padding-block: 50px 22px;
+  color: rgba(255, 255, 255, 0.76);
+  background: #062f45;
+}
+
+.packages-footer-container {
+  text-align: center;
+}
+
+.packages-footer-logo {
+  display: inline-flex;
+  flex-direction: column;
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  line-height: 0.8;
+}
+
+.packages-footer-logo span {
+  margin-top: 10px;
+  color: #fca51a;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.52rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.packages-footer-container > p {
+  max-width: 600px;
+  margin: 22px auto 0;
+  font-size: 0.73rem;
+  line-height: 1.7;
+}
+
+.packages-footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 26px;
+  margin-top: 28px;
+}
+
+.packages-footer-links a {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.7rem;
+}
+
+.packages-footer-links a:hover {
+  color: #fca51a;
+}
+
+.packages-footer-bottom {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 34px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 0.62rem;
+}
+
+.packages-footer-bottom a {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* ==================================================
+   PACKAGES FOOTER ENDED
+================================================== */
+
+/* ==================================================
+   RESPONSIVE PACKAGES PAGE STARTED
+================================================== */
+
+@media (max-width: 1180px) {
+  .packages-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .packages-hero-container {
+    grid-template-columns: minmax(0, 1fr) minmax(370px, 0.85fr);
+    gap: 50px;
+  }
+}
+
+@media (max-width: 900px) {
+  .packages-hero {
+    padding-block: 58px;
+  }
+
+  .packages-hero-container {
+    grid-template-columns: 1fr;
+  }
+
+  .packages-hero-content {
+    max-width: 100%;
+  }
+
+  .packages-hero-visual {
+    min-height: auto;
+  }
+
+  .packages-hero-visual > img {
+    height: 480px;
+  }
+
+  .packages-hero-card {
+    left: 22px;
+  }
+
+  .packages-hero-badge {
+    right: 20px;
+  }
+
+  .packages-cta-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .packages-cta-action {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 700px) {
+  .packages-hero {
+    padding-block: 44px 50px;
+  }
+
+  .packages-hero-title {
+    font-size: clamp(2.5rem, 11vw, 3.55rem);
+  }
+
+  .packages-hero-description {
+    font-size: 0.85rem;
+  }
+
+  .packages-hero-actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .packages-hero-trust {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .packages-hero-trust div {
+    min-width: 0;
+    padding-inline: 10px;
+    text-align: center;
+  }
+
+  .packages-hero-trust div:first-child {
+    padding-left: 0;
+  }
+
+  .packages-hero-trust div:last-child {
+    padding-right: 0;
+  }
+
+  .packages-hero-trust div + div {
+    padding-left: 10px;
+  }
+
+  .packages-hero-trust strong {
+    font-size: 1.25rem;
+  }
+
+  .packages-hero-trust span {
+    font-size: 0.57rem;
+  }
+
+  .packages-hero-visual > img {
+    height: 410px;
+    border-radius: 22px;
+  }
+
+  .packages-hero-card {
+    left: 14px;
+    bottom: 14px;
+    width: min(240px, calc(100% - 28px));
+  }
+
+  .packages-hero-badge {
+    top: 14px;
+    right: 12px;
+    width: 82px;
+    height: 82px;
+    border-width: 6px;
+  }
+
+  .all-packages {
+    padding-block: 60px 70px;
+  }
+
+  .all-packages-heading {
+    text-align: left;
+  }
+
+  .all-packages-heading h2 {
+    font-size: clamp(2.35rem, 10vw, 3.25rem);
+  }
+
+  .all-packages-heading p {
+    font-size: 0.81rem;
+  }
+
+  .package-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .package-filter-list {
+    flex-wrap: nowrap;
+    width: 100%;
+    padding-bottom: 7px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .package-filter-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .package-filter {
+    flex-shrink: 0;
+  }
+
+  .packages-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .package-card-image {
+    height: 230px;
+  }
+
+  .package-card-description {
+    min-height: auto;
+  }
+
+  .packages-cta {
+    padding-block: 54px;
+  }
+
+  .packages-cta-copy h2 {
+    font-size: clamp(2.35rem, 10vw, 3.3rem);
+  }
+
+  .packages-cta-action,
+  .packages-cta-button {
+    width: 100%;
+  }
+
+  .packages-footer-links {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 430px) {
+  .packages-hero-visual > img {
+    height: 365px;
+  }
+
+  .packages-hero-card {
+    padding: 16px 18px;
+  }
+
+  .packages-hero-badge {
+    width: 76px;
+    height: 76px;
+  }
+
+  .package-card-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+/* Keep Each Hero Heading Line Separate on Desktop */
+@media (min-width: 1181px) {
+  .packages-hero-title {
+    white-space: nowrap;
+  }
+
+  .packages-hero-title span {
+    display: block;
+  }
+}
+
+/* ==================================================
+   RESPONSIVE PACKAGES PAGE ENDED
+================================================== */
+
+/* ==================================================
+   PACKAGES PAGE ENDED
+================================================== */
+
+/* ==================================================
+   PACKAGES HERO EYEBROW COLORS STARTED
+================================================== */
+
+/* ==================================================
+   PACKAGES HERO EYEBROW COLORS STARTED
+================================================== */
+
+/* EYEBROW TEXT → DARK BLUE */
+.packages-hero .packages-eyebrow {
+  color: var(--color-secondary) !important;
+}
+
+/* EYEBROW MARK → ORANGE */
+.packages-hero .packages-eyebrow > span {
+  color: var(--color-accent) !important;
+  margin-right: 6px;
+}
+
+/* ==================================================
+   PACKAGES HERO EYEBROW COLORS ENDED
+================================================== */
+
+/* EYEBROW MARK → ORANGE */
+.packages-hero .packages-eyebrow > span {
+  color: var(--color-accent) !important;
+  margin-right: 6px;
+}
+
+/* ==================================================
+   PACKAGES HERO EYEBROW COLORS ENDED
+================================================== */
+
+/* ==================================================
+   CUSTOM TRIP CTA EYEBROW COLORS STARTED
+================================================== */
+
+/* EYEBROW TEXT → BLUE */
+.packages-cta .packages-cta-eyebrow {
+  color: var(--color-secondary) !important;
+}
+
+/* EYEBROW MARK → ORANGE */
+.packages-cta .packages-cta-eyebrow > span {
+  color: var(--color-accent) !important;
+  margin-right: 6px;
+}
+
+/* ==================================================
+   CUSTOM TRIP CTA EYEBROW COLORS ENDED
+================================================== */
+
+/* ==================================================
+   CUSTOM TRIP PLANNER ANCHOR SCROLL FIX STARTED
+================================================== */
+
+#custom-trip-planner {
+  scroll-margin-top: 65px;
+}
+
+/* ==================================================
+   CUSTOM TRIP PLANNER ANCHOR SCROLL FIX ENDED
+================================================== */
+
+/* ==================================================
+   ALL PACKAGES HEADING SPACING FIX STARTED
+================================================== */
+
+/* REDUCE GAP BELOW MAIN HEADING */
+.all-packages-heading h2 {
+  margin-bottom: 18px !important;
+}
+
+/* REMOVE EXTRA TOP SPACING FROM DESCRIPTION */
+.all-packages-heading p {
+  margin-top: 0 !important;
+}
+
+/* ==================================================
+   ALL PACKAGES HEADING SPACING FIX ENDED
+================================================== */
+
+/* ==================================================
+   ALL PACKAGES SECTION TOP SPACING FIX STARTED
+================================================== */
+
+.all-packages {
+  padding-top: 35px !important;
+}
+
+/* ==================================================
+   ALL PACKAGES SECTION TOP SPACING FIX ENDED
+================================================== */
+
+/* ==================================================
+   ALL PACKAGES EYEBROW COLORS STARTED
+================================================== */
+
+/* EYEBROW TEXT → BLUE */
+.all-packages-heading .packages-eyebrow {
+  color: var(--color-secondary) !important;
+}
+
+/* EYEBROW MARK → ORANGE */
+.all-packages-heading .packages-eyebrow > span {
+  color: var(--color-accent) !important;
+  margin-right: 6px;
+}
+
+/* ==================================================
+   ALL PACKAGES EYEBROW COLORS ENDED
+================================================== */
+
+/* ==================================================
+   PACKAGES CARD TYPOGRAPHY IMPROVEMENTS STARTED
+================================================= */
+
+.package-card-meta {
+  font-size: 0.75rem;
+}
+
+.package-card h3 {
+  font-size: 1.5rem;
+}
+
+.package-card-route {
+  font-size: 0.8rem;
+}
+
+.package-card-description {
+  font-size: 0.85rem;
+}
+
+.package-price small {
+  font-size: 0.7rem;
+}
+
+.package-price strong {
+  font-size: 1.4rem;
+}
+
+.package-price span {
+  font-size: 0.68rem;
+}
+
+.package-card-link {
+  font-size: 0.76rem;
+}
+
+/* ==================================================
+   PACKAGES CARD TYPOGRAPHY IMPROVEMENTS ENDED
+================================================= */
+
+/* ==================================================
+   ALL PACKAGES TWO-LINE HEADING STARTED
+================================================== */
+
+.all-packages-heading h2 {
+  font-size: clamp(2.5rem, 3.5vw, 3.5rem) !important;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+}
+
+.all-packages-heading h2 span {
+  display: block;
+}
+
+/* ==================================================
+   ALL PACKAGES TWO-LINE HEADING ENDED
+================================================== */
+
+/* ==================================================
+   PACKAGES CTA HEADING WIDTH STARTED
+================================================== */
+
+/* INCREASE LEFT CONTENT WIDTH */
+.packages-cta-container {
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 30px;
+  align-items: center;
+}
+
+/* ALLOW HEADING TO USE MORE SPACE */
+.packages-cta h2 {
+  max-width: 900px;
+  font-size: clamp(32px, 2.7vw, 43px);
+}
+
+/* ==================================================
+   PACKAGES CTA HEADING WIDTH ENDED
+================================================== */
+
+/* ==================================================
+   PACKAGES CTA TRUST HIGHLIGHTS STARTED
+================================================== */
+
+.packages-cta-trust {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: fit-content;
+  max-width: 100%;
+  margin-top: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.packages-cta-trust span {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 17px 20px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.packages-cta-trust span + span {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.packages-cta-trust b {
+  color: var(--color-accent);
+  font-size: 17px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .packages-cta-trust {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .packages-cta-trust span + span {
+    border-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* ==================================================
+   PACKAGES CTA TRUST HIGHLIGHTS ENDED
+================================================== */
+
+/* ==================================================
+   PACKAGES CTA BUTTON COLOR STARTED
+================================================== */
+
+/* DEFAULT BUTTON → WHITE */
+.packages-cta a[href="custom-trip.html"] {
+  background: #ffffff !important;
+  color: #102f46 !important;
+  border-color: #ffffff !important;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+/* HOVER BUTTON → ORANGE */
+.packages-cta a[href="custom-trip.html"]:hover {
+  background: var(--color-accent) !important;
+  color: #102f46 !important;
+  border-color: var(--color-accent) !important;
+}
+
+/* ==================================================
+   PACKAGES CTA BUTTON COLOR ENDED
+================================================== */
+
+/* ==================================================
+   PACKAGES CTA BUTTON STYLE STARTED
+================================================== */
+
+.packages-cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 17px 28px;
+  border-radius: 50px;
+  background: #ffffff;
+  color: #102f46;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.packages-cta-button:hover {
+  background: var(--color-accent);
+  color: #102f46;
+  transform: translateY(-2px);
+}
+
+/* ==================================================
+   PACKAGES CTA BUTTON STYLE ENDED
+================================================== */
+
+/* ==================================================
+   PACKAGES CTA CONTACT BUTTON STARTED
+================================================== */
+.packages-cta-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.packages-cta-contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 999px;
+  background: transparent;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.packages-cta-contact-btn:hover {
+  background: #ffffff;
+  color: #10354a;
+}
+
+/* ==================================================
+   PACKAGES CTA CONTACT BUTTON ENDED
+================================================== */

@@ -1,0 +1,1004 @@
+/* ==================================================
+   EXPERIENCES PAGE WIDTH CONTROL STARTED
+================================================== */
+
+/*
+  IMPORTANT:
+  Every actual page element stays within the same
+  Logo → Navbar CTA horizontal working area.
+*/
+
+.experiences-page-container {
+  width: min(calc(100% - 40px), 1320px);
+  margin-inline: auto;
+}
+
+/* ==================================================
+   EXPERIENCES PAGE WIDTH CONTROL ENDED
+================================================== */
+
+/* ==================================================
+   SHARED EXPERIENCES TYPOGRAPHY STARTED
+================================================== */
+
+.experiences-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  color: #e8753d;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.experiences-section-heading h2,
+.experiences-why-content h2 {
+  margin: 0;
+  color: #102f46;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(34px, 4vw, 50px);
+  line-height: 1.08;
+}
+
+.experiences-section-heading h2 span,
+.experiences-why-content h2 span {
+  display: block;
+}
+
+/* ==================================================
+   SHARED EXPERIENCES TYPOGRAPHY ENDED
+================================================== */
+
+/* ==================================================
+   EXPERIENCES HERO SECTION STARTED
+================================================== */
+
+/* ==================================================
+   EXPERIENCES HERO SECTION STARTED
+================================================== */
+
+.experiences-hero {
+  position: relative;
+  width: 100%;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(7, 35, 53, 0.94) 0%,
+      rgba(7, 35, 53, 0.82) 38%,
+      rgba(7, 35, 53, 0.45) 62%,
+      rgba(7, 35, 53, 0.12) 100%
+    ),
+    url("../../images/experiences/experiences-hero.png");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  color: #fff;
+  overflow: hidden;
+}
+
+/* ==================================================
+   EXPERIENCES HERO SECTION ENDED
+================================================== */
+
+.experiences-hero-container {
+  min-height: 500px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  align-items: center;
+  gap: 70px;
+}
+
+.experiences-hero-content {
+  max-width: 680px;
+}
+
+.experiences-hero h1 {
+  margin: 0 0 20px;
+  max-width: 680px;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(44px, 5vw, 68px);
+  line-height: 1.05;
+}
+
+.experiences-hero h1 span {
+  display: block;
+}
+
+.experiences-hero-content > p {
+  max-width: 600px;
+  margin: 0 0 28px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.experiences-hero-highlights {
+  display: grid;
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.experiences-hero-highlights > div {
+  padding: 23px 26px;
+  background: rgba(8, 36, 54, 0.76);
+}
+
+.experiences-hero-highlights strong {
+  display: block;
+  margin-bottom: 3px;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+}
+
+.experiences-hero-highlights span {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 13px;
+}
+
+/* ==================================================
+   EXPERIENCES HERO SECTION ENDED
+================================================== */
+
+/* ==================================================
+   EXPLORE INDIA EXPERIENCES SECTION STARTED
+================================================== */
+
+.experiences-explore {
+  padding: 85px 0 90px;
+}
+
+.experiences-section-heading {
+  max-width: 700px;
+  margin-bottom: 38px;
+}
+
+.experiences-section-heading > p {
+  max-width: 650px;
+  margin: 17px 0 0;
+  color: #66757e;
+  line-height: 1.8;
+}
+
+.experiences-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.experience-card {
+  overflow: hidden;
+  border: 1px solid #e2e9eb;
+  border-radius: 16px;
+  background: #fff;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 35px rgba(15, 47, 70, 0.1);
+}
+
+.experience-card-image {
+  position: relative;
+  height: 230px;
+  overflow: hidden;
+}
+
+.experience-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.experience-card:hover .experience-card-image img {
+  transform: scale(1.04);
+}
+
+.experience-card-number {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 50%;
+  background: #f5a623;
+  color: #102f46;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.experience-card-content {
+  padding: 23px 24px 25px;
+}
+
+.experience-card-content > span {
+  display: block;
+  margin-bottom: 7px;
+  color: #e8753d;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.experience-card-content h3 {
+  margin: 0 0 9px;
+  color: #102f46;
+  font-family: "Playfair Display", serif;
+  font-size: 23px;
+}
+
+.experience-card-content p {
+  min-height: 68px;
+  margin: 0 0 15px;
+  color: #6a7880;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.experience-card-content a {
+  color: #087f8c;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* ==================================================
+   EXPLORE INDIA EXPERIENCES SECTION ENDED
+================================================== */
+
+/* ==================================================
+   WHY EXPERIENCE INDIA WITH ROAMORA SECTION STARTED
+================================================== */
+
+.experiences-why {
+  padding: 80px 0;
+  background: #f4f8f8;
+}
+
+.experiences-why-container {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  align-items: center;
+  gap: 80px;
+}
+
+.experiences-why-content > p {
+  max-width: 520px;
+  margin: 18px 0 0;
+  color: #687780;
+  line-height: 1.8;
+}
+
+.experiences-benefits {
+  display: grid;
+  gap: 14px;
+}
+
+.experiences-benefits article {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 18px;
+  align-items: start;
+  padding: 20px 22px;
+  border: 1px solid #e0e8ea;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.experiences-benefits article > span {
+  color: #e8753d;
+  font-family: "Playfair Display", serif;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.experiences-benefits h3 {
+  margin: 0 0 4px;
+  color: #102f46;
+  font-size: 16px;
+}
+
+.experiences-benefits p {
+  margin: 0;
+  color: #6c7981;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+/* ==================================================
+   WHY EXPERIENCE INDIA WITH ROAMORA SECTION ENDED
+================================================== */
+
+/* ==================================================
+   EXPERIENCES CTA BANNER SECTION STARTED
+================================================== */
+
+.experiences-cta {
+  background: #102f46;
+  color: #fff;
+}
+
+.experiences-cta-container {
+  min-height: 245px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.experiences-cta-container > div:first-child {
+  max-width: 680px;
+}
+
+.experiences-cta-eyebrow {
+  display: block;
+  margin-bottom: 10px;
+  color: #e8753d;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.experiences-cta h2 {
+  margin: 0 0 10px;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(30px, 3vw, 42px);
+  line-height: 1.15;
+}
+
+.experiences-cta p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.74);
+  line-height: 1.7;
+}
+
+.experiences-cta-actions {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex-shrink: 0;
+}
+
+.experiences-cta-link {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* ==================================================
+   EXPERIENCES CTA BANNER SECTION ENDED
+================================================== */
+
+/* ==================================================
+   EXPERIENCES PAGE RESPONSIVE STARTED
+================================================== */
+
+@media (max-width: 1050px) {
+  .experiences-hero-container {
+    grid-template-columns: 1fr 300px;
+    gap: 45px;
+  }
+
+  .experiences-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .experiences-why-container {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .experiences-page-container {
+    width: calc(100% - 32px);
+  }
+
+  .experiences-hero-container {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .experiences-hero-highlights {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .experiences-hero-highlights > div {
+    padding: 18px;
+  }
+
+  .experiences-why-container {
+    grid-template-columns: 1fr;
+  }
+
+  .experiences-cta-container {
+    min-height: auto;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+}
+
+@media (max-width: 575px) {
+  .experiences-explore,
+  .experiences-why {
+    padding: 65px 0;
+  }
+
+  .experiences-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experiences-hero-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-card-image {
+    height: 220px;
+  }
+
+  .experience-card-content p {
+    min-height: auto;
+  }
+
+  .experiences-cta-actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+/* ==================================================
+   EXPERIENCES PAGE RESPONSIVE ENDED
+================================================== */
+
+/* ==================================================
+   EXPERIENCES HERO FULL SCREEN HEIGHT STARTED
+================================================== */
+
+@media (min-width: 992px) {
+  /* HERO → FULL DESKTOP SCREEN BELOW NAVBAR */
+  .experiences-hero {
+    min-height: calc(100vh - var(--header-height, 88px));
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  /* HERO CONTENT → ALIGN WITH NAVBAR CONTENT */
+  .experiences-hero-container {
+    width: calc(100% - 48px);
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ==================================================
+   EXPERIENCES HERO FULL SCREEN HEIGHT ENDED
+================================================== */
+
+/* ==================================================
+   EXPERIENCES HERO TRUST ITEMS STARTED
+================================================== */
+
+.experiences-hero-trust {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.experiences-hero-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.experiences-hero-trust-icon {
+  color: var(--color-accent);
+  font-size: 19px;
+  line-height: 1;
+}
+
+.experiences-hero-trust-divider {
+  width: 1px;
+  height: 18px;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+@media (max-width: 767px) {
+  .experiences-hero-trust {
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  .experiences-hero-trust-item {
+    font-size: 11px;
+  }
+
+  .experiences-hero-trust-divider {
+    display: none;
+  }
+}
+
+/* ==================================================
+   EXPERIENCES HERO TRUST ITEMS ENDED
+================================================== */
+
+/* ==================================================
+   EXPLORE INDIA EXPERIENCES SPACING STARTED
+================================================== */
+
+/* MOVE SECTION CONTENT SLIGHTLY UPWARD */
+@media (min-width: 992px) {
+  .experiences-explore {
+    padding-top: 55px;
+  }
+}
+
+/* ==================================================
+   EXPLORE INDIA EXPERIENCES SPACING ENDED
+================================================== */
+
+/* ==================================================
+   EXPERIENCE IMAGE CATEGORY BADGES STARTED
+================================================== */
+
+/* IMAGE CONTAINER */
+.experience-card-image {
+  position: relative;
+}
+
+/* ==================================================
+   EXPERIENCE CATEGORY BADGE STYLE STARTED
+================================================== */
+
+/* CATEGORY BADGE → WHITE PILL STYLE */
+.experience-card-category {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 2;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 14px;
+  border-radius: 50px;
+
+  background: #ffffff;
+  color: #082f46;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* ==================================================
+   EXPERIENCE CATEGORY BADGE STYLE ENDED
+================================================== */
+/* MOBILE ADJUSTMENT */
+@media (max-width: 767px) {
+  .experience-card-category {
+    top: 12px;
+    left: 12px;
+    padding: 7px 11px;
+    font-size: 10px;
+  }
+}
+
+/* ==================================================
+   EXPERIENCE IMAGE CATEGORY BADGES ENDED
+================================================== */
+
+/* ==================================================
+   EXPERIENCE CARD IMAGE LINKS STARTED
+================================================== */
+
+.experience-card-image-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.experience-card-image-link img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.experience-card-image-link:hover img {
+  transform: scale(1.04);
+}
+
+/* ==================================================
+   EXPERIENCE CARD IMAGE LINKS ENDED
+================================================== */
+
+/* ==================================================
+   EXPERIENCE CARD FOOTER AND BUTTON STARTED
+================================================== */
+
+/* KEEP FOOTER AT BOTTOM OF CARD */
+.experience-card-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* FOOTER LAYOUT */
+.experience-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 12px;
+  padding-top: 8px;
+}
+
+/* LEFT SUPPORTING TEXT */
+.experience-card-footer-text {
+  color: #647b8c;
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* RIGHT BUTTON */
+.experience-card-content .experience-card-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 10px 14px;
+  border: 1px solid var(--color-secondary);
+  border-radius: 50px;
+
+  background: #ffffff;
+  color: var(--color-secondary);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+
+  transition: all 0.25s ease;
+}
+
+/* BUTTON HOVER */
+.experience-card-content .experience-card-button:hover {
+  background: var(--color-secondary);
+  color: #ffffff;
+}
+
+/* RESPONSIVE FOOTER */
+@media (max-width: 480px) {
+  .experience-card-footer {
+    flex-wrap: wrap;
+  }
+
+  .experience-card-footer-text {
+    font-size: 10px;
+  }
+}
+
+/* ==================================================
+   EXPERIENCE CARD FOOTER AND BUTTON ENDED
+================================================== */
+
+/* ==================================================
+   EXPERIENCE CARD CONTENT SPACING STARTED
+================================================== */
+
+.experience-card-content {
+  justify-content: flex-start;
+  min-height: 0;
+  height: auto;
+}
+
+.experience-card-content p {
+  margin-bottom: 8px;
+}
+
+.experience-card-footer {
+  margin-top: 8px;
+  padding-top: 0;
+}
+
+/* ==================================================
+   EXPERIENCE CARD CONTENT SPACING ENDED
+================================================== */
+
+/* ==================================================
+   EXPERIENCES EYEBROW COLORS STARTED
+================================================== */
+
+/* EYEBROW TEXT → BLUE */
+.experiences-eyebrow {
+  color: var(--color-secondary) !important;
+}
+
+/* EYEBROW MARK → ORANGE */
+.experiences-eyebrow .experiences-eyebrow-mark {
+  color: var(--color-accent) !important;
+  margin-right: 8px;
+}
+
+/* ==================================================
+   EXPERIENCES EYEBROW COLORS ENDED
+================================================== */
+
+/* ==================================================
+   EXPERIENCES CTA EYEBROW COLORS STARTED
+================================================== */
+
+/* EYEBROW TEXT → BLUE */
+.experiences-cta-eyebrow {
+  color: var(--color-secondary) !important;
+}
+
+/* EYEBROW MARK → ORANGE */
+.experiences-cta-eyebrow .experiences-eyebrow-mark {
+  color: var(--color-accent) !important;
+  margin-right: 8px;
+}
+
+/* ==================================================
+   EXPERIENCES CTA EYEBROW COLORS ENDED
+================================================== */
+
+/* ==================================================
+   EXPERIENCES CTA BANNER — ABOUT PAGE STYLE STARTED
+================================================== */
+
+/* CTA SECTION */
+.experiences-cta {
+  background: #102f46;
+  padding: 65px 0;
+}
+
+/* CTA CONTAINER */
+.experiences-cta-container {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 60px;
+}
+
+/* ==================================================
+   EXPERIENCES CTA HEADING WIDTH STARTED
+================================================== */
+
+/* WIDEN LEFT CONTENT AREA */
+.experiences-cta-container {
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 30px;
+}
+
+/* TARGET ACTUAL HTML CONTENT DIV */
+.experiences-cta-container > div:first-child {
+  width: 100%;
+  max-width: 900px;
+  min-width: 0;
+}
+
+/* ALLOW HEADING TO USE AVAILABLE WIDTH */
+.experiences-cta-container > div:first-child h2 {
+  max-width: 900px;
+  font-size: clamp(32px, 2.7vw, 43px);
+}
+
+/* ==================================================
+   EXPERIENCES CTA HEADING WIDTH ENDED
+================================================== */
+
+/* EYEBROW */
+.experiences-cta-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-secondary) !important;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.experiences-cta-eyebrow .experiences-eyebrow-mark {
+  color: var(--color-accent) !important;
+  margin-right: 0;
+}
+
+/* CTA HEADING */
+.experiences-cta-content h2 {
+  margin: 22px 0 12px;
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(32px, 3vw, 46px);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.experiences-cta-content h2 span {
+  display: block;
+  color: #a8eaf0;
+}
+
+/* CTA DESCRIPTION */
+.experiences-cta-content p {
+  max-width: 660px;
+  margin: 0;
+  color: #d5e3ea;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* CTA TRUST HIGHLIGHTS */
+.experiences-cta-trust {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: fit-content;
+  max-width: 100%;
+  margin-top: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.experiences-cta-trust span {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 17px 20px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.experiences-cta-trust span + span {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.experiences-cta-trust b {
+  color: var(--color-accent);
+  font-size: 17px;
+}
+
+/* CTA BUTTON */
+.experiences-cta-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.experiences-cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 17px 28px;
+  border-radius: 50px;
+  background: #ffffff;
+  color: #102f46;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.experiences-cta-button:hover {
+  background: #e9f6f8;
+  transform: translateY(-2px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .experiences-cta-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .experiences-cta-actions {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .experiences-cta {
+    padding: 48px 0;
+  }
+
+  .experiences-cta-trust {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .experiences-cta-trust span + span {
+    border-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* ==================================================
+   EXPERIENCES CTA BANNER — ABOUT PAGE STYLE ENDED
+================================================== */
+
+/* ==================================================
+   EXPERIENCES CTA CONTACT BUTTON STARTED
+================================================== */
+
+.experiences-cta-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.experiences-cta-contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 50px;
+  color: #ffffff;
+  background: transparent;
+  font: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.experiences-cta-contact-button:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #ffffff;
+}
+
+/* ==================================================
+   EXPERIENCES CTA CONTACT BUTTON ENDED
+================================================== */

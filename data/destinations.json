@@ -1,0 +1,652 @@
+{
+  "kashmir": {
+    "pageTitle": "Kashmir Travel Guide | Roamora Travels",
+    "eyebrow": "DISCOVER KASHMIR",
+    "titleMain": "Kashmir,",
+    "titleAccent": "Paradise in the Himalayas.",
+    "description": "Discover peaceful valleys, beautiful lakes, mountain landscapes and unforgettable experiences in one of India's most breathtaking destinations.",
+    "heroImage": "assets/images/destination-details/kashmir/kashmir-hero.webp",
+    "highlights": [
+      "Scenic Himalayan Views",
+      "Personalised Trips",
+      "Local Travel Assistance"
+    ],
+    "overview": {
+      "image": "assets/images/destination-details/kashmir/kashmir-overview.webp",
+      "imageAlt": "Beautiful Kashmir valley surrounded by Himalayan mountains",
+      "titleMain": "Where Mountains,",
+      "titleAccent": "Meet Timeless Beauty.",
+      "paragraphs": [
+        "Kashmir brings together snow-covered mountains, peaceful lakes, green valleys and charming hill towns in one unforgettable Himalayan journey.",
+        "From relaxing shikara rides in Srinagar to scenic escapes in Gulmarg and Pahalgam, every part of Kashmir offers a different way to experience its natural beauty."
+      ],
+      "facts": ["5–7 Days", "Nature & Couples", "Scenic & Relaxed"]
+    },
+    "experiences": {
+      "eyebrow": "KASHMIR HIGHLIGHTS",
+      "titleMain": "Experiences That Make,",
+      "titleAccent": "Kashmir Unforgettable.",
+      "description": "Enjoy a carefully balanced mix of scenery, culture and memorable Himalayan experiences.",
+      "cards": [
+        {
+          "image": "assets/images/destination-details/kashmir/dal-lake.webp",
+          "imageAlt": "Shikara boats on Dal Lake in Srinagar",
+          "title": "Dal Lake & Srinagar",
+          "description": "Cruise across peaceful Dal Lake and discover the charm of Srinagar."
+        },
+        {
+          "image": "assets/images/destination-details/kashmir/gulmarg.webp",
+          "imageAlt": "Mountain scenery in Gulmarg Kashmir",
+          "title": "Gulmarg Mountains",
+          "description": "Experience sweeping mountain views, meadows and seasonal adventures."
+        },
+        {
+          "image": "assets/images/destination-details/kashmir/pahalgam.webp",
+          "imageAlt": "Scenic Pahalgam valley in Kashmir",
+          "title": "Pahalgam Valley",
+          "description": "Slow down among rivers, pine forests and peaceful Himalayan landscapes."
+        }
+      ]
+    },
+
+    "bestTime": {
+      "eyebrow": "PLAN YOUR VISIT",
+      "titleMain": "The Right Season,",
+      "titleAccent": "For Your Kashmir Journey.",
+      "description": "Kashmir changes beautifully through the seasons. Choose your travel period according to the experience you want.",
+      "seasons": [
+        {
+          "months": "MAR–MAY",
+          "title": "Spring",
+          "description": "Fresh landscapes, gardens and pleasant sightseeing weather."
+        },
+        {
+          "months": "JUN–AUG",
+          "title": "Summer",
+          "description": "Green valleys, comfortable temperatures and scenic escapes."
+        },
+        {
+          "months": "DEC–FEB",
+          "title": "Winter",
+          "description": "Snow-covered landscapes and memorable winter experiences."
+        }
+      ]
+    },
+
+    "cta": {
+      "eyebrow": "READY TO DISCOVER KASHMIR?",
+      "titleMain": "Let's Plan Your",
+      "titleAccent": "Himalayan Escape.",
+      "description": "Tell us how you want to explore Kashmir, and our experts will create a personalised journey filled with breathtaking landscapes, unforgettable experiences and memories.",
+      "buttonText": "Explore Kashmir Packages",
+      "buttonLink": "packages.html"
+    },
+
+    "recommendedPackages": {
+      "titleMain": "Explore Kashmir,",
+      "titleAccent": "Your Way.",
+      "viewAllLink": "packages.html",
+      "cards": [
+        {
+          "label": "SCENIC ESCAPE",
+          "title": "Kashmir Paradise Scenic Escape",
+          "description": "Discover Srinagar, Gulmarg and Pahalgam through unforgettable Himalayan adventures.",
+          "duration": "6 Days / 5 Nights",
+          "buttonText": "View Journey →",
+          "buttonLink": "package-details.html?package=kashmir-paradise-escape"
+        },
+        {
+          "label": "CUSTOM JOURNEY",
+          "title": "Your Personal Kashmir Holiday",
+          "description": "Designed around your dates, interests and preferred travel style.",
+          "duration": "Made for You",
+          "buttonText": "Start Planning →",
+          "buttonLink": "index.html#custom-trip-planner"
+        }
+      ]
+    }
+  },
+
+  "kerala": {
+    "pageTitle": "Kerala Travel Guide | Roamora Travels",
+    "eyebrow": "DISCOVER KERALA",
+    "titleMain": "Kerala,",
+    "titleAccent": "Where Nature Finds Peace.",
+    "description": "Discover tranquil backwaters, lush tropical landscapes, beautiful beaches and unforgettable experiences in one of India's most relaxing destinations.",
+    "heroImage": "assets/images/destination-details/kerala/kerala-hero.webp",
+    "highlights": [
+      "Peaceful Backwaters",
+      "Personalised Trips",
+      "Local Travel Assistance"
+    ],
+    "overview": {
+      "image": "assets/images/destination-details/kerala/kerala-overview.webp",
+      "imageAlt": "Kerala backwaters with coconut palms, traditional houseboat and travellers",
+      "titleMain": "Where Backwaters,",
+      "titleAccent": "Meet Tropical Beauty.",
+      "paragraphs": [
+        "Kerala brings together peaceful backwaters, lush tropical greenery, beautiful beaches and charming villages in one unforgettable South Indian journey.",
+        "From relaxing houseboat cruises in Alleppey to scenic escapes in Munnar and Kumarakom, every part of Kerala offers a different way to experience its natural beauty."
+      ],
+      "facts": ["5–7 Days", "Nature & Couples", "Relaxed & Scenic"]
+    },
+    "experiences": {
+      "eyebrow": "KERALA HIGHLIGHTS",
+      "titleMain": "Experiences That Make,",
+      "titleAccent": "Kerala Unforgettable.",
+      "description": "Enjoy a carefully balanced mix of peaceful backwaters, tropical landscapes and memorable South Indian experiences.",
+      "cards": [
+        {
+          "image": "assets/images/destination-details/kerala/alleppey-backwaters.webp",
+          "imageAlt": "Traditional Kerala houseboat cruising through Alleppey backwaters",
+          "title": "Alleppey Backwaters",
+          "description": "Cruise through palm-lined waterways aboard a traditional Kerala houseboat."
+        },
+        {
+          "image": "assets/images/destination-details/kerala/munnar-tea-gardens.webp",
+          "imageAlt": "Rolling green tea plantations and scenic hills in Munnar Kerala",
+          "title": "Munnar Tea Gardens",
+          "description": "Explore lush tea plantations, misty hills and refreshing mountain landscapes."
+        },
+        {
+          "image": "assets/images/destination-details/kerala/kumarakom-backwaters.webp",
+          "imageAlt": "Traditional wooden canoe navigating the peaceful Kumarakom backwaters",
+          "title": "Kumarakom Backwaters",
+          "description": "Discover tranquil village waterways, coconut groves and authentic Kerala charm."
+        }
+      ]
+    },
+
+    "bestTime": {
+      "eyebrow": "PLAN YOUR VISIT",
+      "titleMain": "The Right Season,",
+      "titleAccent": "For Your Kerala Journey.",
+      "description": "Kerala offers experiences throughout the year. Choose your season to enjoy peaceful backwaters, lush landscapes and tropical beauty.",
+      "seasons": [
+        {
+          "months": "OCT–FEB",
+          "title": "Winter",
+          "description": "Pleasant weather, relaxing houseboat cruises and comfortable sightseeing."
+        },
+        {
+          "months": "MAR–MAY",
+          "title": "Summer",
+          "description": "Warm tropical days, refreshing hill escapes and scenic tea plantations."
+        },
+        {
+          "months": "JUN–SEP",
+          "title": "Monsoon",
+          "description": "Lush green landscapes, refreshing rainfall and peaceful wellness retreats."
+        }
+      ]
+    },
+
+    "cta": {
+      "eyebrow": "READY TO DISCOVER KERALA?",
+      "titleMain": "Let's Plan Your",
+      "titleAccent": "Tropical Escape.",
+      "description": "Tell us how you want to explore Kerala, and our experts will create a personalised journey with peaceful backwaters, tropical landscapes and unforgettable memories.",
+      "buttonText": "Explore Kerala Packages",
+      "buttonLink": "packages.html"
+    },
+
+    "recommendedPackages": {
+      "titleMain": "Explore Kerala,",
+      "titleAccent": "Your Way.",
+      "viewAllLink": "packages.html",
+      "cards": [
+        {
+          "label": "BACKWATER ESCAPE",
+          "title": "Kerala Backwater Escape",
+          "description": "Explore Kochi, Alleppey and Kumarakom through scenic backwater journeys.",
+          "duration": "6 Days / 5 Nights",
+          "buttonText": "View Journey →",
+          "buttonLink": "package-details.html?package=kerala-backwater-escape"
+        },
+        {
+          "label": "CUSTOM JOURNEY",
+          "title": "Your Personal Kerala Holiday",
+          "description": "Designed around your dates, interests and preferred travel style.",
+          "duration": "Made for You",
+          "buttonText": "Start Planning →",
+          "buttonLink": "index.html#custom-trip-planner"
+        }
+      ]
+    }
+  },
+
+  "rajasthan": {
+    "pageTitle": "Rajasthan Travel Guide | Roamora Travels",
+    "eyebrow": "DISCOVER RAJASTHAN",
+    "titleMain": "Rajasthan,",
+    "titleAccent": "Where Royal Heritage Lives.",
+    "description": "Discover magnificent forts, royal palaces, golden deserts and unforgettable cultural experiences in one of India's most captivating destinations.",
+    "heroImage": "assets/images/destination-details/rajasthan/rajasthan-hero.webp",
+    "highlights": [
+      "Magnificent Royal Heritage",
+      "Personalised Trips",
+      "Local Travel Assistance"
+    ],
+
+    "overview": {
+      "image": "assets/images/destination-details/rajasthan/rajasthan-overview.webp",
+      "imageAlt": "Magnificent Rajasthan palace overlooking a historic royal city",
+      "titleMain": "Where Royal Heritage,",
+      "titleAccent": "Meets Timeless Grandeur.",
+      "paragraphs": [
+        "Rajasthan brings together majestic forts, royal palaces, colourful markets and golden deserts in one unforgettable journey through India's regal heritage.",
+        "From exploring Jaipur's magnificent architecture to discovering Udaipur's romantic lakes and Jaisalmer's desert landscapes, every destination reveals a different side of Rajasthan."
+      ],
+      "facts": ["6–8 Days", "Culture & Heritage", "Royal & Scenic"]
+    },
+
+    "experiences": {
+      "eyebrow": "RAJASTHAN HIGHLIGHTS",
+      "titleMain": "Experiences That Make,",
+      "titleAccent": "Rajasthan Unforgettable.",
+      "description": "Enjoy a carefully balanced mix of royal heritage, vibrant culture, magnificent historic landmarks, traditional local experiences and memorable desert adventures.",
+      "cards": [
+        {
+          "image": "assets/images/destination-details/rajasthan/jaipur-royal-forts.webp",
+          "imageAlt": "Magnificent Amber Fort overlooking the scenic hills of Jaipur Rajasthan",
+          "title": "Jaipur Royal Forts",
+          "description": "Explore magnificent forts, royal palaces and colourful heritage streets."
+        },
+        {
+          "image": "assets/images/destination-details/rajasthan/udaipur-lake-palaces.webp",
+          "imageAlt": "Beautiful royal palaces overlooking Lake Pichola in Udaipur Rajasthan",
+          "title": "Udaipur Lake Palaces",
+          "description": "Discover romantic lakes, elegant palaces and timeless royal charm."
+        },
+        {
+          "image": "assets/images/destination-details/rajasthan/jaisalmer-desert.webp",
+          "imageAlt": "Golden sand dunes and traditional camel safari in Jaisalmer Rajasthan",
+          "title": "Jaisalmer Desert",
+          "description": "Experience golden dunes, desert sunsets and authentic Rajasthani culture."
+        }
+      ]
+    },
+
+    "bestTime": {
+      "eyebrow": "PLAN YOUR VISIT",
+      "titleMain": "The Right Season,",
+      "titleAccent": "For Your Rajasthan Journey.",
+      "description": "Rajasthan reveals its beauty across the seasons. Choose your travel period to enjoy royal heritage, desert adventures and colourful traditions.",
+      "seasons": [
+        {
+          "months": "OCT–MAR",
+          "title": "Winter",
+          "description": "Pleasant weather, heritage sightseeing and memorable desert experiences."
+        },
+        {
+          "months": "APR–JUN",
+          "title": "Summer",
+          "description": "Warm desert days, quieter attractions and scenic hill escapes."
+        },
+        {
+          "months": "JUL–SEP",
+          "title": "Monsoon",
+          "description": "Refreshing rainfall, greener landscapes and beautiful palace views."
+        }
+      ]
+    },
+
+    "cta": {
+      "eyebrow": "READY TO DISCOVER RAJASTHAN?",
+      "titleMain": "Let's Plan Your",
+      "titleAccent": "Royal Escape.",
+      "description": "Tell us how you want to explore Rajasthan, and our experts will create a personalised journey with majestic forts, royal palaces and unforgettable memories.",
+      "buttonText": "Explore Rajasthan Packages",
+      "buttonLink": "packages.html"
+    },
+
+    "recommendedPackages": {
+      "titleMain": "Explore Rajasthan,",
+      "titleAccent": "Your Way.",
+      "viewAllLink": "packages.html",
+      "cards": [
+        {
+          "label": "ROYAL ESCAPE",
+          "title": "Rajasthan Royal Heritage",
+          "description": "Discover Jaipur, Udaipur and Jaisalmer through unforgettable royal adventures.",
+          "duration": "7 Days / 6 Nights",
+          "buttonText": "View Journey →",
+          "buttonLink": "package-details.html?package=rajasthan-royal-heritage-escape"
+        },
+        {
+          "label": "CUSTOM JOURNEY",
+          "title": "Your Personal Rajasthan",
+          "description": "Designed around your dates, interests and preferred travel style.",
+          "duration": "Made for You",
+          "buttonText": "Start Planning →",
+          "buttonLink": "index.html#custom-trip-planner"
+        }
+      ]
+    }
+  },
+
+  "goa": {
+    "pageTitle": "Goa Travel Guide | Roamora Travels",
+    "eyebrow": "DISCOVER GOA",
+    "titleMain": "Goa,",
+    "titleAccent": "Where Coastal Dreams Begin.",
+    "description": "Discover golden beaches, swaying palms, Portuguese heritage and coastal experiences in one of India's most vibrant destinations.",
+    "heroImage": "assets/images/destination-details/goa/goa-hero.webp",
+    "highlights": [
+      "Beautiful Coastal Escapes",
+      "Personalised Trips",
+      "Local Travel Assistance"
+    ],
+
+    "overview": {
+      "image": "assets/images/destination-details/goa/goa-overview.webp",
+      "imageAlt": "Beautiful Goa beach with golden sand, coconut palms and turquoise Arabian Sea",
+      "titleMain": "Where Golden Beaches,",
+      "titleAccent": "Meet Coastal Charm.",
+      "paragraphs": [
+        "Goa brings together sun-kissed beaches, swaying coconut palms, colourful Portuguese architecture and charming coastal villages in one unforgettable seaside journey.",
+        "From relaxing beach escapes in Palolem to exploring Old Goa's historic churches and Panaji's colourful streets, every corner offers a different experience."
+      ],
+      "facts": ["4–6 Days", "Beaches & Couples", "Coastal & Relaxed"]
+    },
+
+    "experiences": {
+      "eyebrow": "GOA HIGHLIGHTS",
+      "titleMain": "Experiences That Make,",
+      "titleAccent": "Goa Unforgettable.",
+      "description": "Enjoy a carefully balanced mix of beautiful beaches, coastal heritage and memorable seaside experiences.",
+      "cards": [
+        {
+          "image": "assets/images/destination-details/goa/palolem-beach.webp",
+          "imageAlt": "Beautiful crescent-shaped Palolem Beach with coconut palms and turquoise waters in South Goa",
+          "title": "Palolem Beach",
+          "description": "Relax beside turquoise waters, golden sands and swaying tropical palms."
+        },
+        {
+          "image": "assets/images/destination-details/goa/old-goa-heritage.webp",
+          "imageAlt": "Historic Basilica of Bom Jesus showcasing Portuguese colonial architecture in Old Goa",
+          "title": "Old Goa Heritage",
+          "description": "Discover historic churches, Portuguese architecture and rich cultural traditions."
+        },
+        {
+          "image": "assets/images/destination-details/goa/dudhsagar-waterfalls.webp",
+          "imageAlt": "Magnificent Dudhsagar Waterfalls cascading through lush Western Ghats forests in Goa",
+          "title": "Dudhsagar Waterfalls",
+          "description": "Experience spectacular waterfalls, lush forests and refreshing natural beauty."
+        }
+      ]
+    },
+
+    "bestTime": {
+      "eyebrow": "PLAN YOUR VISIT",
+      "titleMain": "The Right Season,",
+      "titleAccent": "For Your Goa Journey.",
+      "description": "Goa reveals different charms throughout the year. Choose your travel season for sunny beaches, tropical greenery and coastal adventures.",
+      "seasons": [
+        {
+          "months": "NOV–FEB",
+          "title": "Winter",
+          "description": "Pleasant weather, sunny beaches and memorable coastal experiences."
+        },
+        {
+          "months": "MAR–MAY",
+          "title": "Summer",
+          "description": "Warm beach days, quieter shores and relaxing seaside escapes."
+        },
+        {
+          "months": "JUN–SEP",
+          "title": "Monsoon",
+          "description": "Lush landscapes, dramatic waterfalls and refreshing tropical rainfall."
+        }
+      ]
+    },
+
+    "cta": {
+      "eyebrow": "READY TO DISCOVER GOA?",
+      "titleMain": "Let's Plan Your",
+      "titleAccent": "Coastal Escape.",
+      "description": "Tell us how you want to explore Goa, and our experts will create a personalised journey with beautiful beaches, coastal charm and unforgettable memories.",
+      "buttonText": "Explore Goa Packages",
+      "buttonLink": "packages.html"
+    },
+
+    "recommendedPackages": {
+      "titleMain": "Explore Goa,",
+      "titleAccent": "Differently.",
+      "viewAllLink": "packages.html",
+      "cards": [
+        {
+          "label": "COASTAL ESCAPE",
+          "title": "Goa Coastal Paradise",
+          "description": "Discover scenic beaches, Portuguese heritage and unforgettable coastal adventures.",
+          "duration": "5 Days / 4 Nights",
+          "buttonText": "View Journey →",
+          "buttonLink": "package-details.html?package=goa-coastal-paradise"
+        },
+        {
+          "label": "CUSTOM JOURNEY",
+          "title": "Your Personal Goa Holiday",
+          "description": "Designed around your dates, interests and preferred travel style.",
+          "duration": "Made for You",
+          "buttonText": "Start Planning →",
+          "buttonLink": "index.html#custom-trip-planner"
+        }
+      ]
+    }
+  },
+
+  "himachal-pradesh": {
+    "pageTitle": "Himachal Pradesh Travel Guide | Roamora Travels",
+    "eyebrow": "DISCOVER HIMACHAL PRADESH",
+    "titleMain": "Himachal Pradesh,",
+    "titleAccent": "Where Mountains Inspire.",
+    "description": "Discover snow-capped peaks, peaceful valleys, charming towns and mountain experiences in India's most beautiful destinations.",
+    "heroImage": "assets/images/destination-details/himachal-pradesh/himachal-hero.webp",
+    "highlights": [
+      "Breathtaking Himalayan Views",
+      "Personalised Trips",
+      "Local Travel Assistance"
+    ],
+
+    "overview": {
+      "image": "assets/images/destination-details/himachal-pradesh/himachal-overview.webp",
+      "imageAlt": "Beautiful Himachal Pradesh mountain valley surrounded by pine forests and Himalayan peaks",
+      "titleMain": "Where Mountain Valleys,",
+      "titleAccent": "Meet Timeless Beauty.",
+      "paragraphs": [
+        "Himachal Pradesh brings together majestic Himalayan mountains, peaceful valleys, pine forests and charming hill towns in one unforgettable mountain journey.",
+        "From exploring Manali's breathtaking landscapes to discovering Shimla's colonial charm and Dharamshala's peaceful surroundings, every destination reveals a different side of Himachal."
+      ],
+      "facts": ["6–8 Days", "Nature & Adventure", "Scenic & Relaxed"]
+    },
+
+    "experiences": {
+      "eyebrow": "HIMACHAL HIGHLIGHTS",
+      "titleMain": "Experiences That Make,",
+      "titleAccent": "Himachal Unforgettable.",
+      "description": "Enjoy a carefully balanced mix of Himalayan scenery, mountain adventures and memorable cultural experiences.",
+      "cards": [
+        {
+          "image": "assets/images/destination-details/himachal-pradesh/manali-mountains.webp",
+          "imageAlt": "Beautiful Manali valley with snow-capped Himalayan mountains and lush pine forests",
+          "title": "Manali Mountains",
+          "description": "Explore breathtaking peaks, scenic valleys and unforgettable mountain adventures."
+        },
+        {
+          "image": "assets/images/destination-details/himachal-pradesh/shimla-hill-town.webp",
+          "imageAlt": "Charming Shimla hill town surrounded by pine-covered mountains and colonial architecture",
+          "title": "Shimla Hill Town",
+          "description": "Discover colonial charm, scenic mountain views and peaceful hillside streets."
+        },
+        {
+          "image": "assets/images/destination-details/himachal-pradesh/dharamshala-valley.webp",
+          "imageAlt": "Peaceful Dharamshala valley with Himalayan mountains and traditional Tibetan architecture",
+          "title": "Dharamshala Valley",
+          "description": "Experience peaceful monasteries, mountain scenery and rich Tibetan culture."
+        }
+      ]
+    },
+
+    "bestTime": {
+      "eyebrow": "PLAN YOUR VISIT",
+      "titleMain": "The Right Season,",
+      "titleAccent": "For Your Himachal Journey.",
+      "description": "Himachal Pradesh reveals different charms throughout the year. Choose your travel season for mountain adventures, scenic landscapes and peaceful escapes.",
+      "seasons": [
+        {
+          "months": "MAR–JUN",
+          "title": "Summer",
+          "description": "Pleasant mountain weather, green valleys and comfortable sightseeing."
+        },
+        {
+          "months": "JUL–SEP",
+          "title": "Monsoon",
+          "description": "Lush landscapes and misty mountains, with rainfall and landslide risks."
+        },
+        {
+          "months": "DEC–FEB",
+          "title": "Winter",
+          "description": "Snow-covered peaks, cosy hill retreats and memorable winter experiences."
+        }
+      ]
+    },
+
+    "cta": {
+      "eyebrow": "READY TO DISCOVER HIMACHAL?",
+      "titleMain": "Let's Plan Your",
+      "titleAccent": "Mountain Escape.",
+      "description": "Tell us how you want to explore Himachal, and our experts will create a personalised journey with majestic mountains, peaceful valleys and unforgettable memories.",
+      "buttonText": "Explore Himachal Packages",
+      "buttonLink": "packages.html"
+    },
+
+    "recommendedPackages": {
+      "titleMain": "Explore Himachal,",
+      "titleAccent": "Your Way.",
+      "viewAllLink": "packages.html",
+      "cards": [
+        {
+          "label": "MOUNTAIN ESCAPE",
+          "title": "Himachal Mountain Escape",
+          "description": "Discover Manali, Shimla and Dharamshala through unforgettable Himalayan journeys.",
+          "duration": "7 Days / 6 Nights",
+          "buttonText": "View Journey →",
+          "buttonLink": "package-details.html?package=himachal-mountain-escape"
+        },
+        {
+          "label": "CUSTOM JOURNEY",
+          "title": "Your Personal Himachal",
+          "description": "Designed around your dates, interests and preferred travel style.",
+          "duration": "Made for You",
+          "buttonText": "Start Planning →",
+          "buttonLink": "index.html#custom-trip-planner"
+        }
+      ]
+    }
+  },
+
+  "andaman-islands": {
+    "pageTitle": "Andaman Islands Travel Guide | Roamora Travels",
+    "eyebrow": "DISCOVER ANDAMAN ISLANDS",
+    "titleMain": "Andaman Islands,",
+    "titleAccent": "Where Island Dreams Begin.",
+    "description": "Discover turquoise waters, pristine beaches, tropical forests and island experiences in India's most beautiful coastal destinations.",
+    "heroImage": "assets/images/destination-details/andaman-islands/andaman-hero.webp",
+    "highlights": [
+      "Pristine Tropical Beaches",
+      "Personalised Trips",
+      "Local Travel Assistance"
+    ],
+    "overview": {
+      "image": "assets/images/destination-details/andaman-islands/andaman-overview.webp",
+      "imageAlt": "Beautiful Andaman Islands tropical beach with turquoise waters, white sand and lush palm trees",
+      "titleMain": "Where Turquoise Waters,",
+      "titleAccent": "Meet Island Paradise.",
+      "paragraphs": [
+        "The Andaman Islands bring together crystal-clear waters, white sandy beaches, lush tropical forests and peaceful island surroundings in one unforgettable coastal journey.",
+        "From relaxing on Radhanagar Beach to exploring Havelock Island's marine beauty and discovering Sri Vijaya Puram's historic landmarks, every experience reveals a different side of Andaman."
+      ],
+      "facts": ["5–7 Days", "Beaches & Adventure", "Tropical & Relaxed"]
+    },
+    "experiences": {
+      "eyebrow": "ANDAMAN HIGHLIGHTS",
+      "titleMain": "Experiences That Make,",
+      "titleAccent": "Andaman Unforgettable.",
+      "description": "Enjoy a carefully balanced mix of pristine beaches, tropical adventures and memorable island experiences.",
+      "cards": [
+        {
+          "image": "assets/images/destination-details/andaman-islands/radhanagar-beach.webp",
+          "imageAlt": "Pristine Radhanagar Beach with white sand, turquoise sea and tropical forest on Swaraj Dweep",
+          "title": "Radhanagar Beach",
+          "description": "Relax beside powdery white sands, turquoise waters and peaceful tropical forests."
+        },
+        {
+          "image": "assets/images/destination-details/andaman-islands/havelock-island.webp",
+          "imageAlt": "Beautiful tropical coastline and clear turquoise waters around Havelock Island in Andaman",
+          "title": "Havelock Island",
+          "description": "Discover stunning island scenery, vibrant marine life and exciting water adventures."
+        },
+        {
+          "image": "assets/images/destination-details/andaman-islands/cellular-jail.webp",
+          "imageAlt": "Historic Cellular Jail in Sri Vijaya Puram, Andaman Islands, surrounded by tropical greenery",
+          "title": "Cellular Jail",
+          "description": "Explore a historic landmark and discover the islands' remarkable freedom struggle."
+        }
+      ]
+    },
+    "bestTime": {
+      "eyebrow": "PLAN YOUR VISIT",
+      "titleMain": "The Right Season,",
+      "titleAccent": "For Your Andaman Journey.",
+      "description": "The Andaman Islands offer tropical beauty throughout the year. Choose your travel season for sunny beaches, island adventures and relaxing coastal escapes.",
+      "seasons": [
+        {
+          "months": "OCT–FEB",
+          "title": "Winter",
+          "description": "Pleasant tropical weather, calm beaches and comfortable island sightseeing."
+        },
+        {
+          "months": "MAR–MAY",
+          "title": "Summer",
+          "description": "Warm sunny days, clear waters and exciting snorkelling adventures."
+        },
+        {
+          "months": "JUN–SEP",
+          "title": "Monsoon",
+          "description": "Lush tropical scenery, frequent rainfall and weather-dependent sea activities."
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "READY TO DISCOVER ANDAMAN?",
+      "titleMain": "Let's Plan Your",
+      "titleAccent": "Island Escape.",
+      "description": "Tell us how you want to explore Andaman, and our experts will create a personalised journey with pristine beaches, turquoise waters and unforgettable memories.",
+      "buttonText": "Explore Andaman Packages",
+      "buttonLink": "packages.html"
+    },
+    "recommendedPackages": {
+      "titleMain": "Explore Andaman,",
+      "titleAccent": "Your Way.",
+      "viewAllLink": "packages.html",
+      "cards": [
+        {
+          "label": "ISLAND ESCAPE",
+          "title": "Andaman Island Paradise",
+          "description": "Discover Radhanagar Beach, Havelock Island and Port Blair through memorable island adventures.",
+          "duration": "6 Days / 5 Nights",
+          "buttonText": "View Journey →",
+          "buttonLink": "package-details.html?package=andaman-island-paradise"
+        },
+        {
+          "label": "CUSTOM JOURNEY",
+          "title": "Your Personal Andaman",
+          "description": "Designed around your dates, interests and preferred travel style.",
+          "duration": "Made for You",
+          "buttonText": "Start Planning →",
+          "buttonLink": "index.html#custom-trip-planner"
+        }
+      ]
+    }
+  }
+}

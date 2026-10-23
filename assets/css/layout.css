@@ -1,0 +1,105 @@
+/* ==================================================
+   GLOBAL LAYOUT SYSTEM
+================================================== */
+
+.container {
+  width: min(
+    calc(100% - (var(--container-padding) * 2)),
+    var(--container-width)
+  );
+  margin-inline: auto;
+}
+
+.section {
+  position: relative;
+  padding-block: var(--space-20);
+}
+
+.section-heading {
+  max-width: 760px;
+}
+
+.section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: var(--space-3);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  color: var(--color-secondary-dark);
+}
+
+.section-title {
+  margin-bottom: var(--space-5);
+  font-size: clamp(2.3rem, 4vw, 4rem);
+  line-height: 1.12;
+}
+
+.section-description {
+  max-width: 700px;
+  margin-bottom: 0;
+  font-size: var(--font-size-md);
+  color: var(--color-text-light);
+}
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+  :root {
+    --container-padding: 20px;
+  }
+
+  .section {
+    padding-block: var(--space-16);
+  }
+}
+
+@media (max-width: 575px) {
+  :root {
+    --container-padding: 16px;
+  }
+
+  .section {
+    padding-block: var(--space-12);
+  }
+}
+
+/* ==================================================
+   GLOBAL OFFSET FIX (FINAL WORKING VERSION)
+================================================== */
+
+/* Fix anchor scroll under sticky header */
+html {
+  scroll-padding-top: var(--header-height);
+}
+
+/* Push entire page below header */
+body {
+  /* padding-top: var(--header-height); */
+  padding-top: 0;
+}
+
+/* Remove hero overlap */
+.hero {
+  margin-top: 0 !important;
+}
+
+/* ==================================================
+   GLOBAL OFFSET FIX ENDED
+================================================== */

@@ -1,0 +1,1700 @@
+/* ==================================================
+   1. BLOG DETAILS HERO OVERRIDES STARTED
+================================================== */
+
+/* KEEP BLOG HERO LEFT-SIDE LAYOUT */
+.hero .hero-container {
+  grid-template-columns: minmax(0, 720px);
+  justify-content: start;
+}
+
+/* MOVE ENTIRE HERO CONTENT SLIGHTLY DOWN */
+.hero .hero-content {
+  max-width: 720px;
+  transform: translateY(28px);
+}
+
+/* 1. EYEBROW MARK → ORANGE */
+.hero .hero-eyebrow-mark {
+  color: var(--color-accent) !important;
+}
+
+/* 2. EYEBROW TEXT → BLUE */
+.hero .hero-eyebrow {
+  color: #bfeef0 !important;
+}
+
+/* 3. FIRST PART OF TITLE → WHITE */
+.hero .hero-title {
+  color: #ffffff !important;
+}
+
+/* 4. SECOND PART OF TITLE → ORANGE */
+.hero .hero-title span {
+  display: block;
+  color: var(--color-accent) !important;
+}
+
+/* DESCRIPTION */
+.hero .hero-description {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+/* TRUST ITEMS */
+.hero .hero-trust-item {
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.hero .hero-trust-icon {
+  color: var(--color-accent-light);
+}
+
+.hero .hero-trust-divider {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero .hero-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero .hero-content {
+    max-width: 680px;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 575px) {
+  .hero .hero-content {
+    max-width: 100%;
+  }
+}
+
+/* ==================================================
+   1. BLOG DETAILS HERO OVERRIDES ENDED
+================================================== */
+
+/* ==================================================
+   2. INTRODUCTION SECTION STARTED
+================================================== */
+
+.intro-section {
+  width: 100%;
+  padding: 75px 28px 30px; /* ↓ reduced bottom gap */
+  background: #f7f9fb;
+}
+
+.intro-container {
+  max-width: 1172px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+
+  align-items: start;
+}
+
+/* IMAGE */
+
+.intro-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 0.96;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.intro-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* LOCATION BADGE */
+
+.intro-location {
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+
+  padding: 10px 16px;
+  background: #fff;
+  border-radius: 24px;
+
+  font-size: 13px;
+  font-weight: 500;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* RIGHT CONTENT */
+
+.intro-content {
+  padding-top: 0; /* removed gap */
+}
+
+/* TEXT SYSTEM OVERRIDE (KEEP MINIMAL) */
+
+.intro-content .section-description {
+  margin-bottom: 10px; /* reduced spacing */
+}
+
+/* FEATURES */
+
+.intro-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px 28px;
+}
+
+.feature-item {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 12px;
+}
+
+.feature-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #e3f4fb;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-item h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.feature-item p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #64748b;
+}
+
+/* ==================================================
+   3. MAIN ARTICLE SECTION
+================================================== */
+
+.main-article-section {
+  padding: 35px 0 0; /* ↑ top increased, ↓ bottom reduced */
+  background: #f8fafc;
+}
+
+.main-article-container {
+  max-width: 1172px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 40px;
+
+  align-items: center;
+}
+
+/* LEFT CONTENT */
+
+.main-article-content {
+  max-width: 560px;
+}
+
+/* TITLE */
+
+.hero-title {
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+/* DESCRIPTION */
+
+.hero-description {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+  color: #64748b;
+}
+
+/* POINTS */
+
+.main-article-points {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.article-point {
+  display: flex;
+  gap: 12px;
+}
+
+.article-number {
+  min-width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #e2e8f0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* TEXT */
+
+.article-point-content h3 {
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+
+.article-point-content p {
+  font-size: 13px;
+  line-height: 1.4;
+  color: #64748b;
+}
+
+/* RIGHT GALLERY */
+
+.main-article-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 130px;
+  gap: 14px;
+}
+
+.article-gallery-large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.main-article-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 1024px) {
+  .main-article-container,
+  .intro-container {
+    grid-template-columns: 1fr;
+  }
+
+  .main-article-gallery {
+    grid-auto-rows: 120px;
+  }
+}
+
+@media (max-width: 600px) {
+  .intro-section {
+    padding: 30px 16px;
+  }
+
+  .main-article-section {
+    padding: 20px 16px 30px;
+  }
+}
+
+/* ==================================================
+   3. INTRODUCTION SECTION ENDED
+================================================== */
+
+/* ==================================================
+   4. PHOTO GALLERY SECTION STARTED
+================================================== */
+
+/* ==================================================
+   PHOTO GALLERY SECTION
+================================================== */
+
+.gallery-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 50px 0 70px; /* ↓ reduced top gap (was higher) */
+  background: #f8fafc;
+  padding-top: 70px; /* ↑ increases top spacing (moves section down) */
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* LEFT SIDE */
+.gallery-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+}
+
+/* TOP GRID */
+.gallery-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  align-items: stretch;
+}
+
+/* MAIN IMAGE */
+.gallery-main {
+  position: relative;
+  height: 410px; /* 👈 reduce this value (try 380px / 400px / 450px) */
+}
+
+.gallery-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* BADGE */
+.gallery-badge {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: white;
+  padding: 10px 16px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* RIGHT STACK */
+.gallery-stack {
+  display: grid;
+  grid-template-rows: repeat(3, 123px); /* 🔥 change this */
+  gap: 20px;
+}
+
+.gallery-stack img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* BOTTOM GRID */
+.gallery-bottom {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  height: 20%;
+}
+
+.gallery-bottom img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* RIGHT CONTENT */
+.gallery-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ==================================================
+   GALLERY FEATURES GRID (RIGHT SIDE)
+================================================== */
+
+.gallery-features {
+  margin-top: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+/* CARD */
+.feature-box {
+  background: #eef3f7;
+  padding: 14px 10px; /* 👈 reduce padding */
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+/* HOVER (optional premium feel) */
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+
+/* ICON */
+.feature-box .feature-icon {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+/* TITLE */
+.feature-box h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+/* TEXT */
+.feature-box p {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #6b7280;
+}
+
+/* CONTROL TOTAL HEIGHT OF RIGHT FEATURES GRID */
+.gallery-features {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+
+  max-height: 450px; /* 👈 reduce overall height */
+}
+
+.feature-box {
+  background: #eef3f7;
+  padding: 14px 12px; /* 👈 reduce padding = reduce height */
+  border-radius: 14px;
+  text-align: center;
+}
+
+/* PHOTO GALLERY EYEBROW → BLUE */
+.photo-gallery .section-eyebrow .section-eyebrow-mark {
+  color: var(--color-secondary);
+}
+
+/* ==================================================
+   4. PHOTO GALLERY SECTION ENDED
+================================================== */
+
+/* ==================================================
+   5. PHOTO GALLERY SECTION STARTED
+================================================== */
+
+.tips-section {
+  padding: 40px 0 80px; /* reduced top padding */
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* MAIN GRID FIX */
+.tips-container {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
+  align-items: center; /* ✅ FIXED (was start) */
+}
+
+/* LEFT */
+.tips-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* CARDS */
+.tips-card {
+  display: flex;
+  gap: 16px;
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.tips-icon {
+  font-size: 28px;
+  color: var(--color-accent);
+}
+
+.tips-card h4 {
+  margin-bottom: 8px;
+}
+
+.tips-card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #64748b;
+}
+
+.tips-card ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 20px;
+  font-size: 13px;
+  color: #475569;
+}
+
+/* INFO BAR */
+.tips-info-bar {
+  display: flex;
+  justify-content: space-between;
+  background: #eef2f7;
+  padding: 20px;
+  border-radius: 16px;
+  margin-top: 20px;
+}
+
+/* RIGHT SIDE FIX */
+.tips-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* IMPORTANT: FORCE SAME VISUAL HEIGHT */
+.tips-images img {
+  width: 100%;
+  height: 270px; /* ✅ KEY FIX */
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* REMOVE EXTRA SPACE ISSUE */
+.tips-section,
+.tips-container {
+  height: auto;
+}
+
+/* Remove unwanted margin from previous section */
+section + .tips-section {
+  margin-top: -20px;
+}
+
+/* REMOVE EXTRA SPACE FROM ABOVE SECTION */
+.photo-gallery-section {
+  margin-bottom: 0; /* remove bottom gap */
+  padding-bottom: 0px; /* reduce space */
+}
+
+/* REMOVE GAP FROM ANY PREVIOUS SECTION */
+section {
+  margin-bottom: 0;
+}
+
+/* IF STILL GAP → coming from wrapper/container */
+.blog-details-wrapper,
+.main-wrapper,
+.container {
+  padding-top: 0 !important;
+}
+
+/* REMOVE GAP FROM TOP SECTION */
+.highlights-section,
+.explore-section,
+.hero-highlights {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* 🔥 REMOVE GAP FROM PREVIOUS SECTION (THIS IS THE REAL ISSUE) */
+.photo-gallery-section,
+.highlights-section {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* 🔥 FORCE NEXT SECTION TO COME UP */
+.photo-gallery-section + .tips-section,
+.highlights-section + .tips-section {
+  margin-top: -80px !important;
+}
+
+/* OPTIONAL: fine tune spacing */
+.tips-section {
+  padding-top: 20px !important;
+}
+
+/* 🔥 FORCE MOVE SECTION UP (NO DEPENDENCY ON HTML STRUCTURE) */
+.tips-section {
+  margin-top: -50px !important;
+  position: relative;
+  z-index: 2;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .tips-container {
+    grid-template-columns: 1fr;
+  }
+
+  .tips-images img {
+    height: 240px;
+  }
+}
+
+/* ==================================================
+   5. PHOTO GALLERY SECTION ENDED
+================================================== */
+
+/* ==================================================
+   6. CALL TO ACTION SECTION STARTED
+================================================== */
+
+/* ==================================================
+   CTA SECTION
+================================================== */
+
+.cta-section {
+  padding: 80px 0;
+  background: linear-gradient(to right, #f8fafc, #eef2f7);
+}
+
+/* CONTAINER */
+.cta-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* LEFT IMAGE */
+.cta-image {
+  height: 100%;
+}
+
+.cta-image img {
+  width: 100%;
+  height: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+}
+
+/* RIGHT CONTENT */
+.cta-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* FEATURES */
+.cta-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.cta-feature {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.cta-feature span {
+  font-size: 20px;
+  color: var(--color-accent);
+}
+
+/* BUTTON */
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f59e0b, #fbbf24);
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* HEIGHT FIX (FULL SCREEN FIT) */
+.cta-section {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+/* REMOVE extra gap inside feature items */
+.cta-feature h4 {
+  margin: 0; /* default browser margin removed */
+}
+
+/* tighten spacing between title & description inside feature */
+.cta-feature p {
+  margin-top: 3px;
+}
+
+/* reduce gap between 5th (tips) and 6th (cta) section */
+.cta-section {
+  margin-top: -40px; /* pull section upwards */
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .cta-container {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-image img {
+    max-height: 400px;
+  }
+}
+
+/* ==================================================
+   6. CALL TO ACTION SECTION ENDED
+================================================== */
+
+/* ==================================================
+   7. RELATED JOURNALS SECTION STARTED
+================================================== */
+
+.related-journals {
+  padding: 38px 0 42px;
+  background: #ffffff;
+}
+
+.related-journals-container {
+  width: min(100% - 48px, 1320px);
+  margin: 0 auto;
+}
+
+/* ==================================================
+   RELATED JOURNALS HEADING
+================================================== */
+
+.related-journals-heading {
+  text-align: center;
+  margin: 0 auto 26px;
+}
+
+.related-journals-heading .section-eyebrow {
+  margin-bottom: 10px;
+}
+
+.related-journals-heading .section-title {
+  margin-bottom: 10px;
+}
+
+.related-journals-heading .section-description {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* ==================================================
+   RELATED JOURNALS GRID
+================================================== */
+
+.related-journals-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+/* ==================================================
+   RELATED JOURNAL CARD
+================================================== */
+
+.related-journal-card {
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.related-journal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.1);
+}
+
+/* ==================================================
+   CARD IMAGE
+================================================== */
+
+.related-journal-image {
+  position: relative;
+  display: block;
+  height: 180px;
+  overflow: hidden;
+}
+
+.related-journal-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.related-journal-card:hover .related-journal-image img {
+  transform: scale(1.05);
+}
+
+.related-journal-category {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  padding: 6px 12px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.94);
+  color: var(--color-secondary-dark);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+/* ==================================================
+   CARD CONTENT
+================================================== */
+
+.related-journal-content {
+  padding: 17px 18px 18px;
+}
+
+.related-journal-meta {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 8px;
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.related-journal-content h3 {
+  margin: 0 0 8px;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  line-height: 1.3;
+  color: var(--heading-color, #0f172a);
+}
+
+.related-journal-content p {
+  margin: 0 0 13px;
+  color: var(--text-color, #475569);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+/* ==================================================
+   READ JOURNAL LINK
+================================================== */
+
+.related-journal-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-secondary-dark);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.related-journal-link span {
+  transition: transform 0.25s ease;
+}
+
+.related-journal-link:hover span {
+  transform: translateX(4px);
+}
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 900px) {
+  .related-journals-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .related-journals {
+    padding: 45px 0;
+  }
+
+  .related-journals-container {
+    width: min(100% - 30px, 1320px);
+  }
+
+  .related-journals-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .related-journal-image {
+    height: 210px;
+  }
+}
+
+/* ==================================================
+   7. RELATED JOURNALS SECTION ENDED
+================================================== */
+
+/* ==================================================
+   BLOG HERO — HOMEPAGE TYPOGRAPHY OVERRIDE STARTED
+================================================== */
+
+.hero .hero-eyebrow {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hero .hero-eyebrow-mark {
+  color: #ffa818;
+}
+
+.hero .hero-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(3.4rem, 5vw, 5.2rem);
+  font-weight: 700;
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+  margin-bottom: 28px;
+  color: #ffffff;
+}
+
+.hero .hero-title span {
+  display: block;
+  color: #ffffff;
+}
+
+.hero .hero-description {
+  max-width: 650px;
+  margin-bottom: 34px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.08rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #ffffff;
+}
+
+/* ==================================================
+   BLOG HERO — HOMEPAGE TYPOGRAPHY OVERRIDE ENDED
+================================================== */
+
+/* ==================================================
+   KASHMIR SPRING HERO — SECOND LINE COLOR STARTED
+================================================== */
+
+#blog-hero.hero .hero-content h1.hero-title span {
+  display: block;
+  color: var(--color-secondary-soft) !important;
+}
+
+/* ==================================================
+   KASHMIR SPRING HERO — SECOND LINE COLOR ENDED
+================================================== */
+
+/* ==================================================
+   KASHMIR SPRING HERO — EYEBROW COLORS STARTED
+================================================== */
+
+/* EYEBROW TEXT → BLUE */
+#blog-hero .hero-eyebrow {
+  color: var(--color-secondary) !important;
+}
+
+/* EYEBROW MARK → ORANGE */
+#blog-hero .hero-eyebrow-mark {
+  color: var(--color-accent) !important;
+}
+
+/* ==================================================
+   KASHMIR SPRING HERO — EYEBROW COLORS ENDED
+================================================== */
+
+/* ==================================================
+   KASHMIR HERO — CTA BOTTOM SPACING STARTED
+================================================== */
+
+#blog-hero .hero-content > a.btn {
+  margin-bottom: 34px;
+}
+
+/* ==================================================
+   KASHMIR HERO — CTA BOTTOM SPACING ENDED
+================================================== */
+
+/* ==================================================
+   BLOG DETAILS — SECTION TITLE BLUE COLOR STARTED
+================================================== */
+
+/* 2. INTRODUCTION SECTION */
+#introduction .section-title span,
+
+/* 3. MAIN ARTICLE CONTENT SECTION */
+#main-article .section-title span,
+
+/* 4. PHOTO GALLERY SECTION */
+#photo-gallery .section-title span,
+
+/* 5. TRAVEL TIPS SECTION */
+#travel-tips .section-title span,
+
+/* 6. CALL TO ACTION SECTION */
+#plan-your-journey .section-title span,
+
+/* 7. RELATED JOURNALS SECTION */
+#related-journals .section-title span {
+  color: var(--color-primary);
+}
+
+/* ==================================================
+   BLOG DETAILS — SECTION TITLE BLUE COLOR ENDED
+================================================== */
+
+/* ==================================================
+   KASHMIR JOURNEY CTA BANNER STARTED
+================================================== */
+
+.kashmir-journey-cta {
+  background: #102f46;
+  padding: 65px 0;
+}
+
+.kashmir-journey-cta-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.kashmir-journey-cta-content {
+  flex: 1;
+  max-width: 760px;
+}
+
+/* EYEBROW */
+.kashmir-journey-cta-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  color: var(--color-secondary);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.kashmir-journey-cta-eyebrow-mark {
+  color: var(--color-accent);
+}
+
+/* TITLE */
+.kashmir-journey-cta h2 {
+  margin: 0 0 14px;
+  color: #ffffff;
+  font-size: clamp(32px, 3.2vw, 46px);
+  line-height: 1.12;
+}
+
+.kashmir-journey-cta h2 span {
+  display: block;
+  color: var(--color-secondary-soft);
+}
+
+/* DESCRIPTION */
+.kashmir-journey-cta-content > p {
+  max-width: 700px;
+  margin: 0;
+  color: #e0eaf0;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+/* ==================================================
+   KASHMIR CTA HIGHLIGHTS STARTED
+================================================== */
+
+.kashmir-journey-cta-highlights {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: fit-content;
+  max-width: 100%;
+  margin-top: 30px;
+  padding: 10px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.kashmir-journey-cta-highlights > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 12px 16px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.kashmir-journey-cta-highlights > span:not(:last-child) {
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.kashmir-journey-cta-highlight-icon {
+  color: var(--color-accent);
+  font-size: 18px;
+}
+
+/* ==================================================
+   KASHMIR CTA HIGHLIGHTS ENDED
+================================================== */
+
+/* CTA BUTTON */
+/* ==================================================
+   KASHMIR JOURNEY CTA ACTIONS STARTED
+================================================== */
+.kashmir-journey-cta-actions {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+/* SECONDARY ENQUIRY BUTTON */
+.kashmir-journey-cta-actions .kashmir-cta-enquiry {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 26px;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 50px;
+  background: transparent;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.kashmir-journey-cta-actions .kashmir-cta-enquiry:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .kashmir-journey-cta-actions .kashmir-cta-enquiry {
+    white-space: normal;
+  }
+}
+/* ==================================================
+   KASHMIR JOURNEY CTA ACTIONS ENDED
+================================================== */
+
+.kashmir-journey-cta-actions .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 26px;
+  border-radius: 50px;
+  background: #ffffff;
+  color: #102f46;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.kashmir-journey-cta-actions .btn:hover {
+  background: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+/* ==================================================
+   RESPONSIVE DESIGN STARTED
+================================================== */
+
+@media (max-width: 1100px) {
+  .kashmir-journey-cta-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .kashmir-journey-cta {
+    padding: 55px 0;
+  }
+
+  .kashmir-journey-cta h2 {
+    font-size: 32px;
+  }
+
+  .kashmir-journey-cta-highlights {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .kashmir-journey-cta-highlights > span {
+    width: 100%;
+    padding: 12px;
+    white-space: normal;
+  }
+
+  .kashmir-journey-cta-highlights > span:not(:last-child) {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .kashmir-journey-cta-actions .btn {
+    white-space: normal;
+    text-align: center;
+  }
+}
+
+/* ==================================================
+   RESPONSIVE DESIGN ENDED
+================================================== */
+
+/* ==================================================
+   KASHMIR JOURNEY CTA BANNER ENDED
+================================================== */
+
+/* ==================================================
+   INTRODUCTION SECTION POSITION ADJUSTMENT STARTED
+================================================= */
+.intro-section {
+  transform: none;
+}
+/* ==================================================
+   INTRODUCTION SECTION POSITION ADJUSTMENT ENDED
+================================================= */
+
+/* ==================================================
+   MAIN ARTICLE SECTION POSITION ADJUSTMENT STARTED
+================================================== */
+.main-article-section {
+  transform: translateY(-15px);
+}
+/* ==================================================
+   MAIN ARTICLE SECTION POSITION ADJUSTMENT ENDED
+================================================== */
+
+/* ==================================================
+   PHOTO GALLERY — DESKTOP SCREEN FIT STARTED
+================================================== */
+
+@media (min-width: 1025px) {
+  /* SECTION HEIGHT AND SPACING */
+  #photo-gallery.gallery-section {
+    height: calc(100vh - var(--header-height, 88px));
+    min-height: 0;
+    padding: 20px 0;
+    box-sizing: border-box;
+  }
+
+  /* MAIN CONTAINER */
+  #photo-gallery .gallery-container {
+    width: 100%;
+    gap: 40px;
+    align-items: center;
+  }
+
+  /* LEFT IMAGE GRID */
+  #photo-gallery .gallery-left {
+    gap: 12px;
+    min-height: 0;
+  }
+
+  #photo-gallery .gallery-top {
+    gap: 12px;
+  }
+
+  /* LARGE IMAGE */
+  #photo-gallery .gallery-main {
+    height: 340px;
+  }
+
+  /* THREE STACKED IMAGES */
+  #photo-gallery .gallery-stack {
+    grid-template-rows: repeat(3, 104px);
+    gap: 14px;
+  }
+
+  /* FOUR BOTTOM IMAGES */
+  #photo-gallery .gallery-bottom {
+    height: 125px;
+    gap: 12px;
+  }
+
+  /* RIGHT CONTENT */
+  #photo-gallery .gallery-content {
+    gap: 0;
+  }
+
+  /* FEATURE GRID */
+  #photo-gallery .gallery-features {
+    margin-top: 0;
+    gap: 12px;
+    max-height: none;
+  }
+
+  /* FEATURE CARDS */
+  #photo-gallery .feature-box {
+    padding: 12px 9px;
+  }
+
+  #photo-gallery .feature-box .feature-icon {
+    font-size: 23px;
+    margin-bottom: 4px;
+  }
+
+  #photo-gallery .feature-box h4 {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  #photo-gallery .feature-box p {
+    font-size: 11px;
+    line-height: 1.35;
+  }
+}
+
+/* ==================================================
+   PHOTO GALLERY — DESKTOP SCREEN FIT ENDED
+================================================== */
+
+/* ==================================================
+   PHOTO GALLERY — CONTAINER WIDTH ADJUSTMENT STARTED
+================================================== */
+
+@media (min-width: 1025px) {
+  #photo-gallery .gallery-container {
+    width: calc(100% - 80px);
+    max-width: 1300px;
+    margin: 0 auto;
+    gap: 40px;
+  }
+}
+
+/* ==================================================
+   PHOTO GALLERY — CONTAINER WIDTH ADJUSTMENT ENDED
+================================================== */
+
+/* ==================================================
+   PHOTO GALLERY — BALANCED COLUMN HEIGHT STARTED
+================================================== */
+
+@media (min-width: 1025px) {
+  /* MAIN GALLERY CONTAINER */
+  #photo-gallery .gallery-container {
+    width: calc(100% - 80px);
+    max-width: 1300px;
+    margin: 0 auto;
+    gap: 40px;
+    align-items: center;
+  }
+
+  /* LEFT IMAGE COLUMN */
+  #photo-gallery .gallery-left {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: auto;
+    min-height: 0;
+  }
+
+  /* TOP IMAGE GRID */
+  #photo-gallery .gallery-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 12px;
+    height: 360px;
+    min-height: 0;
+  }
+
+  /* LARGE IMAGE */
+  #photo-gallery .gallery-main {
+    height: 360px;
+  }
+
+  /* THREE STACKED IMAGES */
+  #photo-gallery .gallery-stack {
+    display: grid;
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    height: 360px;
+    gap: 12px;
+    min-height: 0;
+  }
+
+  /* FOUR BOTTOM IMAGES */
+  /* ==================================================
+   PHOTO GALLERY - BOTTOM IMAGE ALIGNMENT STARTED
+================================================== */
+
+  #photo-gallery .gallery-bottom {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: 195px;
+    height: 195px;
+    min-height: 0;
+    gap: 12px;
+  }
+
+  #photo-gallery .gallery-bottom img {
+    display: block;
+    width: 100%;
+    height: 195px;
+    min-height: 0;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+
+  /* ==================================================
+   PHOTO GALLERY - BOTTOM IMAGE ALIGNMENT ENDED
+================================================== */
+
+  /* IMAGE FIT */
+  #photo-gallery .gallery-main img,
+  #photo-gallery .gallery-stack img,
+  #photo-gallery .gallery-bottom img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* RIGHT CONTENT */
+  #photo-gallery .gallery-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* ==================================================
+   PHOTO GALLERY — BALANCED COLUMN HEIGHT ENDED
+================================================== */
+
+/* ==================================================
+   TRAVEL TIPS — RIGHT IMAGE HEIGHT ADJUSTMENT STARTED
+================================================== */
+
+.tips-images img {
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* ==================================================
+   TRAVEL TIPS — RIGHT IMAGE HEIGHT ADJUSTMENT ENDED
+================================================== */
+
+/* ==================================================
+   TRAVEL TIPS — SECTION SPACING FIX STARTED
+================================================== */
+
+#travel-tips.tips-section {
+  margin-top: 0 !important;
+  padding-top: 40px !important;
+  padding-bottom: 55px;
+}
+
+/* ==================================================
+   TRAVEL TIPS — SECTION SPACING FIX ENDED
+================================================== */
+
+/* ==================================================
+   CALL TO ACTION — IMAGE HEIGHT ADJUSTMENT STARTED
+================================================== */
+
+#plan-your-journey .cta-image {
+  height: 590px;
+  min-height: 590px;
+}
+
+#plan-your-journey .cta-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* ==================================================
+   CALL TO ACTION — IMAGE HEIGHT ADJUSTMENT ENDED
+================================================== */
+
+/* ==================================================
+   CALL TO ACTION — CONTENT UPWARD ADJUSTMENT STARTED
+================================================== */
+
+#plan-your-journey .cta-container {
+  transform: translateY(-35px);
+}
+
+/* ==================================================
+   CALL TO ACTION — CONTENT UPWARD ADJUSTMENT ENDED
+================================================== */
+
+/* ==================================================
+   TRAVEL TIPS – RIGHT IMAGE POSITION STARTED
+================================================== */
+#travel-tips .tips-images {
+  transform: translateY(-10px);
+}
+/* ==================================================
+   TRAVEL TIPS – RIGHT IMAGE POSITION ENDED
+================================================== */
+
+/* ==================================================
+   INTRODUCTION – DESCRIPTION BOTTOM GAP STARTED
+================================================== */
+#introduction .section-description {
+  margin-bottom: 20px;
+}
+/* ==================================================
+   INTRODUCTION – DESCRIPTION BOTTOM GAP ENDED
+================================================== */
+
+/* ==================================================
+   INTRODUCTION – RIGHT CONTENT POSITION STARTED
+================================================== */
+#introduction .intro-content {
+  transform: translateY(-10px);
+}
+/* ==================================================
+   INTRODUCTION – RIGHT CONTENT POSITION ENDED
+================================================== */
+
+/* ==================================================
+   RELATED JOURNALS — HOMEPAGE CARD ALIGNMENT STARTED
+================================================== */
+
+/* Make card content fill available height */
+#related-journals .related-journal-card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Keep image dimensions unchanged */
+#related-journals .related-journal-image {
+  flex-shrink: 0;
+}
+
+/* Align content vertically */
+#related-journals .related-journal-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 14px 18px 18px;
+}
+
+/* Reading time above title */
+#related-journals .related-journal-meta {
+  margin-bottom: 8px;
+  color: #008e9b;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* Consistent title spacing */
+#related-journals .related-journal-content h3 {
+  margin: 0 0 10px;
+}
+
+/* Consistent description spacing */
+#related-journals .related-journal-content p {
+  margin: 0 0 18px;
+}
+
+/* Rounded Read Journal button */
+#related-journals .related-journal-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+  gap: 12px;
+
+  margin-top: auto;
+  padding: 9px 16px;
+
+  border: 1px solid #075581;
+  border-radius: 50px;
+
+  color: #075581;
+  background: #ffffff;
+
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+
+  transition: all 0.25s ease;
+}
+
+#related-journals .related-journal-link:hover {
+  color: #ffffff;
+  background: #075581;
+}
+
+/* ==================================================
+   RELATED JOURNALS — HOMEPAGE CARD ALIGNMENT ENDED
+================================================== */
+
+/* ==================================================
+   RELATED JOURNALS FOOTER ALIGNMENT STARTED
+================================================== */
+
+#related-journals .related-journal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: auto;
+}
+
+#related-journals .related-journal-date {
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+#related-journals .related-journal-footer .related-journal-link {
+  margin-top: 0;
+  flex-shrink: 0;
+}
+
+/* ==================================================
+   RELATED JOURNALS FOOTER ALIGNMENT ENDED
+================================================== */

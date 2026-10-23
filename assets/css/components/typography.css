@@ -1,0 +1,108 @@
+/* ==================================================
+   GLOBAL TYPOGRAPHY SYSTEM STARTED
+================================================== */
+
+/* ==================================================
+   COMMON SECTION EYEBROW STARTED
+================================================== */
+
+.section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: var(--font-weight-semibold);
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+
+  color: var(--color-secondary-dark);
+  margin-bottom: 16px;
+}
+
+.section-eyebrow .section-eyebrow-mark {
+  color: var(--color-accent);
+  font-size: 14px;
+  display: inline-block;
+  transform: translateY(-1px);
+}
+
+/* ==================================================
+   COMMON SECTION EYEBROW ENDED
+================================================== */
+
+/* ==================================================
+   COMMON SECTION TITLE STARTED
+================================================== */
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 40px;
+  font-weight: var(--font-weight-bold);
+  line-height: 1.2;
+
+  color: var(--color-heading);
+  margin-bottom: 18px;
+}
+
+.section-title span {
+  color: var(--color-accent);
+}
+
+/* ==================================================
+   COMMON SECTION TITLE ENDED
+================================================== */
+
+/* ==================================================
+   COMMON SECTION DESCRIPTION STARTED
+================================================== */
+
+.section-description {
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-base);
+
+  color: var(--color-text);
+
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+/* ==================================================
+   COMMON SECTION DESCRIPTION ENDED
+================================================== */
+
+/* ==================================================
+   COMMON SECTION CENTER ALIGNMENT STARTED
+================================================== */
+
+.section-center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* ==================================================
+   COMMON SECTION CENTER ALIGNMENT ENDED
+================================================== */
+
+/* ==================================================
+   GLOBAL ICON COLOR SYSTEM STARTED
+================================================== */
+
+.section-features svg,
+.section-content svg,
+.intro-info svg,
+.intro-item svg {
+  stroke: var(--color-accent) !important;
+  fill: var(--color-accent) !important;
+}
+
+/* ==================================================
+   GLOBAL ICON COLOR SYSTEM ENDED
+================================================== */
+
+/* ==================================================
+   GLOBAL TYPOGRAPHY SYSTEM ENDED
+================================================== */

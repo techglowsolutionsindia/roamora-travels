@@ -1,0 +1,1135 @@
+/* ==================================================
+   CUSTOM TRIP PAGE STARTED
+================================================== */
+
+/* ==================================================
+   CUSTOM TRIP HERO STARTED
+================================================== */
+
+/* ==================================================
+   CUSTOM TRIP HERO STARTED
+================================================== */
+
+.custom-trip-hero {
+  position: relative;
+
+  min-height: 0;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+  padding-block: 12px;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(2, 35, 54, 0.96) 0%,
+      rgba(2, 35, 54, 0.92) 38%,
+      rgba(2, 35, 54, 0.68) 58%,
+      rgba(2, 35, 54, 0.2) 78%,
+      rgba(2, 35, 54, 0.08) 100%
+    ),
+    url("../../images/custom-trip/custom-trip-hero.webp");
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.custom-trip-container {
+  position: relative;
+  z-index: 1;
+
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(500px, 0.76fr);
+  align-items: center;
+  gap: clamp(55px, 6vw, 90px);
+
+  padding-block: 0;
+}
+
+.custom-trip-container {
+  position: relative;
+  z-index: 1;
+
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(500px, 0.76fr);
+  align-items: center;
+  gap: clamp(55px, 6vw, 90px);
+}
+
+/* ==================================================
+   CUSTOM TRIP CONTENT STARTED
+================================================== */
+
+.custom-trip-content {
+  max-width: 650px;
+}
+
+.custom-trip-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  color: #0798a5;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.custom-trip-title {
+  margin-top: 12px;
+  color: #082f49;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(3rem, 4.35vw, 4.7rem);
+  font-weight: 400;
+  line-height: 0.96;
+  letter-spacing: -0.025em;
+}
+
+.custom-trip-title span {
+  display: block;
+  color: #05658b;
+}
+
+.custom-trip-description {
+  max-width: 605px;
+  margin-top: 14px;
+  color: #64748b;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.custom-trip-hero .custom-trip-eyebrow-mark {
+  color: var(--color-accent) !important;
+}
+
+.custom-trip-title span {
+  display: block;
+  color: var(--color-secondary-soft);
+}
+
+/* ==================================================
+   TRIP PREFERENCES SUMMARY STARTED
+================================================== */
+
+.trip-preferences-summary {
+  margin-top: 18px;
+  padding: 16px 20px;
+
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(7, 152, 165, 0.17);
+  border-radius: 18px;
+
+  box-shadow: 0 12px 30px rgba(8, 47, 73, 0.06);
+}
+
+.trip-preferences-summary-heading {
+  padding-bottom: 13px;
+  border-bottom: 1px solid rgba(7, 152, 165, 0.12);
+}
+
+.trip-preferences-summary-heading > span {
+  display: block;
+
+  color: #0798a5;
+
+  font-size: 0.61rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.trip-preferences-summary-heading p {
+  margin-top: 4px;
+
+  color: #718096;
+
+  font-size: 0.66rem;
+  line-height: 1.5;
+}
+
+.trip-preferences-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 10px 22px;
+
+  margin-top: 15px;
+}
+
+.trip-preference-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 12px;
+
+  min-width: 0;
+}
+
+.trip-preference-item > span {
+  color: #718096;
+
+  font-size: 0.65rem;
+}
+
+.trip-preference-item strong {
+  color: #082f49;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+
+  text-align: right;
+}
+
+.trip-preference-wishes {
+  margin-top: 15px;
+  padding-top: 13px;
+
+  border-top: 1px solid rgba(7, 152, 165, 0.12);
+}
+
+.trip-preference-wishes > span {
+  display: block;
+
+  color: #0798a5;
+
+  font-size: 0.59rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.trip-preference-wishes p {
+  margin-top: 5px;
+
+  color: #456374;
+
+  font-size: 0.68rem;
+  line-height: 1.55;
+}
+
+/* ==================================================
+   LEFT CONTENT — IMAGE HERO VERSION
+================================================== */
+
+.custom-trip-title {
+  color: #ffffff;
+}
+
+.custom-trip-title span {
+  display: block;
+  color: var(--color-secondary-soft);
+}
+
+.custom-trip-description {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.custom-trip-eyebrow {
+  color: var(--color-secondary-light);
+}
+
+.custom-trip-eyebrow-mark {
+  color: var(--color-accent) !important;
+}
+
+.custom-trip-trust {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+/* ==================================================
+   TRIP PREFERENCES — GLASS CARD
+================================================== */
+
+.trip-preferences-summary {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* ==================================================
+   FORM CARD
+================================================== */
+
+.custom-trip-form-card {
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.18);
+}
+
+/* ==================================================
+   TRIP PREFERENCES SUMMARY ENDED
+================================================== */
+
+/* ==================================================
+   SELECTED PACKAGE CARD STARTED
+================================================== */
+
+.selected-package-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr) 38px;
+  align-items: center;
+  gap: 16px;
+  margin-top: 28px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(7, 152, 165, 0.2);
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(8, 47, 73, 0.08);
+}
+
+.selected-package-image {
+  width: 96px;
+  height: 78px;
+  overflow: hidden;
+  border-radius: 13px;
+}
+
+.selected-package-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.selected-package-content > span {
+  display: block;
+  color: #0798a5;
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.selected-package-content strong {
+  display: block;
+  margin-top: 5px;
+  color: #082f49;
+  font-family: "Playfair Display", serif;
+  font-size: 1.12rem;
+  font-weight: 400;
+}
+
+.selected-package-content p {
+  margin-top: 3px;
+  color: #718096;
+  font-size: 0.65rem;
+}
+
+.selected-package-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  color: #ffffff;
+  background: #0798a5;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+/* ==================================================
+   SELECTED PACKAGE CARD ENDED
+================================================== */
+
+.custom-trip-trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 14px;
+  color: #456374;
+  font-size: 0.67rem;
+  font-weight: 600;
+}
+
+.custom-trip-trust span::first-letter {
+  color: #0798a5;
+}
+
+/* ==================================================
+   CUSTOM TRIP CONTENT ENDED
+================================================== */
+
+/* ==================================================
+   CUSTOM TRIP FORM CARD STARTED
+================================================== */
+
+.custom-trip-form-card {
+  position: relative;
+  padding: 18px 30px 18px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(7, 152, 165, 0.15);
+  border-radius: 24px;
+  box-shadow: 0 24px 55px rgba(8, 47, 73, 0.12);
+}
+
+.custom-trip-form-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 30px;
+  width: 72px;
+  height: 4px;
+  background: linear-gradient(90deg, #fca51a, #0798a5);
+  border-radius: 0 0 999px 999px;
+}
+
+.custom-trip-form-heading > span {
+  color: #0798a5;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.custom-trip-form-heading h2 {
+  margin-top: 5px;
+  color: #082f49;
+  font-family: "Playfair Display", serif;
+  font-size: 1.85rem;
+  font-weight: 400;
+}
+
+.custom-trip-form-heading p {
+  max-width: 450px;
+  margin-top: 5px;
+  color: #718096;
+  font-size: 0.7rem;
+  line-height: 1.6;
+}
+
+/* ==================================================
+   CUSTOM TRIP FORM STARTED
+================================================== */
+
+.custom-trip-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 8px 15px;
+
+  margin-top: 11px;
+}
+
+.custom-trip-field-full {
+  grid-column: 1 / -1;
+}
+
+.custom-trip-field label,
+.custom-trip-style legend {
+  display: block;
+  margin-bottom: 7px;
+  color: #082f49;
+  font-size: 0.67rem;
+  font-weight: 700;
+}
+
+/* ==================================================
+   CUSTOM TRIP FORM CONTROLS STARTED
+================================================== */
+
+.custom-trip-field select,
+.custom-trip-field input {
+  width: 100%;
+  height: 42px;
+  padding: 0 14px;
+
+  color: #466172;
+  background: #fbfefe;
+
+  border: 1px solid #d7e8ec;
+  border-radius: 12px;
+  outline: none;
+
+  font-family: inherit;
+  font-size: 0.7rem;
+
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.custom-trip-field input::placeholder {
+  color: #8ca0ad;
+  opacity: 1;
+}
+
+.custom-trip-field select:focus,
+.custom-trip-field input:focus {
+  background: #ffffff;
+  border-color: #0798a5;
+  box-shadow: 0 0 0 3px rgba(7, 152, 165, 0.09);
+}
+
+/* ==================================================
+   CUSTOM TRIP FORM CONTROLS ENDED
+================================================== */
+
+/* ==================================================
+   TRAVEL STYLE STARTED
+================================================== */
+
+.custom-trip-style {
+  padding: 0;
+  border: 0;
+}
+
+.custom-trip-style-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.custom-trip-style-options label {
+  margin: 0;
+  cursor: pointer;
+}
+
+.custom-trip-style-options input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.custom-trip-style-options span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 35px;
+  padding-inline: 14px;
+  color: #617686;
+  background: #ffffff;
+  border: 1px solid #d7e8ec;
+  border-radius: 999px;
+  font-size: 0.62rem;
+  font-weight: 600;
+  transition:
+    color 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.custom-trip-style-options input:checked + span {
+  color: #ffffff;
+  background: #0798a5;
+  border-color: #0798a5;
+}
+
+/* ==================================================
+   CUSTOM TRIP CONTACT DETAILS STARTED
+================================================== */
+
+.custom-trip-contact-heading {
+  margin-top: 1px;
+  padding-top: 9px;
+
+  border-top: 1px solid #e4eff1;
+}
+
+.custom-trip-contact-heading > span {
+  display: block;
+
+  color: #0798a5;
+
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.custom-trip-contact-heading p {
+  margin-top: 4px;
+
+  color: #718096;
+
+  font-size: 0.65rem;
+  line-height: 1.5;
+}
+
+/* ==================================================
+   CUSTOM TRIP CONTACT DETAILS ENDED
+================================================== */
+
+/* ==================================================
+   TRAVEL STYLE ENDED
+================================================== */
+
+.custom-trip-form-note {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding-top: 2px;
+  color: #718096;
+  font-size: 0.61rem;
+}
+
+.custom-trip-form-note > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 21px;
+  height: 21px;
+  flex-shrink: 0;
+  color: #0798a5;
+  background: #eaf8fa;
+  border-radius: 50%;
+  font-size: 0.6rem;
+}
+
+.custom-trip-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 44px;
+  margin-top: 2px;
+  color: #082f49;
+  background: #fca51a;
+  border: 0;
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 0.76rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.custom-trip-submit:hover {
+  background: #ffb42f;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(252, 165, 26, 0.22);
+}
+
+/* ==================================================
+   CUSTOM TRIP FORM ENDED
+================================================== */
+
+/* ==================================================
+   SUCCESS MESSAGE STARTED
+================================================== */
+
+.custom-trip-success {
+  padding-block: 50px 25px;
+  text-align: center;
+}
+
+.custom-trip-success-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  margin-inline: auto;
+  color: #ffffff;
+  background: linear-gradient(135deg, #0798a5, #05658b);
+  border-radius: 50%;
+  box-shadow: 0 10px 24px rgba(7, 152, 165, 0.2);
+}
+
+.custom-trip-success h3 {
+  margin-top: 17px;
+  color: #082f49;
+  font-family: "Playfair Display", serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.custom-trip-success p {
+  max-width: 400px;
+  margin: 8px auto 0;
+  color: #718096;
+  font-size: 0.72rem;
+  line-height: 1.6;
+}
+
+.custom-trip-success button {
+  margin-top: 18px;
+  padding: 10px 18px;
+  color: #05658b;
+  background: #eef9fb;
+  border: 1px solid #cde8ed;
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 0.68rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* ==================================================
+   SUCCESS MESSAGE ENDED
+================================================== */
+
+/* ==================================================
+   CUSTOM TRIP SUCCESS POPUP STARTED
+================================================== */
+
+.custom-trip-success {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(3, 37, 55, 0.68);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+}
+
+.custom-trip-success[hidden] {
+  display: none !important;
+}
+
+.custom-trip-success-popup {
+  position: relative;
+  width: min(100%, 510px);
+  padding: 42px 38px 36px;
+  overflow: hidden;
+  text-align: center;
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(7, 152, 165, 0.12),
+      transparent 34%
+    ),
+    #ffffff;
+  border: 1px solid rgba(7, 152, 165, 0.2);
+  border-radius: 28px;
+  box-shadow: 0 32px 80px rgba(3, 37, 55, 0.28);
+  animation: customTripPopupIn 0.32s ease both;
+}
+
+/* TOP ACCENT */
+
+.custom-trip-success-popup::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 86px;
+  height: 5px;
+  background: linear-gradient(90deg, #fca51a 0%, #0798a5 100%);
+  border-radius: 0 0 999px 999px;
+  transform: translateX(-50%);
+}
+
+/* SUCCESS ICON */
+
+.custom-trip-success-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 68px;
+  margin-inline: auto;
+  color: #ffffff;
+  background: linear-gradient(135deg, #0798a5 0%, #05658b 100%);
+  border: 6px solid #eaf8fa;
+  border-radius: 50%;
+  box-shadow: 0 14px 30px rgba(7, 152, 165, 0.22);
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.custom-trip-success-eyebrow {
+  display: block;
+  margin-top: 22px;
+  color: #0798a5;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+/* TITLE */
+
+.custom-trip-success h3 {
+  margin-top: 10px;
+  color: #082f49;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.12;
+}
+
+/* DESCRIPTION */
+
+.custom-trip-success p {
+  max-width: 390px;
+  margin: 13px auto 0;
+  color: #718096;
+  font-size: 0.78rem;
+  line-height: 1.7;
+}
+
+/* ACTIONS */
+
+.custom-trip-success-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.custom-trip-success-edit,
+.custom-trip-success-close {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding-inline: 20px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* EDIT BUTTON */
+
+.custom-trip-success-edit {
+  color: #05658b;
+  background: #ffffff;
+  border: 1px solid rgba(5, 101, 139, 0.25);
+}
+
+.custom-trip-success-edit:hover {
+  color: #ffffff;
+  background: #05658b;
+  border-color: #05658b;
+  transform: translateY(-2px);
+}
+
+/* PACKAGES BUTTON */
+
+.custom-trip-success-close {
+  color: #082f49;
+  background: #fca51a;
+  border: 1px solid #fca51a;
+  box-shadow: 0 8px 20px rgba(252, 165, 26, 0.2);
+}
+
+.custom-trip-success-close:hover {
+  background: #ffb32e;
+  border-color: #ffb32e;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(252, 165, 26, 0.28);
+}
+
+/* POPUP ANIMATION */
+
+@keyframes customTripPopupIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* ==================================================
+   CUSTOM TRIP SUCCESS POPUP ENDED
+================================================== */
+
+/* ==================================================
+   CUSTOM TRIP FORM CARD ENDED
+================================================== */
+
+/* ==================================================
+   CUSTOM TRIP RESPONSIVE STARTED
+================================================== */
+
+@media (max-width: 1050px) {
+  .custom-trip-hero {
+    min-height: auto;
+    padding-block: 60px;
+  }
+
+  .custom-trip-container {
+    grid-template-columns: 1fr;
+  }
+
+  .custom-trip-content {
+    max-width: 100%;
+  }
+
+  .custom-trip-form-card {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 700px) {
+  .custom-trip-hero {
+    padding-block: 45px;
+  }
+
+  .custom-trip-title {
+    font-size: clamp(2.75rem, 11vw, 3.7rem);
+  }
+
+  .custom-trip-description {
+    font-size: 0.82rem;
+  }
+
+  .selected-package-card {
+    grid-template-columns: 75px minmax(0, 1fr);
+  }
+
+  .selected-package-image {
+    width: 75px;
+    height: 68px;
+  }
+
+  .selected-package-check {
+    display: none;
+  }
+
+  .custom-trip-form-card {
+    padding: 24px 18px;
+    border-radius: 20px;
+  }
+
+  .custom-trip-form {
+    grid-template-columns: 1fr;
+  }
+
+  .custom-trip-field-full {
+    grid-column: auto;
+  }
+
+  .custom-trip-style-options {
+    gap: 7px;
+  }
+
+  .custom-trip-trust {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  /* ==================================================
+     TRIP PREFERENCES SUMMARY MOBILE STARTED
+  ================================================== */
+
+  .trip-preferences-summary {
+    padding: 18px;
+    border-radius: 17px;
+  }
+
+  .trip-preferences-summary-grid {
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+
+  .trip-preference-item {
+    justify-content: space-between;
+  }
+
+  /* ==================================================
+     TRIP PREFERENCES SUMMARY MOBILE ENDED
+  ================================================== */
+
+  /* ==================================================
+   CUSTOM TRIP SUCCESS POPUP MOBILE STARTED
+================================================== */
+
+  .custom-trip-success {
+    padding: 18px;
+  }
+
+  .custom-trip-success-popup {
+    padding: 34px 22px 28px;
+    border-radius: 22px;
+  }
+
+  .custom-trip-success h3 {
+    font-size: 1.7rem;
+  }
+
+  .custom-trip-success-actions {
+    flex-direction: column;
+  }
+
+  .custom-trip-success-edit,
+  .custom-trip-success-close {
+    width: 100%;
+  }
+
+  /* ==================================================
+   CUSTOM TRIP SUCCESS POPUP MOBILE ENDED
+================================================== */
+}
+
+/* ==================================================
+   CUSTOM TRIP RESPONSIVE ENDED
+================================================== */
+
+/* ==================================================
+   CUSTOM TRIP PAGE ENDED
+================================================== */
+
+/* ==================================================
+   CUSTOM TRIP HERO — HEIGHT COMPRESSION
+================================================== */
+
+.custom-trip-hero {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+/* ==================================================
+   HERO TO FOOTER GAP
+================================================== */
+
+.custom-trip-hero {
+  margin-bottom: 66px;
+}
+
+.custom-trip-title {
+  margin-top: 8px;
+  font-size: clamp(2.8rem, 4vw, 4.35rem);
+  line-height: 0.94;
+}
+
+.custom-trip-description {
+  margin-top: 10px;
+}
+
+.trip-preferences-summary {
+  margin-top: 14px;
+  padding: 13px 20px;
+}
+
+.trip-preferences-summary-heading {
+  padding-bottom: 10px;
+}
+
+.trip-preferences-summary-grid {
+  margin-top: 11px;
+  gap: 7px 22px;
+}
+
+.trip-preference-wishes {
+  margin-top: 11px;
+  padding-top: 10px;
+}
+
+.custom-trip-trust {
+  margin-top: 10px;
+}
+
+/* RIGHT FORM CARD */
+
+.custom-trip-form-card {
+  padding-top: 24px;
+  padding-bottom: 18px;
+}
+
+.custom-trip-form-heading {
+  margin-bottom: 14px;
+}
+
+.custom-trip-form {
+  row-gap: 10px;
+}
+
+/* ==================================================
+   CUSTOM TRIP FORM — COMPACT HEIGHT
+================================================== */
+
+.custom-trip-form-card {
+  padding: 18px 30px 14px !important;
+}
+
+/* FORM HEADING */
+
+.custom-trip-form-heading {
+  margin-bottom: 8px !important;
+}
+
+.custom-trip-form-heading h2 {
+  margin-top: 4px !important;
+  margin-bottom: 0 !important;
+}
+
+.custom-trip-form-heading p {
+  margin-top: 6px !important;
+  margin-bottom: 0 !important;
+  line-height: 1.4;
+}
+
+/* FORM GRID */
+
+.custom-trip-form {
+  row-gap: 6px !important;
+  column-gap: 16px;
+}
+
+/* FIELD LABELS */
+
+.custom-trip-field label {
+  margin-bottom: 4px !important;
+}
+
+/* INPUTS + SELECTS */
+
+.custom-trip-field input,
+.custom-trip-field select {
+  height: 38px !important;
+  min-height: 38px !important;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+/* CONTACT DETAILS */
+
+.custom-trip-contact-heading {
+  margin-top: 0 !important;
+  padding-top: 6px !important;
+}
+
+.custom-trip-contact-heading p {
+  margin-top: 2px !important;
+  margin-bottom: 0 !important;
+}
+
+/* FORM NOTE */
+
+.custom-trip-form-note {
+  margin-top: 0 !important;
+  padding: 0 !important;
+  min-height: 28px;
+}
+
+.custom-trip-form-note p {
+  margin: 0 !important;
+  line-height: 1.35;
+}
+
+/* SUBMIT BUTTON */
+
+.custom-trip-submit {
+  height: 40px !important;
+  min-height: 40px !important;
+  margin-top: 2px !important;
+  padding-block: 7px !important;
+}

@@ -1,0 +1,6333 @@
+/* ==================================================
+   INDIA DESTINATIONS HERO SECTION STARTED
+================================================== */
+
+.destinations-hero {
+  position: relative;
+  min-height: calc(100vh - var(--header-height));
+  overflow: hidden;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+}
+
+/* Background Started */
+
+.destinations-hero-background {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+}
+
+.destinations-hero-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.destinations-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(4, 37, 58, 0.94) 0%,
+      rgba(4, 37, 58, 0.82) 37%,
+      rgba(4, 37, 58, 0.48) 65%,
+      rgba(4, 37, 58, 0.26) 100%
+    ),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.05), rgba(0, 25, 42, 0.28));
+}
+
+/* Background Ended */
+
+/* Container Started */
+
+.destinations-hero-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.72fr);
+  align-items: center;
+  gap: clamp(60px, 7vw, 110px);
+  padding-block: 58px;
+}
+
+/* Container Ended */
+
+/* Hero Content Started */
+
+.destinations-hero-content {
+  max-width: 710px;
+}
+
+.destinations-hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 22px;
+
+  color: #bfeef1;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.destinations-hero-eyebrow span {
+  color: #ffa91f;
+  font-size: 1rem;
+}
+
+.destinations-hero-title {
+  margin: 0;
+
+  color: #ffffff;
+  font-family: var(--font-heading);
+  font-size: clamp(3.2rem, 4.45vw, 4.9rem);
+  font-weight: 500;
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+}
+
+.destinations-hero-title span {
+  display: block;
+  color: #c9f0ef;
+}
+
+.destinations-hero-description {
+  max-width: 650px;
+  margin: 27px 0 0;
+
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+
+/* Hero Content Ended */
+
+/* Hero Actions Started */
+
+.destinations-hero-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 17px;
+  margin-top: 31px;
+}
+
+.destinations-hero-primary-btn,
+.destinations-hero-secondary-btn {
+  min-height: 54px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+
+  padding: 0 26px;
+  border-radius: 999px;
+
+  font-size: 0.91rem;
+  font-weight: 700;
+
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.destinations-hero-primary-btn {
+  background: #ffa51c;
+  color: #082f49;
+}
+
+.destinations-hero-primary-btn:hover {
+  transform: translateY(-3px);
+  background: #ffb535;
+}
+
+.destinations-hero-secondary-btn {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(8px);
+}
+
+.destinations-hero-secondary-btn:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.14);
+}
+
+/* Hero Actions Ended */
+
+/* Hero Benefits Started */
+
+.destinations-hero-benefits {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+  margin-top: 32px;
+
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+
+.destinations-hero-benefits span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.destinations-hero-benefits strong {
+  color: #54d1d1;
+  font-size: 0.9rem;
+}
+
+/* Hero Benefits Ended */
+
+/* Destination Finder Card Started */
+
+.destinations-hero-card {
+  width: 100%;
+  max-width: 425px;
+  justify-self: end;
+
+  padding: 27px 31px 24px;
+
+  border: 1px solid rgba(255, 255, 255, 0.52);
+  border-radius: 25px;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  box-shadow: 0 24px 70px rgba(0, 26, 43, 0.25);
+
+  backdrop-filter: blur(15px);
+}
+
+.destinations-hero-card::before {
+  content: "";
+  display: block;
+  width: 74px;
+  height: 4px;
+  margin: -32px auto 27px;
+
+  border-radius: 0 0 5px 5px;
+
+  background: linear-gradient(90deg, #ffa51c 0 42%, #16a5aa 42% 100%);
+}
+
+.destinations-hero-card-eyebrow {
+  display: block;
+  margin-bottom: 11px;
+
+  color: #0797a2;
+  font-size: 0.69rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.destinations-hero-card h2 {
+  margin: 0;
+
+  color: #082f49;
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 2.2vw, 2.35rem);
+  font-weight: 500;
+  line-height: 1.08;
+}
+
+.destinations-hero-card h2 span {
+  display: block;
+  color: #087c9e;
+}
+
+.destinations-hero-card > p {
+  margin: 13px 0 20px;
+
+  color: #687c8c;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+/* Destination Finder Card Ended */
+
+/* Quick Destination Links Started */
+
+.destinations-hero-quick-links {
+  display: grid;
+  gap: 7px;
+}
+
+.destinations-hero-quick-links a {
+  min-height: 53px;
+  display: grid;
+  grid-template-columns: 35px 1fr auto;
+  align-items: center;
+  gap: 10px;
+
+  padding: 8px 13px;
+
+  border: 1px solid #d9e9ed;
+  border-radius: 13px;
+
+  background: #f9fcfd;
+
+  transition:
+    transform 0.22s ease,
+    border-color 0.22s ease,
+    background-color 0.22s ease;
+}
+
+.destinations-hero-quick-links a:hover {
+  transform: translateX(4px);
+  border-color: #9fd9df;
+  background: #effafb;
+}
+
+.quick-link-icon {
+  width: 33px;
+  height: 33px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: #e3f7f8;
+  color: #079ca5;
+
+  font-size: 1.1rem;
+}
+
+.destinations-hero-quick-links a > span:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.destinations-hero-quick-links strong {
+  color: #0b3b56;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.destinations-hero-quick-links small {
+  color: #7a8d99;
+  font-size: 0.68rem;
+}
+
+.destinations-hero-quick-links b {
+  color: #079aa5;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Quick Destination Links Ended */
+
+/* Card Bottom Link Started */
+
+.destinations-hero-card-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 17px;
+  padding-top: 16px;
+
+  border-top: 1px solid #dbe9ed;
+
+  color: #087e9d;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.destinations-hero-card-link span {
+  transition: transform 0.22s ease;
+}
+
+.destinations-hero-card-link:hover span {
+  transform: translateX(4px);
+}
+
+/* Card Bottom Link Ended */
+
+/* ==================================================
+   INDIA DESTINATIONS HERO RESPONSIVE STARTED
+================================================== */
+
+@media (max-width: 1050px) {
+  .destinations-hero {
+    min-height: auto;
+  }
+
+  .destinations-hero-container {
+    grid-template-columns: 1fr;
+    gap: 45px;
+    padding-block: 70px;
+  }
+
+  .destinations-hero-content {
+    max-width: 720px;
+  }
+
+  .destinations-hero-card {
+    justify-self: start;
+    max-width: 520px;
+  }
+}
+
+@media (max-width: 700px) {
+  .destinations-hero-container {
+    padding-block: 55px;
+  }
+
+  .destinations-hero-title {
+    font-size: clamp(2.8rem, 13vw, 4rem);
+  }
+
+  .destinations-hero-description {
+    font-size: 0.94rem;
+  }
+
+  .destinations-hero-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .destinations-hero-primary-btn,
+  .destinations-hero-secondary-btn {
+    width: 100%;
+  }
+
+  .destinations-hero-benefits {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 11px;
+  }
+
+  .destinations-hero-card {
+    max-width: 100%;
+    padding: 28px 20px 24px;
+  }
+
+  .destinations-hero-card::before {
+    margin-top: -28px;
+  }
+}
+
+/* ==================================================
+   INDIA DESTINATIONS HERO RESPONSIVE ENDED
+================================================== */
+
+/* ==================================================
+   DESTINATIONS HERO DESKTOP HEIGHT FIX STARTED
+================================================== */
+
+@media (min-width: 1051px) {
+  .destinations-hero {
+    min-height: 0;
+    height: 690px;
+  }
+
+  .destinations-hero-container {
+    height: 100%;
+    align-items: center;
+  }
+}
+
+/* ==================================================
+   DESTINATIONS HERO DESKTOP HEIGHT FIX ENDED
+================================================== */
+
+/* ==================================================
+   DESTINATIONS HERO CONTENT WIDTH FIX STARTED
+================================================== */
+
+@media (min-width: 1051px) {
+  .destinations-hero-container {
+    width: calc(100% - 264px);
+    max-width: 1336px;
+    margin-inline: auto;
+  }
+}
+
+/* ==================================================
+   DESTINATIONS HERO CONTENT WIDTH FIX ENDED
+================================================== */
+
+/* ==================================================
+   INDIA DESTINATIONS HERO SECTION ENDED
+================================================== */
+
+/* ==================================================
+   EXPLORE INDIA BY REGION SECTION STARTED
+================================================== */
+
+.destination-regions {
+  min-height: calc(100vh - var(--header-height));
+  display: flex;
+  align-items: center;
+  padding-block: 28px;
+  background:
+    radial-gradient(
+      circle at 10% 15%,
+      rgba(7, 152, 165, 0.08),
+      transparent 27%
+    ),
+    linear-gradient(180deg, #f8fcfd 0%, #ffffff 100%);
+}
+
+.destination-regions-container {
+  width: calc(100% - 264px);
+  max-width: 1336px;
+  margin-inline: auto;
+}
+
+/* SECTION HEADING */
+
+.destination-regions-heading {
+  max-width: 760px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.destination-regions-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  color: #0798a5;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.destination-regions-heading h2 {
+  margin-top: 10px;
+  color: #082f49;
+  font-family: var(--font-heading);
+  font-size: clamp(2.45rem, 3.5vw, 3.55rem);
+  font-weight: 400;
+  line-height: 1.02;
+}
+
+.destination-regions-heading h2 span {
+  display: block;
+  color: #05658b;
+}
+
+.destination-regions-heading p {
+  max-width: 650px;
+  margin: -30px auto 0;
+  color: #718096;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+/* REGION GRID */
+
+.destination-regions-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-rows: 175px;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.destination-region-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 22px;
+  background: #082f49;
+  box-shadow: 0 14px 34px rgba(8, 47, 73, 0.12);
+}
+
+.destination-region-card-large {
+  grid-column: span 2;
+}
+
+.destination-region-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.55s ease;
+}
+
+.destination-region-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(3, 31, 48, 0.06) 18%,
+    rgba(3, 31, 48, 0.86) 100%
+  );
+}
+
+.destination-region-card:hover img {
+  transform: scale(1.055);
+}
+
+/* CARD CONTENT */
+
+.destination-region-content {
+  position: absolute;
+  inset: auto 0 0;
+  z-index: 2;
+  padding: 17px 18px 16px;
+}
+
+.destination-region-number {
+  position: absolute;
+  right: 20px;
+  bottom: 14px;
+  color: rgba(255, 255, 255, 0.24);
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.destination-region-label {
+  display: block;
+  color: #6ee8ee;
+  font-size: 0.56rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.destination-region-content h3 {
+  margin-top: 5px;
+  color: #ffffff;
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 400;
+  line-height: 1.08;
+}
+
+.destination-region-content p {
+  max-width: 310px;
+  margin-top: 4px;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 0.63rem;
+  line-height: 1.45;
+}
+
+.destination-region-content a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 7px;
+  color: #ffffff;
+  font-size: 0.62rem;
+  font-weight: 700;
+}
+
+.destination-region-content a span {
+  transition: transform 0.25s ease;
+}
+
+.destination-region-content a:hover span {
+  transform: translateX(4px);
+}
+
+/* ==================================================
+   EXPLORE INDIA BY REGION RESPONSIVE STARTED
+================================================== */
+
+@media (max-width: 1050px) {
+  .destination-regions {
+    min-height: auto;
+    padding-block: 60px;
+  }
+
+  .destination-regions-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: 230px;
+  }
+
+  .destination-region-card-large {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 700px) {
+  .destination-regions {
+    padding-block: 52px;
+  }
+
+  .destination-regions-heading {
+    text-align: left;
+  }
+
+  .destination-regions-heading h2 {
+    font-size: clamp(2.35rem, 10vw, 3.25rem);
+  }
+
+  .destination-regions-heading p {
+    margin-left: 0;
+  }
+
+  .destination-regions-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 245px;
+    gap: 14px;
+    margin-top: 28px;
+  }
+}
+
+/* ==================================================
+   EXPLORE INDIA BY REGION RESPONSIVE ENDED
+================================================== */
+
+/* ==================================================
+   EXPLORE INDIA BY REGION - DESKTOP HEIGHT FIX STARTED
+================================================== */
+
+@media (min-width: 1051px) {
+  .destination-regions {
+    min-height: calc(100vh - var(--header-height));
+    padding-block: 22px;
+  }
+
+  .destination-regions-grid {
+    grid-auto-rows: 185px;
+    gap: 12px;
+  }
+
+  .destination-region-card {
+    min-height: 175px;
+    height: 175px;
+  }
+}
+
+/* ==================================================
+   EXPLORE INDIA BY REGION - DESKTOP HEIGHT FIX ENDED
+================================================== */
+
+/* ==================================================
+   EXPLORE INDIA BY REGION SECTION ENDED
+================================================== */
+
+/* ==================================================
+   POPULAR INDIA DESTINATIONS SECTION STARTED
+================================================== */
+
+.popular-india-destinations {
+  scroll-margin-top: calc(var(--header-height) - 100px);
+  min-height: calc(100vh - var(--header-height));
+  display: flex;
+  align-items: flex-start;
+  padding-block: 34px;
+  background:
+    radial-gradient(
+      circle at 88% 12%,
+      rgba(252, 165, 26, 0.07),
+      transparent 28%
+    ),
+    linear-gradient(180deg, #ffffff 0%, #f5fbfc 100%);
+}
+
+.popular-india-destinations-container {
+  width: calc(100% - 264px);
+  max-width: 1336px;
+  margin-inline: auto;
+}
+
+/* SECTION HEADING */
+
+.popular-india-destinations-heading {
+  max-width: 780px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.popular-india-destinations-eyebrow {
+  display: inline-flex;
+  color: #0798a5;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.popular-india-destinations-heading h2 {
+  margin: 10px 0 0;
+
+  color: #082f49;
+  font-family: var(--font-heading);
+  font-size: clamp(2.45rem, 3.45vw, 3.55rem);
+  font-weight: 400;
+  line-height: 1.02;
+}
+
+.popular-india-destinations-heading h2 span {
+  display: block;
+  color: #05658b;
+}
+
+.popular-india-destinations-heading p {
+  max-width: 670px;
+  margin: 10px auto 0;
+
+  color: #718096;
+  font-size: 0.8rem;
+  line-height: 1.65;
+}
+
+/* DESTINATION GRID */
+
+/* ==================================================
+   POPULAR DESTINATIONS SLIDER STARTED
+================================================== */
+
+.popular-destinations-slider {
+  --destination-slider-gap: 16px;
+
+  position: relative;
+  margin-top: 20px;
+}
+
+/* SLIDER CONTROLS */
+
+.popular-destinations-slider-controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 9px;
+  margin-bottom: 12px;
+}
+
+.popular-destinations-arrow {
+  width: 42px;
+  height: 42px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  color: #05658b;
+  background: #ffffff;
+
+  border: 1px solid rgba(5, 101, 139, 0.2);
+  border-radius: 50%;
+
+  box-shadow: 0 7px 18px rgba(8, 47, 73, 0.07);
+
+  cursor: pointer;
+
+  font-size: 1rem;
+
+  transition:
+    color 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    opacity 0.25s ease;
+}
+
+.popular-destinations-arrow:hover:not(:disabled) {
+  color: #ffffff;
+  background: #0798a5;
+  border-color: #0798a5;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 10px 23px rgba(7, 152, 165, 0.2);
+}
+
+/* DISABLED FIRST / LAST ARROW */
+
+.popular-destinations-arrow:disabled {
+  color: #aab8c1;
+  background: #f1f5f6;
+  border-color: #e0e8eb;
+
+  box-shadow: none;
+
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* VIEWPORT */
+
+.popular-destinations-slider-viewport {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* SLIDER TRACK */
+
+.popular-destinations-grid {
+  display: flex;
+  align-items: stretch;
+  gap: var(--destination-slider-gap);
+
+  margin: 0;
+
+  will-change: transform;
+
+  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* THREE CARDS VISIBLE */
+
+.popular-destination-card {
+  flex: 0 0 calc((100% - (var(--destination-slider-gap) * 2)) / 3);
+}
+
+/* DOTS */
+
+.popular-destinations-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+  margin-top: 17px;
+}
+
+.popular-destinations-dot {
+  width: 7px;
+  height: 7px;
+
+  padding: 0;
+
+  background: #c8dce1;
+
+  border: 0;
+  border-radius: 999px;
+
+  cursor: pointer;
+
+  transition:
+    width 0.3s ease,
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.popular-destinations-dot:hover {
+  background: #79cbd1;
+  transform: scale(1.15);
+}
+
+.popular-destinations-dot.is-active {
+  width: 25px;
+  background: #0798a5;
+}
+
+/* ==================================================
+   POPULAR DESTINATIONS SLIDER ENDED
+================================================== */
+
+/* DESTINATION CARD */
+
+.popular-destination-card {
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #dcecef;
+  border-radius: 22px;
+  box-shadow: 0 14px 34px rgba(8, 47, 73, 0.075);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.popular-destination-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(7, 152, 165, 0.28);
+  box-shadow: 0 22px 44px rgba(8, 47, 73, 0.12);
+}
+
+/* IMAGE */
+
+.popular-destination-image {
+  position: relative;
+  height: 165px;
+  overflow: hidden;
+}
+
+.popular-destination-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(4, 37, 58, 0.03) 35%,
+    rgba(4, 37, 58, 0.35) 100%
+  );
+}
+
+.popular-destination-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.popular-destination-card:hover .popular-destination-image img {
+  transform: scale(1.055);
+}
+
+.popular-destination-number {
+  position: absolute;
+  z-index: 2;
+  right: 15px;
+  bottom: 10px;
+  color: rgba(255, 255, 255, 0.78);
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  line-height: 1;
+}
+
+.popular-destination-badge {
+  position: absolute;
+  z-index: 2;
+  top: 13px;
+  left: 13px;
+  padding: 7px 11px;
+  color: #ffffff;
+  background: rgba(8, 47, 73, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  backdrop-filter: blur(8px);
+  font-size: 0.58rem;
+  font-weight: 700;
+}
+
+/* CARD CONTENT */
+
+.popular-destination-content {
+  padding: 16px 18px 17px;
+}
+
+.popular-destination-location {
+  display: block;
+  color: #0798a5;
+  font-size: 0.56rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.popular-destination-content h3 {
+  margin-top: 5px;
+  color: #082f49;
+  font-family: var(--font-heading);
+  font-size: 1.38rem;
+  font-weight: 400;
+}
+
+.popular-destination-content p {
+  margin-top: 6px;
+  color: #718096;
+  font-size: 0.68rem;
+  line-height: 1.55;
+}
+
+.popular-destination-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 12px;
+  padding-top: 11px;
+  border-top: 1px solid #e4eef1;
+  color: #708391;
+  font-size: 0.58rem;
+  font-weight: 600;
+}
+
+.popular-destination-content > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 12px;
+  color: #05658b;
+  font-size: 0.65rem;
+  font-weight: 700;
+}
+
+.popular-destination-content > a span {
+  transition: transform 0.25s ease;
+}
+
+.popular-destination-content > a:hover span {
+  transform: translateX(4px);
+}
+
+/* ==================================================
+   POPULAR INDIA DESTINATIONS RESPONSIVE STARTED
+================================================== */
+
+@media (max-width: 1050px) {
+  .popular-india-destinations {
+    min-height: auto;
+    padding-block: 60px;
+  }
+
+  .popular-india-destinations-container {
+    width: min(100% - 48px, 1180px);
+  }
+
+  /* TABLET — 2 CARDS VISIBLE */
+
+  .popular-destination-card {
+    flex-basis: calc((100% - var(--destination-slider-gap)) / 2);
+  }
+}
+
+@media (max-width: 700px) {
+  .popular-india-destinations {
+    padding-block: 52px;
+  }
+
+  .popular-india-destinations-container {
+    width: min(100% - 32px, 1180px);
+  }
+
+  .popular-india-destinations-heading {
+    text-align: left;
+  }
+
+  .popular-india-destinations-heading h2 {
+    font-size: clamp(2.35rem, 10vw, 3.25rem);
+  }
+
+  .popular-india-destinations-heading p {
+    margin-left: 0;
+  }
+
+  /* MOBILE SLIDER */
+
+  .popular-destinations-slider {
+    --destination-slider-gap: 14px;
+  }
+
+  .popular-destination-card {
+    flex-basis: 100%;
+  }
+
+  .popular-destinations-slider-controls {
+    justify-content: flex-start;
+  }
+
+  .popular-destinations-arrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  .popular-destinations-dots {
+    margin-top: 15px;
+  }
+
+  .popular-destination-image {
+    height: 210px;
+  }
+}
+
+/* ==================================================
+   POPULAR DESTINATIONS TOP GAP FIX STARTED
+================================================== */
+
+@media (min-width: 1051px) {
+  .popular-india-destinations-heading {
+    margin-bottom: 0;
+  }
+
+  .popular-destinations-slider {
+    margin-top: -18px;
+  }
+
+  .popular-destinations-slider-controls {
+    margin-bottom: 0;
+  }
+}
+
+/* ==================================================
+   POPULAR DESTINATIONS TOP GAP FIX ENDED
+================================================== */
+
+/* ==================================================
+   POPULAR INDIA DESTINATIONS RESPONSIVE ENDED
+================================================== */
+
+/* ==================================================
+   POPULAR INDIA DESTINATIONS SECTION ENDED
+================================================== */
+
+/* ==================================================
+   BEST TIME TO VISIT INDIA SECTION STARTED
+================================================== */
+
+.india-seasons {
+  min-height: calc(100vh - var(--header-height));
+
+  display: flex;
+  align-items: center;
+
+  padding-block: 28px;
+
+  background: #f8fbfc;
+}
+
+.india-seasons-container {
+  width: calc(100% - 264px);
+  max-width: 1336px;
+  margin-inline: auto;
+}
+
+/* ==================================================
+   BEST TIME TO VISIT INDIA HEADING STARTED
+================================================== */
+
+.india-seasons-heading {
+  max-width: 790px;
+  margin-inline: auto;
+
+  text-align: center;
+}
+
+.india-seasons-eyebrow {
+  display: inline-flex;
+  align-items: center;
+
+  color: #0798a5;
+
+  font-size: 0.72rem;
+  font-weight: 700;
+
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.india-seasons-heading h2 {
+  margin: 10px 0 0;
+
+  color: #082f49;
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(2.45rem, 3.45vw, 3.55rem);
+  font-weight: 400;
+
+  line-height: 1.02;
+}
+
+.india-seasons-heading h2 span {
+  display: block;
+
+  color: #06789e;
+}
+
+.india-seasons-heading p {
+  max-width: 710px;
+
+  margin: 12px auto 0;
+
+  color: #718096;
+
+  font-size: 0.81rem;
+  line-height: 1.65;
+}
+
+/* ==================================================
+   BEST TIME TO VISIT INDIA HEADING ENDED
+================================================== */
+
+/* ==================================================
+   SEASON CARDS GRID STARTED
+================================================== */
+
+.india-seasons-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 16px;
+
+  margin-top: 30px;
+}
+
+/* ==================================================
+   SEASON CARDS GRID ENDED
+================================================== */
+
+/* ==================================================
+   SEASON CARD STARTED
+================================================== */
+
+.india-season-card {
+  position: relative;
+
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+
+  background: #ffffff;
+
+  border: 1px solid #e2edf0;
+  border-radius: 22px;
+
+  box-shadow: 0 15px 35px rgba(8, 47, 73, 0.08);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.india-season-card:hover {
+  transform: translateY(-7px);
+
+  border-color: rgba(7, 152, 165, 0.26);
+
+  box-shadow: 0 23px 48px rgba(8, 47, 73, 0.14);
+}
+
+/* ==================================================
+   SEASON CARD ENDED
+================================================== */
+
+/* ==================================================
+   SEASON IMAGE STARTED
+================================================== */
+
+.india-season-image {
+  position: relative;
+
+  height: 205px;
+
+  overflow: visible;
+
+  background: #dcecef;
+}
+
+.india-season-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.55s ease;
+}
+
+.india-season-card:hover .india-season-image img {
+  transform: scale(1.055);
+}
+
+/* Subtle image shade */
+
+.india-season-image::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  pointer-events: none;
+
+  background: linear-gradient(
+    180deg,
+    rgba(4, 37, 58, 0.02) 40%,
+    rgba(4, 37, 58, 0.18) 100%
+  );
+}
+
+/* ==================================================
+   SEASON IMAGE ENDED
+================================================== */
+
+/* ==================================================
+   SEASON ICON STARTED
+================================================== */
+
+.india-season-icon {
+  position: absolute;
+
+  z-index: 3;
+
+  left: 20px;
+  bottom: -21px;
+
+  width: 48px;
+  height: 48px;
+
+  display: grid;
+  place-items: center;
+
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+
+  color: #ffffff;
+
+  font-size: 1.2rem;
+  font-weight: 700;
+
+  box-shadow: 0 7px 18px rgba(8, 47, 73, 0.14);
+}
+
+/* WINTER */
+
+.india-season-card-winter .india-season-icon {
+  background: #54b9da;
+}
+
+/* SPRING */
+
+.india-season-card-spring .india-season-icon {
+  background: #ef6073;
+}
+
+/* SUMMER */
+
+.india-season-card-summer .india-season-icon {
+  background: #efa62e;
+}
+
+/* MONSOON */
+
+.india-season-card-monsoon .india-season-icon {
+  background: #128c58;
+}
+
+/* ==================================================
+   SEASON ICON ENDED
+================================================== */
+
+/* ==================================================
+   SEASON CARD CONTENT STARTED
+================================================== */
+
+.india-season-card-content {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+
+  padding: 34px 22px 21px;
+}
+
+/* MONTHS */
+
+.india-season-months {
+  display: block;
+
+  font-size: 0.63rem;
+  font-weight: 700;
+
+  letter-spacing: 0.15em;
+}
+
+/* WINTER */
+
+.india-season-card-winter .india-season-months,
+.india-season-card-winter .india-season-card-content > a {
+  color: #0785b4;
+}
+
+/* SPRING */
+
+.india-season-card-spring .india-season-months,
+.india-season-card-spring .india-season-card-content > a {
+  color: #df5267;
+}
+
+/* SUMMER */
+
+.india-season-card-summer .india-season-months,
+.india-season-card-summer .india-season-card-content > a {
+  color: #cf7d08;
+}
+
+/* MONSOON */
+
+.india-season-card-monsoon .india-season-months,
+.india-season-card-monsoon .india-season-card-content > a {
+  color: #087c4d;
+}
+
+/* TITLE */
+
+.india-season-card-content h3 {
+  margin: 7px 0 0;
+
+  color: #082f49;
+
+  font-family: var(--font-heading);
+
+  font-size: 1.47rem;
+  font-weight: 400;
+
+  line-height: 1.15;
+}
+
+/* DESCRIPTION */
+
+.india-season-card-content > p {
+  min-height: 48px;
+
+  margin: 11px 0 0;
+
+  color: #687b8e;
+
+  font-size: 0.72rem;
+  line-height: 1.58;
+}
+
+/* ==================================================
+   SEASON CARD CONTENT ENDED
+================================================== */
+
+/* ==================================================
+   SEASON DESTINATION TAGS STARTED
+================================================== */
+
+.india-season-destinations {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin-top: 15px;
+}
+
+.india-season-destinations span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 28px;
+
+  padding: 4px 10px;
+
+  border-radius: 999px;
+
+  font-size: 0.58rem;
+  font-weight: 600;
+}
+
+/* WINTER TAGS */
+
+.india-season-card-winter .india-season-destinations span {
+  color: #17688c;
+
+  background: #edf8fc;
+}
+
+/* SPRING TAGS */
+
+.india-season-card-spring .india-season-destinations span {
+  color: #bb4054;
+
+  background: #fff0f2;
+}
+
+/* SUMMER TAGS */
+
+.india-season-card-summer .india-season-destinations span {
+  color: #b66b05;
+
+  background: #fff6e8;
+}
+
+/* MONSOON TAGS */
+
+.india-season-card-monsoon .india-season-destinations span {
+  color: #087248;
+
+  background: #eaf7f0;
+}
+
+/* ==================================================
+   SEASON DESTINATION TAGS ENDED
+================================================== */
+
+/* ==================================================
+   SEASON EXPLORE LINK STARTED
+================================================== */
+
+.india-season-card-content > a {
+  display: inline-flex;
+  align-items: center;
+
+  align-self: flex-start;
+
+  gap: 8px;
+
+  margin-top: 18px;
+
+  font-size: 0.66rem;
+  font-weight: 700;
+
+  transition: opacity 0.25s ease;
+}
+
+.india-season-card-content > a span {
+  transition: transform 0.25s ease;
+}
+
+.india-season-card-content > a:hover {
+  opacity: 0.82;
+}
+
+.india-season-card-content > a:hover span {
+  transform: translateX(5px);
+}
+
+/* ==================================================
+   SEASON EXPLORE LINK ENDED
+================================================== */
+
+/* ==================================================
+   BEST TIME TO VISIT INDIA DESKTOP HEIGHT FIX STARTED
+================================================== */
+
+@media (min-width: 1051px) {
+  .india-seasons {
+    min-height: calc(100vh - var(--header-height));
+
+    padding-block: 24px;
+  }
+
+  .india-seasons-grid {
+    margin-top: 27px;
+  }
+
+  .india-season-image {
+    height: 150px;
+  }
+
+  .india-season-card-content {
+    padding: 31px 21px 18px;
+  }
+
+  .india-season-card-content > p {
+    min-height: 45px;
+  }
+
+  .india-season-destinations {
+    margin-top: 12px;
+  }
+
+  .india-season-card-content > a {
+    margin-top: 15px;
+  }
+}
+
+/* ==================================================
+   BEST TIME TO VISIT INDIA DESKTOP HEIGHT FIX ENDED
+================================================== */
+
+/* ==================================================
+   BEST TIME TO VISIT INDIA TABLET STARTED
+================================================== */
+
+@media (max-width: 1050px) {
+  .india-seasons {
+    min-height: auto;
+
+    padding-block: 60px;
+  }
+
+  .india-seasons-container {
+    width: min(100% - 48px, 1180px);
+  }
+
+  .india-seasons-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+  }
+
+  .india-season-image {
+    height: 220px;
+  }
+}
+
+/* ==================================================
+   BEST TIME TO VISIT INDIA TABLET ENDED
+================================================== */
+
+/* ==================================================
+   BEST TIME TO VISIT INDIA MOBILE STARTED
+================================================== */
+
+@media (max-width: 700px) {
+  .india-seasons {
+    padding-block: 52px;
+  }
+
+  .india-seasons-container {
+    width: min(100% - 32px, 1180px);
+  }
+
+  .india-seasons-heading {
+    text-align: left;
+  }
+
+  .india-seasons-heading h2 {
+    font-size: clamp(2.35rem, 10vw, 3.25rem);
+  }
+
+  .india-seasons-heading p {
+    margin-left: 0;
+  }
+
+  .india-seasons-grid {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+
+    margin-top: 27px;
+  }
+
+  .india-season-image {
+    height: 220px;
+  }
+
+  .india-season-card-content > p {
+    min-height: 0;
+  }
+}
+
+/* ==================================================
+   BEST TIME TO VISIT INDIA MOBILE ENDED
+================================================== */
+
+/* ==================================================
+   BEST TIME TO VISIT INDIA SECTION ENDED
+================================================== */
+
+/* ==================================================
+   TRAVEL EXPERIENCES BY INTEREST SECTION STARTED
+================================================== */
+
+.travel-experiences-interest {
+  min-height: calc(100vh - var(--header-height));
+
+  display: flex;
+  align-items: center;
+
+  padding-block: 26px;
+
+  background: #ffffff;
+}
+
+.travel-experiences-interest-container {
+  width: calc(100% - 264px);
+  max-width: 1336px;
+  margin-inline: auto;
+}
+
+/* ==================================================
+   TRAVEL EXPERIENCES HEADING STARTED
+================================================== */
+
+.travel-experiences-interest-heading {
+  max-width: 800px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.travel-experiences-interest-eyebrow {
+  display: inline-flex;
+  align-items: center;
+
+  color: #078fa2;
+
+  font-size: 0.72rem;
+  font-weight: 700;
+
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.travel-experiences-interest-heading h2 {
+  margin: 10px 0 0;
+
+  color: #082f49;
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(2.45rem, 3.35vw, 3.45rem);
+  font-weight: 400;
+
+  line-height: 1.02;
+}
+
+.travel-experiences-interest-heading h2 span {
+  display: block;
+  color: #067ea4;
+}
+
+.travel-experiences-interest-heading p {
+  max-width: 700px;
+
+  margin: 12px auto 0;
+
+  color: #718096;
+
+  font-size: 0.8rem;
+  line-height: 1.65;
+}
+
+/* ==================================================
+   TRAVEL EXPERIENCES HEADING ENDED
+================================================== */
+
+/* ==================================================
+   EXPERIENCE CARDS GRID STARTED
+================================================== */
+
+.travel-experiences-interest-grid {
+  display: grid;
+
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+
+  gap: 14px;
+
+  margin-top: 28px;
+}
+
+/* ==================================================
+   EXPERIENCE CARDS GRID ENDED
+================================================== */
+
+/* ==================================================
+   EXPERIENCE CARD STARTED
+================================================== */
+
+.travel-interest-card {
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+
+  background: #ffffff;
+
+  border: 1px solid #e3edf0;
+  border-radius: 20px;
+
+  box-shadow: 0 12px 30px rgba(8, 47, 73, 0.07);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.travel-interest-card:hover {
+  transform: translateY(-6px);
+
+  border-color: rgba(7, 152, 165, 0.24);
+
+  box-shadow: 0 20px 42px rgba(8, 47, 73, 0.12);
+}
+
+/* ==================================================
+   EXPERIENCE CARD ENDED
+================================================== */
+
+/* ==================================================
+   EXPERIENCE IMAGE STARTED
+================================================== */
+
+.travel-interest-image {
+  position: relative;
+
+  height: 205px;
+
+  overflow: visible;
+
+  background: #eaf2f4;
+}
+
+.travel-interest-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.55s ease;
+}
+
+.travel-interest-card:hover .travel-interest-image img {
+  transform: scale(1.055);
+}
+
+.travel-interest-image::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  pointer-events: none;
+
+  background: linear-gradient(
+    180deg,
+    rgba(3, 31, 48, 0.02) 35%,
+    rgba(3, 31, 48, 0.14) 100%
+  );
+}
+
+/* ==================================================
+   EXPERIENCE IMAGE ENDED
+================================================== */
+
+/* ==================================================
+   EXPERIENCE ICON STARTED
+================================================== */
+
+.travel-interest-icon {
+  position: absolute;
+
+  z-index: 3;
+
+  left: 18px;
+  bottom: -22px;
+
+  width: 48px;
+  height: 48px;
+
+  display: grid;
+  place-items: center;
+
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+
+  font-size: 1.15rem;
+  font-weight: 700;
+
+  box-shadow: 0 6px 16px rgba(8, 47, 73, 0.13);
+}
+
+.travel-interest-card-mountains .travel-interest-icon {
+  color: #1682ad;
+  background: #e9f6fb;
+}
+
+.travel-interest-card-beaches .travel-interest-icon {
+  color: #168b65;
+  background: #eaf8f2;
+}
+
+.travel-interest-card-heritage .travel-interest-icon {
+  color: #a66b22;
+  background: #fff3e6;
+}
+
+.travel-interest-card-wildlife .travel-interest-icon {
+  color: #4d8d45;
+  background: #edf7eb;
+}
+
+.travel-interest-card-spiritual .travel-interest-icon {
+  color: #cf5770;
+  background: #fff0f3;
+}
+
+.travel-interest-card-adventure .travel-interest-icon {
+  color: #8151bf;
+  background: #f2ebfb;
+}
+
+/* ==================================================
+   EXPERIENCE ICON ENDED
+================================================== */
+
+/* ==================================================
+   EXPERIENCE CONTENT STARTED
+================================================== */
+
+.travel-interest-content {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+
+  padding: 33px 17px 17px;
+}
+
+.travel-interest-content h3 {
+  margin: 0;
+
+  color: #082f49;
+
+  font-family: var(--font-heading);
+
+  font-size: 1.35rem;
+  font-weight: 400;
+
+  line-height: 1.1;
+}
+
+.travel-interest-content p {
+  min-height: 78px;
+
+  margin: 8px 0 0;
+
+  color: #6f8191;
+
+  font-size: 0.68rem;
+  line-height: 1.5;
+}
+
+/* Arrow */
+
+.travel-interest-content > a {
+  width: 36px;
+  height: 36px;
+
+  display: grid;
+  place-items: center;
+
+  align-self: flex-end;
+
+  margin-top: auto;
+
+  border-radius: 50%;
+
+  font-size: 0.98rem;
+
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.travel-interest-card-mountains .travel-interest-content > a {
+  color: #167ea5;
+  background: #e7f4f9;
+}
+
+.travel-interest-card-beaches .travel-interest-content > a {
+  color: #167853;
+  background: #e7f6ef;
+}
+
+.travel-interest-card-heritage .travel-interest-content > a {
+  color: #9b611c;
+  background: #fff1df;
+}
+
+.travel-interest-card-wildlife .travel-interest-content > a {
+  color: #3f833a;
+  background: #edf6ea;
+}
+
+.travel-interest-card-spiritual .travel-interest-content > a {
+  color: #c94d68;
+  background: #fff0f3;
+}
+
+.travel-interest-card-adventure .travel-interest-content > a {
+  color: #7e4ab7;
+  background: #f1eafb;
+}
+
+.travel-interest-content > a:hover {
+  transform: translateX(4px);
+}
+
+/* ==================================================
+   EXPERIENCE CONTENT ENDED
+================================================== */
+
+/* ==================================================
+   SECTION CTA STARTED
+================================================== */
+
+.travel-experiences-interest-cta {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 26px;
+}
+
+.travel-experiences-interest-cta a {
+  min-height: 48px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 13px;
+
+  padding-inline: 32px;
+
+  border-radius: 999px;
+
+  color: #ffffff;
+  background: #087f9f;
+
+  font-size: 0.76rem;
+  font-weight: 700;
+
+  box-shadow: 0 10px 24px rgba(8, 127, 159, 0.16);
+
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.travel-experiences-interest-cta a:hover {
+  transform: translateY(-3px);
+
+  background: #0797a2;
+
+  box-shadow: 0 14px 30px rgba(7, 151, 162, 0.22);
+}
+
+/* ==================================================
+   SECTION CTA ENDED
+================================================== */
+
+/* ==================================================
+   SECTION TAGLINE STARTED
+================================================== */
+
+.travel-experiences-interest-tagline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+
+  margin-top: 18px;
+}
+
+.travel-experiences-interest-tagline > span {
+  width: 45px;
+  height: 1px;
+
+  background: #b8c9d1;
+}
+
+.travel-experiences-interest-tagline p {
+  margin: 0;
+
+  color: #8193a4;
+
+  font-size: 0.58rem;
+  font-weight: 700;
+
+  letter-spacing: 0.22em;
+}
+
+/* ==================================================
+   SECTION TAGLINE ENDED
+================================================== */
+
+/* ==================================================
+   TRAVEL EXPERIENCES DESKTOP HEIGHT FIX STARTED
+================================================== */
+
+@media (min-width: 1051px) {
+  .travel-experiences-interest {
+    min-height: calc(100vh - var(--header-height));
+    padding-block: 22px;
+  }
+
+  .travel-experiences-interest-grid {
+    margin-top: 24px;
+  }
+
+  .travel-interest-image {
+    height: 170px;
+  }
+
+  .travel-interest-content {
+    padding: 31px 15px 15px;
+  }
+
+  .travel-interest-content p {
+    min-height: 70px;
+  }
+
+  .travel-experiences-interest-cta {
+    margin-top: 22px;
+  }
+
+  .travel-experiences-interest-tagline {
+    margin-top: 14px;
+  }
+}
+
+/* ==================================================
+   TRAVEL EXPERIENCES DESKTOP HEIGHT FIX ENDED
+================================================== */
+
+/* ==================================================
+   TRAVEL EXPERIENCES TABLET STARTED
+================================================== */
+
+@media (max-width: 1050px) {
+  .travel-experiences-interest {
+    min-height: auto;
+    padding-block: 60px;
+  }
+
+  .travel-experiences-interest-container {
+    width: min(100% - 48px, 1180px);
+  }
+
+  .travel-experiences-interest-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 18px;
+  }
+
+  .travel-interest-image {
+    height: 200px;
+  }
+}
+
+/* ==================================================
+   TRAVEL EXPERIENCES TABLET ENDED
+================================================== */
+
+/* ==================================================
+   TRAVEL EXPERIENCES MOBILE STARTED
+================================================== */
+
+@media (max-width: 700px) {
+  .travel-experiences-interest {
+    padding-block: 52px;
+  }
+
+  .travel-experiences-interest-container {
+    width: min(100% - 32px, 1180px);
+  }
+
+  .travel-experiences-interest-heading {
+    text-align: left;
+  }
+
+  .travel-experiences-interest-heading h2 {
+    font-size: clamp(2.35rem, 10vw, 3.25rem);
+  }
+
+  .travel-experiences-interest-heading p {
+    margin-left: 0;
+  }
+
+  .travel-experiences-interest-grid {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .travel-interest-image {
+    height: 220px;
+  }
+
+  .travel-interest-content p {
+    min-height: 0;
+  }
+
+  .travel-experiences-interest-cta {
+    justify-content: flex-start;
+  }
+
+  .travel-experiences-interest-tagline {
+    justify-content: flex-start;
+
+    flex-wrap: wrap;
+  }
+}
+
+/* ==================================================
+   TRAVEL EXPERIENCES MOBILE ENDED
+================================================== */
+
+/* ==================================================
+   TRAVEL EXPERIENCES DESKTOP CARD HEIGHT FIX STARTED
+================================================== */
+
+@media (min-width: 1051px) {
+  .travel-experiences-interest {
+    min-height: calc(100vh - var(--header-height));
+    padding-block: 22px;
+  }
+
+  .travel-experiences-interest-grid {
+    margin-top: 24px;
+    align-items: start;
+  }
+
+  .travel-interest-card {
+    height: 295px;
+    min-height: 0;
+  }
+
+  .travel-interest-image {
+    height: 155px;
+    flex-shrink: 0;
+  }
+
+  .travel-interest-content {
+    height: 140px;
+    min-height: 0;
+
+    padding: 28px 14px 12px;
+  }
+
+  .travel-interest-content h3 {
+    margin: 0;
+  }
+
+  .travel-interest-content p {
+    min-height: 0;
+    margin-top: 6px;
+
+    font-size: 0.66rem;
+    line-height: 1.42;
+  }
+
+  .travel-interest-content > a {
+    width: 34px;
+    height: 34px;
+
+    margin-top: auto;
+  }
+
+  .travel-experiences-interest-cta {
+    margin-top: 20px;
+  }
+
+  .travel-experiences-interest-tagline {
+    margin-top: 12px;
+  }
+}
+
+/* ==================================================
+   TRAVEL EXPERIENCES DESKTOP CARD HEIGHT FIX ENDED
+================================================== */
+
+/* ==================================================
+   TRAVEL EXPERIENCES BY INTEREST SECTION ENDED
+================================================== */
+
+/* ==================================================
+   EXPLORE INDIA ON THE MAP SECTION STARTED
+================================================== */
+
+.india-map-destinations {
+  min-height: calc(100vh - var(--header-height));
+
+  display: flex;
+  align-items: center;
+
+  padding-block: 26px;
+
+  background: #ffffff;
+}
+
+.india-map-destinations-container {
+  width: calc(100% - 264px);
+  max-width: 1336px;
+  margin-inline: auto;
+}
+
+/* ==================================================
+   SECTION HEADING STARTED
+================================================== */
+
+.india-map-destinations-heading {
+  max-width: 900px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.india-map-destinations-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+
+  color: #078fa2;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.india-map-destinations-eyebrow > span {
+  width: 44px;
+  height: 1px;
+
+  background: #8fb9c5;
+}
+
+.india-map-destinations-heading h2 {
+  margin: 10px 0 0;
+
+  color: #082f49;
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(2.4rem, 3.25vw, 3.4rem);
+  font-weight: 400;
+
+  line-height: 1.03;
+}
+
+.india-map-destinations-heading h2 span {
+  color: #087fa3;
+}
+
+.india-map-destinations-heading p {
+  max-width: 720px;
+
+  margin: 11px auto 0;
+
+  color: #718096;
+
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+/* ==================================================
+   SECTION HEADING ENDED
+================================================== */
+
+/* ==================================================
+   DESTINATION GRID STARTED
+================================================== */
+
+.india-map-destinations-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 14px;
+
+  margin-top: 28px;
+}
+
+/* ==================================================
+   DESTINATION GRID ENDED
+================================================== */
+
+/* ==================================================
+   DESTINATION CARD STARTED
+================================================== */
+
+.india-map-card {
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #e0ebee;
+  border-radius: 18px;
+
+  box-shadow: 0 11px 27px rgba(8, 47, 73, 0.07);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.india-map-card:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(7, 152, 165, 0.25);
+
+  box-shadow: 0 18px 38px rgba(8, 47, 73, 0.12);
+}
+
+/* ==================================================
+   DESTINATION CARD ENDED
+================================================== */
+
+/* ==================================================
+   DESTINATION IMAGE STARTED
+================================================== */
+
+.india-map-card-image {
+  height: 150px;
+  overflow: hidden;
+}
+
+.india-map-card-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.india-map-card:hover .india-map-card-image img {
+  transform: scale(1.055);
+}
+
+/* ==================================================
+   DESTINATION IMAGE ENDED
+================================================== */
+
+/* ==================================================
+   DESTINATION CARD CONTENT STARTED
+================================================== */
+
+.india-map-card-content {
+  min-height: 76px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 12px;
+
+  padding: 11px 13px;
+}
+
+.india-map-card-details {
+  min-width: 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.india-map-card-icon {
+  width: 34px;
+  height: 34px;
+
+  flex: 0 0 34px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.india-map-card-content h3 {
+  margin: 0;
+
+  color: #082f49;
+
+  font-family: var(--font-heading);
+
+  font-size: 1.2rem;
+  font-weight: 400;
+
+  line-height: 1.1;
+}
+
+.india-map-card-content p {
+  margin: 3px 0 0;
+
+  color: #718096;
+
+  font-size: 0.62rem;
+  line-height: 1.35;
+}
+
+/* CARD ARROW */
+
+.india-map-card-content > a {
+  width: 34px;
+  height: 34px;
+
+  flex: 0 0 34px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  font-size: 0.95rem;
+
+  transition:
+    transform 0.25s ease,
+    filter 0.25s ease;
+}
+
+.india-map-card-content > a:hover {
+  transform: translateX(4px);
+  filter: brightness(0.97);
+}
+
+/* ==================================================
+   DESTINATION CARD CONTENT ENDED
+================================================== */
+
+/* ==================================================
+   DESTINATION CARD COLOURS STARTED
+================================================== */
+
+/* JAIPUR */
+
+.india-map-card-jaipur .india-map-card-icon,
+.india-map-card-jaipur .india-map-card-content > a {
+  color: #ef7c29;
+  background: #fff0e6;
+}
+
+/* UDAIPUR */
+
+.india-map-card-udaipur .india-map-card-icon,
+.india-map-card-udaipur .india-map-card-content > a {
+  color: #1689b5;
+  background: #e8f6fb;
+}
+
+/* VARANASI */
+
+.india-map-card-varanasi .india-map-card-icon,
+.india-map-card-varanasi .india-map-card-content > a {
+  color: #c68425;
+  background: #fff4df;
+}
+
+/* RISHIKESH */
+
+.india-map-card-rishikesh .india-map-card-icon,
+.india-map-card-rishikesh .india-map-card-content > a {
+  color: #22945d;
+  background: #e9f7ef;
+}
+
+/* AGRA */
+
+.india-map-card-agra .india-map-card-icon,
+.india-map-card-agra .india-map-card-content > a {
+  color: #e55370;
+  background: #fff0f3;
+}
+
+/* KERALA */
+
+.india-map-card-kerala .india-map-card-icon,
+.india-map-card-kerala .india-map-card-content > a {
+  color: #18864f;
+  background: #e8f7ee;
+}
+
+/* LADAKH */
+
+.india-map-card-ladakh .india-map-card-icon,
+.india-map-card-ladakh .india-map-card-content > a {
+  color: #8d4ee5;
+  background: #f3eafb;
+}
+
+/* GOA */
+
+.india-map-card-goa .india-map-card-icon,
+.india-map-card-goa .india-map-card-content > a {
+  color: #ec5366;
+  background: #fff0f2;
+}
+
+/* ==================================================
+   DESTINATION CARD COLOURS ENDED
+================================================== */
+
+/* ==================================================
+   SECTION CTA STARTED
+================================================== */
+
+.india-map-destinations-cta {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 22px;
+}
+
+.india-map-destinations-cta a {
+  min-height: 48px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+
+  padding-inline: 32px;
+
+  color: #ffffff;
+  background: #0787a5;
+
+  border-radius: 999px;
+
+  font-size: 0.74rem;
+  font-weight: 700;
+
+  box-shadow: 0 10px 25px rgba(7, 135, 165, 0.17);
+
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.india-map-destinations-cta a:hover {
+  transform: translateY(-3px);
+
+  background: #0798a5;
+
+  box-shadow: 0 14px 30px rgba(7, 152, 165, 0.22);
+}
+
+/* ==================================================
+   SECTION CTA ENDED
+================================================== */
+
+/* ==================================================
+   EXPLORE INDIA ON THE MAP DESKTOP HEIGHT FIX STARTED
+================================================== */
+
+@media (min-width: 1051px) {
+  .india-map-destinations {
+    min-height: calc(100vh - var(--header-height));
+    height: calc(100vh - var(--header-height));
+
+    padding-block: 32px;
+
+    overflow: hidden;
+  }
+
+  .india-map-destinations-container {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .india-map-destinations-heading h2 {
+    margin-top: 6px;
+
+    font-size: clamp(2.2rem, 3vw, 3.15rem);
+    line-height: 0.98;
+  }
+
+  .india-map-destinations-heading p {
+    margin-top: 7px;
+
+    font-size: 0.75rem;
+    line-height: 1.45;
+  }
+
+  .india-map-destinations-grid {
+    margin-top: 22px;
+
+    gap: 12px 13px;
+  }
+
+  .india-map-card-image {
+    height: 140px;
+  }
+
+  .india-map-card-content {
+    min-height: 64px;
+    padding: 9px 11px;
+  }
+
+  .india-map-card-icon {
+    width: 31px;
+    height: 31px;
+
+    flex-basis: 31px;
+  }
+
+  .india-map-card-content h3 {
+    font-size: 1.05rem;
+  }
+
+  .india-map-card-content p {
+    margin-top: 2px;
+
+    font-size: 0.56rem;
+  }
+
+  .india-map-card-content > a {
+    width: 31px;
+    height: 31px;
+
+    flex-basis: 31px;
+  }
+
+  .india-map-destinations-cta {
+    margin-top: 18px;
+  }
+
+  .india-map-destinations-cta a {
+    min-height: 44px;
+
+    padding-inline: 28px;
+
+    font-size: 0.7rem;
+  }
+
+  .india-map-destinations-container {
+    position: relative;
+    top: -8px;
+  }
+}
+
+/* ==================================================
+   EXPLORE INDIA ON THE MAP DESKTOP HEIGHT FIX ENDED
+================================================== */
+
+/* ==================================================
+   EXPLORE INDIA ON THE MAP TABLET STARTED
+================================================== */
+
+@media (max-width: 1050px) {
+  .india-map-destinations {
+    min-height: auto;
+
+    padding-block: 60px;
+  }
+
+  .india-map-destinations-container {
+    width: min(100% - 48px, 1180px);
+  }
+
+  .india-map-destinations-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+  }
+
+  .india-map-card-image {
+    height: 200px;
+  }
+}
+
+/* ==================================================
+   EXPLORE INDIA ON THE MAP TABLET ENDED
+================================================== */
+
+/* ==================================================
+   EXPLORE INDIA ON THE MAP MOBILE STARTED
+================================================== */
+
+@media (max-width: 700px) {
+  .india-map-destinations {
+    padding-block: 52px;
+  }
+
+  .india-map-destinations-container {
+    width: min(100% - 32px, 1180px);
+  }
+
+  .india-map-destinations-heading {
+    text-align: left;
+  }
+
+  .india-map-destinations-eyebrow {
+    justify-content: flex-start;
+  }
+
+  .india-map-destinations-eyebrow > span {
+    display: none;
+  }
+
+  .india-map-destinations-heading h2 {
+    font-size: clamp(2.35rem, 10vw, 3.25rem);
+  }
+
+  .india-map-destinations-heading p {
+    margin-left: 0;
+  }
+
+  .india-map-destinations-grid {
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+
+    margin-top: 26px;
+  }
+
+  .india-map-card-image {
+    height: 215px;
+  }
+
+  .india-map-destinations-cta {
+    justify-content: flex-start;
+  }
+}
+
+/* ==================================================
+   EXPLORE INDIA ON THE MAP MOBILE ENDED
+================================================== */
+
+/* ==================================================
+   EXPLORE INDIA ON THE MAP SECTION ENDED
+================================================== */
+
+/* ==================================================
+   FEATURED INDIA JOURNEYS SECTION STARTED
+================================================== */
+
+.featured-india-journeys {
+  min-height: calc(100vh - var(--header-height));
+
+  display: flex;
+  align-items: center;
+
+  padding-block: 28px;
+
+  background: #ffffff;
+}
+
+.featured-india-journeys-container {
+  width: calc(100% - 264px);
+  max-width: 1336px;
+  margin-inline: auto;
+}
+
+/* ==================================================
+   FEATURED INDIA JOURNEYS HEADING STARTED
+================================================== */
+
+.featured-india-journeys-heading {
+  max-width: 820px;
+  margin-inline: auto;
+
+  text-align: center;
+}
+
+.featured-india-journeys-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+
+  color: #078fa2;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.featured-india-journeys-eyebrow > span {
+  width: 44px;
+  height: 1px;
+
+  background: #91bec8;
+}
+
+.featured-india-journeys-heading h2 {
+  margin: 10px 0 0;
+
+  color: #082f49;
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(2.45rem, 3.35vw, 3.55rem);
+  font-weight: 400;
+
+  line-height: 1.02;
+}
+
+.featured-india-journeys-heading h2 span {
+  display: block;
+
+  color: #0785a7;
+}
+
+.featured-india-journeys-heading p {
+  max-width: 700px;
+
+  margin: 11px auto 0;
+
+  color: #718096;
+
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+/* ==================================================
+   FEATURED INDIA JOURNEYS HEADING ENDED
+================================================== */
+
+/* ==================================================
+   FEATURED JOURNEYS SLIDER STARTED
+================================================== */
+
+.featured-journeys-slider {
+  --featured-journey-gap: 16px;
+
+  position: relative;
+
+  margin-top: 24px;
+}
+
+.featured-journeys-viewport {
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.featured-journeys-track {
+  display: flex;
+  align-items: stretch;
+
+  gap: var(--featured-journey-gap);
+
+  will-change: transform;
+
+  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ==================================================
+   FEATURED JOURNEY CARD STARTED
+================================================== */
+
+.featured-journey-card {
+  flex: 0 0 calc((100% - (var(--featured-journey-gap) * 3)) / 4);
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #e0ebee;
+  border-radius: 20px;
+
+  box-shadow: 0 13px 32px rgba(8, 47, 73, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.featured-journey-card:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(7, 152, 165, 0.25);
+
+  box-shadow: 0 20px 42px rgba(8, 47, 73, 0.13);
+}
+
+/* IMAGE */
+
+.featured-journey-image {
+  position: relative;
+
+  height: 205px;
+
+  overflow: hidden;
+}
+
+.featured-journey-image::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    180deg,
+    rgba(4, 37, 58, 0.02) 36%,
+    rgba(4, 37, 58, 0.5) 100%
+  );
+
+  pointer-events: none;
+}
+
+.featured-journey-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.55s ease;
+}
+
+.featured-journey-card:hover .featured-journey-image img {
+  transform: scale(1.055);
+}
+
+/* JOURNEY BADGE */
+
+.featured-journey-badge {
+  position: absolute;
+  z-index: 3;
+
+  top: 13px;
+  left: 13px;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 6px;
+
+  padding: 7px 12px;
+
+  border-radius: 999px;
+
+  font-size: 0.59rem;
+  font-weight: 700;
+}
+
+/* FAVOURITE BUTTON */
+
+.featured-journey-favourite {
+  position: absolute;
+  z-index: 4;
+
+  top: 12px;
+  right: 12px;
+
+  width: 38px;
+  height: 38px;
+
+  display: grid;
+  place-items: center;
+
+  padding: 0;
+
+  color: #ffffff;
+
+  background: rgba(8, 47, 73, 0.45);
+
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 50%;
+
+  backdrop-filter: blur(8px);
+
+  cursor: pointer;
+
+  font-size: 1.2rem;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.featured-journey-favourite:hover {
+  transform: scale(1.08);
+
+  background: rgba(8, 47, 73, 0.72);
+}
+
+.featured-journey-favourite.is-active {
+  color: #ff6377;
+
+  background: #ffffff;
+}
+
+/* LOCATION */
+
+.featured-journey-location {
+  position: absolute;
+  z-index: 3;
+
+  left: 15px;
+  bottom: 12px;
+
+  color: #ffffff;
+
+  font-size: 0.68rem;
+  font-weight: 600;
+
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+}
+
+/* ==================================================
+   FEATURED JOURNEY CARD CONTENT STARTED
+================================================== */
+
+.featured-journey-content {
+  padding: 14px 16px 15px;
+}
+
+.featured-journey-title-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 10px;
+}
+
+.featured-journey-title-row h3 {
+  margin: 0;
+
+  color: #082f49;
+
+  font-family: var(--font-heading);
+
+  font-size: 1.25rem;
+  font-weight: 400;
+
+  line-height: 1.12;
+}
+
+.featured-journey-duration {
+  flex: 0 0 auto;
+
+  font-size: 0.79rem;
+  font-weight: 800;
+}
+
+.featured-journey-content > p {
+  min-height: 42px;
+
+  margin: 8px 0 0;
+
+  color: #718096;
+
+  font-size: 0.67rem;
+  line-height: 1.52;
+}
+
+/* BOTTOM AREA */
+
+.featured-journey-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+
+  margin-top: 13px;
+  padding-top: 11px;
+
+  border-top: 1px solid #e5eef1;
+}
+
+.featured-journey-ideal {
+  min-width: 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+}
+
+.featured-journey-ideal-icon {
+  color: #082f49;
+
+  font-size: 1.35rem;
+}
+
+.featured-journey-ideal > span:last-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-journey-ideal small {
+  color: #758895;
+
+  font-size: 0.54rem;
+}
+
+.featured-journey-ideal strong {
+  color: #38536a;
+
+  font-size: 0.59rem;
+  font-weight: 600;
+}
+
+/* VIEW DETAILS BUTTON */
+
+.featured-journey-button {
+  min-height: 36px;
+
+  flex: 0 0 auto;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  padding-inline: 14px;
+
+  border-radius: 999px;
+
+  font-size: 0.61rem;
+  font-weight: 700;
+
+  transition:
+    transform 0.25s ease,
+    filter 0.25s ease;
+}
+
+.featured-journey-button:hover {
+  transform: translateY(-2px);
+
+  filter: brightness(0.97);
+}
+
+/* ==================================================
+   FEATURED JOURNEY CARD CONTENT ENDED
+================================================== */
+
+/* ==================================================
+   JOURNEY COLOUR THEMES STARTED
+================================================== */
+
+.badge-rajasthan,
+.button-rajasthan {
+  color: #aa6800;
+  background: #fff1d9;
+}
+
+.duration-rajasthan {
+  color: #db8500;
+}
+
+.badge-kerala,
+.button-kerala {
+  color: #087c50;
+  background: #e5f6ed;
+}
+
+.duration-kerala {
+  color: #0c9a61;
+}
+
+.badge-ladakh,
+.button-ladakh {
+  color: #5145d7;
+  background: #eeecff;
+}
+
+.duration-ladakh {
+  color: #6748f5;
+}
+
+.badge-goa,
+.button-goa {
+  color: #de4b46;
+  background: #ffeded;
+}
+
+.duration-goa {
+  color: #f05b4f;
+}
+
+.badge-kashmir,
+.button-kashmir {
+  color: #087ca5;
+  background: #e7f6fb;
+}
+
+.duration-kashmir {
+  color: #168eb7;
+}
+
+.badge-varanasi,
+.button-varanasi {
+  color: #c17c16;
+  background: #fff3df;
+}
+
+.duration-varanasi {
+  color: #d68d1d;
+}
+
+/* ==================================================
+   JOURNEY COLOUR THEMES ENDED
+================================================== */
+
+/* ==================================================
+   SLIDER NAVIGATION STARTED
+================================================== */
+
+.featured-journeys-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+
+  margin-top: 16px;
+}
+
+.featured-journeys-arrow {
+  width: 42px;
+  height: 42px;
+
+  display: grid;
+  place-items: center;
+
+  padding: 0;
+
+  color: #05658b;
+  background: #ffffff;
+
+  border: 1px solid #dce9ed;
+  border-radius: 50%;
+
+  box-shadow: 0 7px 18px rgba(8, 47, 73, 0.07);
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    color 0.25s ease,
+    background 0.25s ease,
+    opacity 0.25s ease;
+}
+
+.featured-journeys-arrow:hover:not(:disabled) {
+  transform: translateY(-2px);
+
+  color: #ffffff;
+  background: #078fa2;
+}
+
+.featured-journeys-arrow:disabled {
+  color: #aab7bf;
+
+  background: #f3f6f7;
+
+  opacity: 0.5;
+
+  cursor: not-allowed;
+}
+
+/* DOTS */
+
+.featured-journeys-dots {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+}
+
+.featured-journeys-dot {
+  width: 7px;
+  height: 7px;
+
+  padding: 0;
+
+  background: #cedfe4;
+
+  border: 0;
+  border-radius: 999px;
+
+  cursor: pointer;
+
+  transition:
+    width 0.3s ease,
+    background 0.3s ease;
+}
+
+.featured-journeys-dot.is-active {
+  width: 22px;
+
+  background: #078fa2;
+}
+
+/* ==================================================
+   SLIDER NAVIGATION ENDED
+================================================== */
+
+/* ==================================================
+   SECTION CTA STARTED
+================================================== */
+
+.featured-india-journeys-cta {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 15px;
+}
+
+.featured-india-journeys-cta a {
+  min-height: 46px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+
+  padding-inline: 31px;
+
+  color: #ffffff;
+  background: #078fa8;
+
+  border-radius: 999px;
+
+  font-size: 0.71rem;
+  font-weight: 700;
+
+  box-shadow: 0 11px 26px rgba(7, 143, 168, 0.18);
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.featured-india-journeys-cta a:hover {
+  transform: translateY(-3px);
+
+  background: #079aa7;
+
+  box-shadow: 0 15px 32px rgba(7, 143, 168, 0.24);
+}
+
+/* ==================================================
+   SECTION CTA ENDED
+================================================== */
+
+/* ==================================================
+   FEATURED INDIA JOURNEYS DESKTOP HEIGHT FIX STARTED
+================================================== */
+
+@media (min-width: 1051px) {
+  .featured-india-journeys {
+    min-height: calc(100vh - var(--header-height));
+    height: calc(100vh - var(--header-height));
+
+    padding-block: 10px;
+
+    overflow: hidden;
+  }
+
+  .featured-india-journeys-container {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
+    top: -5px;
+  }
+
+  /* Heading */
+
+  .featured-india-journeys-heading h2 {
+    margin-top: 6px;
+
+    font-size: clamp(2.3rem, 3vw, 3.25rem);
+    line-height: 1;
+  }
+
+  .featured-india-journeys-heading p {
+    margin-top: 7px;
+
+    font-size: 0.76rem;
+    line-height: 1.5;
+  }
+
+  /* Slider */
+
+  .featured-journeys-slider {
+    margin-top: 14px;
+  }
+
+  /* Cards */
+
+  .featured-journey-image {
+    height: 195px;
+  }
+
+  .featured-journey-content {
+    padding: 10px 14px 11px;
+  }
+
+  .featured-journey-title-row h3 {
+    font-size: 1.18rem;
+  }
+
+  .featured-journey-content > p {
+    min-height: 36px;
+
+    margin-top: 6px;
+
+    font-size: 0.64rem;
+    line-height: 1.45;
+  }
+
+  .featured-journey-bottom {
+    margin-top: 9px;
+    padding-top: 9px;
+  }
+
+  /* Slider Navigation */
+
+  .featured-journeys-navigation {
+    margin-top: 9px;
+  }
+
+  .featured-journeys-arrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Bottom CTA */
+
+  .featured-india-journeys-cta {
+    margin-top: 8px;
+  }
+
+  .featured-india-journeys-cta a {
+    min-height: 42px;
+
+    padding-inline: 29px;
+  }
+}
+
+/* ==================================================
+   FEATURED INDIA JOURNEYS DESKTOP HEIGHT FIX ENDED
+================================================== */
+
+/* ==================================================
+   FEATURED INDIA JOURNEYS TABLET STARTED
+================================================== */
+
+@media (max-width: 1050px) {
+  .featured-india-journeys {
+    min-height: auto;
+
+    padding-block: 60px;
+  }
+
+  .featured-india-journeys-container {
+    width: min(100% - 48px, 1180px);
+  }
+
+  .featured-journey-card {
+    flex-basis: calc((100% - var(--featured-journey-gap)) / 2);
+  }
+
+  .featured-journey-image {
+    height: 220px;
+  }
+}
+
+/* ==================================================
+   FEATURED INDIA JOURNEYS TABLET ENDED
+================================================== */
+
+/* ==================================================
+   FEATURED INDIA JOURNEYS MOBILE STARTED
+================================================== */
+
+@media (max-width: 700px) {
+  .featured-india-journeys {
+    padding-block: 52px;
+  }
+
+  .featured-india-journeys-container {
+    width: min(100% - 32px, 1180px);
+  }
+
+  .featured-india-journeys-heading {
+    text-align: left;
+  }
+
+  .featured-india-journeys-eyebrow {
+    justify-content: flex-start;
+  }
+
+  .featured-india-journeys-eyebrow > span {
+    display: none;
+  }
+
+  .featured-india-journeys-heading h2 {
+    font-size: clamp(2.35rem, 10vw, 3.25rem);
+  }
+
+  .featured-india-journeys-heading p {
+    margin-left: 0;
+  }
+
+  .featured-journeys-slider {
+    --featured-journey-gap: 14px;
+  }
+
+  .featured-journey-card {
+    flex-basis: 100%;
+  }
+
+  .featured-journey-image {
+    height: 220px;
+  }
+
+  .featured-journey-content > p {
+    min-height: auto;
+  }
+
+  .featured-journey-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .featured-journey-button {
+    width: 100%;
+  }
+}
+
+/* ==================================================
+   FEATURED INDIA JOURNEYS MOBILE ENDED
+================================================== */
+
+/* ==================================================
+   FEATURED INDIA JOURNEYS SECTION ENDED
+================================================== */
+
+/* ==================================================
+   WHY EXPLORE INDIA WITH ROAMORA SECTION STARTED
+================================================== */
+
+.why-explore-roamora {
+  min-height: calc(100vh - var(--header-height));
+
+  display: flex;
+  align-items: center;
+
+  padding-block: 30px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+}
+
+.why-explore-roamora-container {
+  width: calc(100% - 264px);
+  max-width: 1336px;
+
+  margin-inline: auto;
+}
+
+/* ==================================================
+   SECTION HEADING STARTED
+================================================== */
+
+.why-explore-roamora-heading {
+  max-width: 800px;
+
+  margin-inline: auto;
+
+  text-align: center;
+}
+
+.why-explore-roamora-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+
+  color: #078fa2;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+
+  letter-spacing: 0.17em;
+
+  text-transform: uppercase;
+}
+
+.why-explore-roamora-eyebrow > span {
+  width: 43px;
+  height: 1px;
+
+  background: #8ebdc8;
+}
+
+.why-explore-roamora-heading h2 {
+  margin: 10px 0 0;
+
+  color: #082f49;
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(2.5rem, 3.45vw, 3.65rem);
+  font-weight: 400;
+
+  line-height: 1;
+}
+
+.why-explore-roamora-heading h2 span {
+  display: block;
+
+  color: #078aa7;
+}
+
+.why-explore-roamora-heading p {
+  max-width: 690px;
+
+  margin: 12px auto 0;
+
+  color: #718096;
+
+  font-size: 0.8rem;
+  line-height: 1.62;
+}
+
+/* ==================================================
+   SECTION HEADING ENDED
+================================================== */
+
+/* ==================================================
+   MAIN LAYOUT STARTED
+================================================== */
+
+.why-explore-roamora-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(340px, 0.95fr)
+    minmax(0, 1fr);
+
+  align-items: center;
+
+  gap: 38px;
+
+  margin-top: 28px;
+}
+
+/* ==================================================
+   MAIN LAYOUT ENDED
+================================================== */
+
+/* ==================================================
+   BENEFITS STARTED
+================================================== */
+
+.why-roamora-benefits {
+  display: grid;
+
+  gap: 0;
+}
+
+.why-roamora-benefit {
+  display: grid;
+
+  grid-template-columns: 78px 1fr;
+
+  align-items: center;
+
+  gap: 17px;
+
+  min-height: 128px;
+
+  padding-block: 18px;
+
+  border-bottom: 1px solid #dbe8ec;
+}
+
+.why-roamora-benefit:last-child {
+  border-bottom: 0;
+}
+
+.why-roamora-icon {
+  width: 72px;
+  height: 72px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  font-size: 1.65rem;
+  font-weight: 700;
+}
+
+.why-roamora-icon-blue {
+  color: #1388d4;
+  background: #e5f4fc;
+}
+
+.why-roamora-icon-green {
+  color: #179443;
+  background: #e7f7e9;
+}
+
+.why-roamora-icon-purple {
+  color: #7140df;
+  background: #f0eafe;
+}
+
+.why-roamora-icon-orange {
+  color: #dd8b06;
+  background: #fff2dd;
+}
+
+.why-roamora-icon-pink {
+  color: #e34869;
+  background: #fde9ee;
+}
+
+.why-roamora-icon-cyan {
+  color: #0798aa;
+  background: #e4f7f9;
+}
+
+.why-roamora-benefit-content h3 {
+  margin: 0;
+
+  color: #082f49;
+
+  font-family: var(--font-heading);
+
+  font-size: 1.2rem;
+  font-weight: 400;
+
+  line-height: 1.15;
+}
+
+.why-roamora-benefit-content p {
+  max-width: 285px;
+
+  margin: 6px 0 0;
+
+  color: #718096;
+
+  font-size: 0.73rem;
+  line-height: 1.55;
+}
+
+/* ==================================================
+   BENEFITS ENDED
+================================================== */
+
+/* ==================================================
+   CENTRE VISUAL STARTED
+================================================== */
+
+.why-roamora-visual {
+  position: relative;
+
+  min-height: 410px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-roamora-image-wrap {
+  position: relative;
+
+  width: 100%;
+  max-width: 370px;
+
+  aspect-ratio: 0.92;
+
+  overflow: hidden;
+
+  border-radius: 47% 47% 42% 42% / 32% 32% 45% 45%;
+
+  box-shadow: 0 18px 40px rgba(8, 47, 73, 0.12);
+}
+
+.why-roamora-image-wrap img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+/* SCRIPT TEXT */
+
+.why-roamora-script {
+  position: absolute;
+
+  z-index: 4;
+
+  color: #0d4f77;
+
+  font-family: var(--font-heading);
+
+  font-size: 1.5rem;
+  font-style: italic;
+
+  line-height: 1.02;
+}
+
+.why-roamora-script-top {
+  top: 12px;
+  left: -14px;
+
+  transform: rotate(-6deg);
+}
+
+.why-roamora-script-bottom {
+  right: -30px;
+  bottom: 35px;
+
+  padding: 10px 18px;
+
+  background: rgba(232, 246, 250, 0.93);
+
+  transform: rotate(-5deg);
+}
+
+/* FLIGHT PATH */
+
+.why-roamora-flight-path {
+  position: absolute;
+
+  inset: 0;
+
+  pointer-events: none;
+}
+
+.why-roamora-flight-line {
+  position: absolute;
+
+  top: 88px;
+  right: -14px;
+
+  width: 118px;
+  height: 112px;
+
+  border: 2px dashed #68bdd0;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+
+  border-radius: 50%;
+}
+
+.why-roamora-plane {
+  position: absolute;
+
+  top: 46px;
+  right: -10px;
+
+  color: #159bb0;
+
+  font-size: 1.8rem;
+
+  transform: rotate(-18deg);
+}
+
+/* ==================================================
+   CENTRE VISUAL ENDED
+================================================== */
+
+/* ==================================================
+   SECTION CTA STARTED
+================================================== */
+
+.why-explore-roamora-cta {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 20px;
+}
+
+.why-explore-roamora-cta a {
+  min-height: 48px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+
+  padding-inline: 32px;
+
+  color: #ffffff;
+
+  background: #078fa8;
+
+  border-radius: 999px;
+
+  font-size: 0.72rem;
+  font-weight: 700;
+
+  box-shadow: 0 11px 26px rgba(7, 143, 168, 0.18);
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.why-explore-roamora-cta a:hover {
+  transform: translateY(-3px);
+
+  background: #079ba9;
+
+  box-shadow: 0 15px 30px rgba(7, 143, 168, 0.24);
+}
+
+/* ==================================================
+   SECTION CTA ENDED
+================================================== */
+
+/* ==================================================
+   SECTION TAGLINE STARTED
+================================================== */
+
+.why-explore-roamora-tagline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+
+  margin-top: 13px;
+}
+
+.why-explore-roamora-tagline > span {
+  width: 44px;
+  height: 1px;
+
+  background: #9ebfc7;
+}
+
+.why-explore-roamora-tagline strong {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  color: #79909d;
+
+  font-size: 0.61rem;
+  font-weight: 700;
+
+  letter-spacing: 0.2em;
+}
+
+.why-explore-roamora-tagline b {
+  color: #d1a24a;
+
+  font-size: 0.55rem;
+}
+
+/* ==================================================
+   SECTION TAGLINE ENDED
+================================================== */
+
+/* ==================================================
+   WHY EXPLORE ROAMORA DESKTOP HEIGHT FIX STARTED
+================================================== */
+
+@media (min-width: 1051px) {
+  .why-explore-roamora {
+    min-height: calc(100vh - var(--header-height));
+    height: calc(100vh - var(--header-height));
+
+    padding-block: 12px;
+  }
+
+  .why-explore-roamora-container {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .why-explore-roamora-heading h2 {
+    margin-top: 6px;
+
+    font-size: clamp(2.3rem, 3vw, 3.2rem);
+  }
+
+  .why-explore-roamora-heading p {
+    margin-top: 8px;
+
+    font-size: 0.75rem;
+  }
+
+  .why-explore-roamora-layout {
+    margin-top: 20px;
+
+    gap: 28px;
+  }
+
+  .why-roamora-benefit {
+    min-height: 104px;
+
+    padding-block: 12px;
+  }
+
+  .why-roamora-icon {
+    width: 62px;
+    height: 62px;
+
+    font-size: 1.42rem;
+  }
+
+  .why-roamora-benefit {
+    grid-template-columns: 67px 1fr;
+
+    gap: 13px;
+  }
+
+  .why-roamora-benefit-content h3 {
+    font-size: 1.08rem;
+  }
+
+  .why-roamora-benefit-content p {
+    margin-top: 4px;
+
+    font-size: 0.67rem;
+  }
+
+  .why-roamora-visual {
+    min-height: 325px;
+  }
+
+  .why-roamora-image-wrap {
+    max-width: 300px;
+  }
+
+  .why-roamora-script {
+    font-size: 1.2rem;
+  }
+
+  .why-explore-roamora-cta {
+    margin-top: 12px;
+  }
+
+  .why-explore-roamora-tagline {
+    margin-top: 9px;
+  }
+}
+
+/* ==================================================
+   WHY EXPLORE ROAMORA DESKTOP HEIGHT FIX ENDED
+================================================== */
+
+/* ==================================================
+   WHY EXPLORE ROAMORA TABLET STARTED
+================================================== */
+
+@media (max-width: 1050px) {
+  .why-explore-roamora {
+    min-height: auto;
+
+    padding-block: 60px;
+  }
+
+  .why-explore-roamora-container {
+    width: min(100% - 48px, 1180px);
+  }
+
+  .why-explore-roamora-layout {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 32px;
+  }
+
+  .why-roamora-visual {
+    grid-column: 1 / -1;
+
+    grid-row: 1;
+
+    max-width: 450px;
+
+    margin-inline: auto;
+  }
+}
+
+/* ==================================================
+   WHY EXPLORE ROAMORA TABLET ENDED
+================================================== */
+
+/* ==================================================
+   WHY EXPLORE ROAMORA MOBILE STARTED
+================================================== */
+
+@media (max-width: 700px) {
+  .why-explore-roamora {
+    padding-block: 52px;
+  }
+
+  .why-explore-roamora-container {
+    width: min(100% - 32px, 1180px);
+  }
+
+  .why-explore-roamora-heading {
+    text-align: left;
+  }
+
+  .why-explore-roamora-eyebrow {
+    justify-content: flex-start;
+  }
+
+  .why-explore-roamora-eyebrow > span {
+    display: none;
+  }
+
+  .why-explore-roamora-heading h2 {
+    font-size: clamp(2.35rem, 10vw, 3.25rem);
+  }
+
+  .why-explore-roamora-heading p {
+    margin-left: 0;
+  }
+
+  .why-explore-roamora-layout {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+
+    margin-top: 32px;
+  }
+
+  .why-roamora-visual {
+    grid-column: auto;
+
+    min-height: 360px;
+  }
+
+  .why-roamora-benefits {
+    gap: 0;
+  }
+
+  .why-roamora-benefit {
+    min-height: auto;
+
+    grid-template-columns: 58px 1fr;
+
+    gap: 13px;
+
+    padding-block: 16px;
+  }
+
+  .why-roamora-icon {
+    width: 54px;
+    height: 54px;
+
+    font-size: 1.3rem;
+  }
+
+  .why-roamora-benefit-content p {
+    max-width: none;
+  }
+
+  .why-roamora-script-bottom {
+    right: 0;
+  }
+
+  .why-explore-roamora-tagline {
+    gap: 8px;
+  }
+
+  .why-explore-roamora-tagline > span {
+    width: 24px;
+  }
+
+  .why-explore-roamora-tagline strong {
+    font-size: 0.52rem;
+
+    letter-spacing: 0.14em;
+  }
+}
+
+/* ==================================================
+   WHY EXPLORE ROAMORA MOBILE ENDED
+================================================== */
+
+/* ==================================================
+   WHY EXPLORE INDIA WITH ROAMORA SECTION ENDED
+================================================== */
+
+/* ==================================================
+   DESTINATION FAQ SECTION STARTED
+================================================== */
+
+.destination-faq {
+  min-height: calc(100vh - var(--header-height));
+
+  display: flex;
+  align-items: center;
+
+  padding-block: 28px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+}
+
+.destination-faq-container {
+  width: calc(100% - 264px);
+  max-width: 1336px;
+
+  margin-inline: auto;
+}
+
+/* ==================================================
+   DESTINATION FAQ HEADING STARTED
+================================================== */
+
+.destination-faq-heading {
+  max-width: 800px;
+
+  margin-inline: auto;
+
+  text-align: center;
+}
+
+.destination-faq-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+
+  color: #078fa2;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+
+  letter-spacing: 0.17em;
+
+  text-transform: uppercase;
+}
+
+.destination-faq-eyebrow > span {
+  width: 45px;
+  height: 1px;
+
+  background: #8ebdc8;
+}
+
+.destination-faq-heading h2 {
+  margin: 9px 0 0;
+
+  color: #082f49;
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(2.45rem, 3.25vw, 3.45rem);
+  font-weight: 400;
+
+  line-height: 1;
+}
+
+.destination-faq-heading h2 span {
+  display: block;
+
+  color: #078aa7;
+}
+
+.destination-faq-heading p {
+  max-width: 690px;
+
+  margin: 11px auto 0;
+
+  color: #718096;
+
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
+/* ==================================================
+   DESTINATION FAQ HEADING ENDED
+================================================== */
+
+/* ==================================================
+   DESTINATION FAQ MAIN LAYOUT STARTED
+================================================== */
+
+.destination-faq-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(360px, 0.86fr)
+    minmax(0, 1.14fr);
+
+  align-items: center;
+
+  gap: 66px;
+
+  margin-top: 24px;
+}
+
+/* ==================================================
+   DESTINATION FAQ MAIN LAYOUT ENDED
+================================================== */
+
+/* ==================================================
+   DESTINATION FAQ VISUAL STARTED
+================================================== */
+
+.destination-faq-visual {
+  position: relative;
+}
+
+.destination-faq-image-shape {
+  position: absolute;
+
+  width: 420px;
+  height: 390px;
+
+  left: -32px;
+  top: 15px;
+
+  border-radius: 46% 54% 47% 53% / 41% 47% 53% 59%;
+
+  background: #edf8fb;
+}
+
+.destination-faq-image-wrap {
+  position: relative;
+
+  z-index: 2;
+
+  width: 370px;
+  height: 405px;
+
+  margin-left: 36px;
+
+  overflow: hidden;
+
+  border-radius: 48% 48% 17px 17px / 28% 28% 17px 17px;
+
+  box-shadow: 0 17px 38px rgba(8, 47, 73, 0.1);
+}
+
+.destination-faq-image-wrap img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+/* FLOATING QUOTE */
+
+.destination-faq-quote-card {
+  position: absolute;
+
+  z-index: 4;
+
+  top: 74px;
+  right: -8px;
+
+  width: 172px;
+
+  padding: 20px 24px;
+
+  background: #fff9ef;
+
+  border: 1px solid #fff0d8;
+  border-radius: 23px;
+
+  box-shadow: 0 12px 28px rgba(8, 47, 73, 0.07);
+}
+
+.destination-faq-quote-mark {
+  display: block;
+
+  color: #f2a000;
+
+  font-family: Georgia, serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+
+  line-height: 0.7;
+}
+
+.destination-faq-quote-card p {
+  margin: 9px 0 0;
+
+  color: #082f49;
+
+  font-family: var(--font-heading);
+
+  font-size: 1.15rem;
+
+  line-height: 1.07;
+}
+
+.destination-faq-quote-card strong {
+  display: block;
+
+  font-weight: 400;
+}
+
+.destination-faq-quote-line {
+  display: block;
+
+  width: 39px;
+  height: 2px;
+
+  margin-top: 11px;
+
+  background: #f2a000;
+
+  transform: rotate(-6deg);
+}
+
+/* ==================================================
+   DESTINATION FAQ BENEFITS STARTED
+================================================== */
+
+.destination-faq-benefits {
+  position: relative;
+
+  z-index: 4;
+
+  display: grid;
+
+  grid-template-columns:
+    1fr auto
+    1fr auto
+    1fr;
+
+  align-items: center;
+
+  gap: 13px;
+
+  margin-top: 10px;
+
+  padding: 18px 21px;
+
+  background: #f6fbfd;
+
+  border: 1px solid #e6f0f3;
+  border-radius: 20px;
+}
+
+.destination-faq-benefit {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+}
+
+.destination-faq-benefit-icon {
+  width: 38px;
+  height: 38px;
+
+  flex: 0 0 38px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.faq-benefit-blue {
+  color: #078fa8;
+  background: #e5f5fa;
+}
+
+.faq-benefit-orange {
+  color: #e69600;
+  background: #fff2dd;
+}
+
+.faq-benefit-green {
+  color: #159545;
+  background: #e8f7e9;
+}
+
+.destination-faq-benefit strong {
+  color: #082f49;
+
+  font-family: var(--font-heading);
+
+  font-size: 0.76rem;
+  font-weight: 400;
+
+  line-height: 1.1;
+}
+
+.destination-faq-benefit strong span {
+  display: block;
+}
+
+.destination-faq-benefit-divider {
+  width: 1px;
+  height: 42px;
+
+  background: #d8e7eb;
+}
+
+/* ==================================================
+   DESTINATION FAQ BENEFITS ENDED
+================================================== */
+
+/* ==================================================
+   DESTINATION FAQ VISUAL ENDED
+================================================== */
+
+/* ==================================================
+   DESTINATION FAQ ACCORDION STARTED
+================================================== */
+
+.destination-faq-content {
+  min-width: 0;
+}
+
+.destination-faq-accordion {
+  display: grid;
+
+  gap: 7px;
+}
+
+.destination-faq-item {
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #dde9ed;
+  border-radius: 15px;
+
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+.destination-faq-item:hover {
+  border-color: #bddde3;
+}
+
+.destination-faq-item.is-open {
+  background: #fbfdfe;
+
+  border-color: #cde6eb;
+
+  box-shadow: 0 8px 24px rgba(8, 47, 73, 0.055);
+}
+
+/* FAQ TRIGGER */
+
+.destination-faq-trigger {
+  width: 100%;
+
+  min-height: 57px;
+
+  display: grid;
+
+  grid-template-columns: 48px 1fr 28px;
+
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 7px 15px;
+
+  color: inherit;
+  background: transparent;
+
+  border: 0;
+
+  text-align: left;
+
+  cursor: pointer;
+}
+
+/* NUMBER */
+
+.destination-faq-number {
+  width: 44px;
+  height: 44px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  font-family: var(--font-heading);
+
+  font-size: 0.96rem;
+}
+
+.faq-number-blue {
+  color: #1384d1;
+  background: #e5f4fc;
+}
+
+.faq-number-orange {
+  color: #e69100;
+  background: #fff2dd;
+}
+
+.faq-number-green {
+  color: #178f3f;
+  background: #e8f7e9;
+}
+
+.faq-number-pink {
+  color: #df4165;
+  background: #fde8ee;
+}
+
+.faq-number-purple {
+  color: #7440dd;
+  background: #f0e9fe;
+}
+
+.faq-number-cyan {
+  color: #078fa8;
+  background: #e5f7f9;
+}
+
+/* QUESTION */
+
+.destination-faq-question {
+  color: #082f49;
+
+  font-family: var(--font-heading);
+
+  font-size: 1rem;
+
+  font-weight: 400;
+}
+
+/* ARROW */
+
+.destination-faq-arrow {
+  justify-self: end;
+
+  color: #082f49;
+
+  font-size: 1.1rem;
+
+  transition: transform 0.3s ease;
+}
+
+/* FAQ ANSWER ANIMATION */
+
+.destination-faq-answer {
+  display: grid;
+
+  grid-template-rows: 0fr;
+
+  transition: grid-template-rows 0.34s ease;
+}
+
+.destination-faq-item.is-open .destination-faq-answer {
+  grid-template-rows: 1fr;
+}
+
+.destination-faq-answer-inner {
+  overflow: hidden;
+}
+
+.destination-faq-answer-inner p {
+  margin: 0;
+
+  padding: 0 55px 17px 77px;
+
+  color: #718096;
+
+  font-size: 0.73rem;
+  line-height: 1.6;
+}
+
+/* ==================================================
+   DESTINATION FAQ ACCORDION ENDED
+================================================== */
+
+/* ==================================================
+   DESTINATION FAQ SUPPORT BAR STARTED
+================================================== */
+
+.destination-faq-support {
+  display: grid;
+
+  grid-template-columns:
+    54px
+    1px
+    minmax(0, 1fr)
+    auto;
+
+  align-items: center;
+
+  gap: 18px;
+
+  margin-top: 14px;
+
+  padding: 16px 18px;
+
+  background: linear-gradient(100deg, #edf9fc 0%, #f7fcfd 100%);
+
+  border: 1px solid #e0eff3;
+  border-radius: 18px;
+}
+
+.destination-faq-support-icon {
+  width: 48px;
+  height: 48px;
+
+  display: grid;
+  place-items: center;
+
+  color: #078fa8;
+
+  font-size: 1.5rem;
+}
+
+.destination-faq-support::before {
+  content: "";
+
+  width: 1px;
+  height: 46px;
+
+  background: #bddce3;
+
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.destination-faq-support-content {
+  grid-column: 3;
+}
+
+.destination-faq-support-content > span {
+  display: block;
+
+  color: #078fa8;
+
+  font-size: 0.58rem;
+  font-weight: 700;
+
+  letter-spacing: 0.15em;
+}
+
+.destination-faq-support-content h3 {
+  margin: 3px 0 0;
+
+  color: #082f49;
+
+  font-family: var(--font-heading);
+
+  font-size: 1.24rem;
+  font-weight: 400;
+}
+
+.destination-faq-support-content p {
+  margin: 2px 0 0;
+
+  color: #718096;
+
+  font-size: 0.64rem;
+}
+
+.destination-faq-support > a {
+  grid-column: 4;
+
+  min-height: 42px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding-inline: 21px;
+
+  color: #ffffff;
+
+  background: #078fa8;
+
+  border-radius: 999px;
+
+  font-size: 0.66rem;
+  font-weight: 700;
+
+  box-shadow: 0 9px 22px rgba(7, 143, 168, 0.18);
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.destination-faq-support > a:hover {
+  transform: translateY(-2px);
+
+  background: #079ca9;
+}
+
+/* ==================================================
+   DESTINATION FAQ SUPPORT BAR ENDED
+================================================== */
+
+/* ==================================================
+   DESTINATION FAQ DESKTOP HEIGHT FIX STARTED
+================================================== */
+
+@media (min-width: 1051px) {
+  .destination-faq {
+    min-height: calc(100vh - var(--header-height));
+    height: calc(100vh - var(--header-height));
+
+    padding-block: 8px;
+
+    overflow: hidden;
+  }
+
+  .destination-faq-container {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
+    top: -6px;
+  }
+
+  /* Section Heading */
+
+  .destination-faq-heading h2 {
+    margin-top: 5px;
+
+    font-size: clamp(2.35rem, 2.95vw, 3.1rem);
+    line-height: 1;
+  }
+
+  .destination-faq-heading p {
+    max-width: 700px;
+
+    margin-top: 8px;
+
+    font-size: 0.72rem;
+    line-height: 1.5;
+  }
+
+  /* Main Layout */
+
+  .destination-faq-layout {
+    margin-top: 18px;
+
+    gap: 58px;
+
+    align-items: center;
+  }
+
+  /* Left Visual */
+
+  .destination-faq-image-wrap {
+    width: 360px;
+    height: 365px;
+  }
+
+  .destination-faq-image-shape {
+    width: 410px;
+    height: 355px;
+  }
+
+  .destination-faq-quote-card {
+    top: 62px;
+    right: -5px;
+
+    width: 160px;
+
+    padding: 17px 21px;
+  }
+
+  /* FAQ Accordion */
+
+  .destination-faq-accordion {
+    gap: 6px;
+  }
+
+  .destination-faq-trigger {
+    min-height: 53px;
+  }
+
+  .destination-faq-number {
+    width: 40px;
+    height: 40px;
+  }
+
+  .destination-faq-question {
+    font-size: 0.96rem;
+  }
+
+  .destination-faq-answer-inner p {
+    padding: 0 50px 14px 77px;
+
+    font-size: 0.68rem;
+    line-height: 1.55;
+  }
+}
+
+/* ==================================================
+   DESTINATION FAQ DESKTOP HEIGHT FIX ENDED
+================================================== */
+
+/* ==================================================
+   DESTINATION FAQ TABLET STARTED
+================================================== */
+
+@media (max-width: 1050px) {
+  .destination-faq {
+    min-height: auto;
+
+    padding-block: 60px;
+  }
+
+  .destination-faq-container {
+    width: min(100% - 48px, 1180px);
+  }
+
+  .destination-faq-layout {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+  .destination-faq-visual {
+    max-width: 570px;
+
+    margin-inline: auto;
+  }
+
+  .destination-faq-content {
+    width: 100%;
+  }
+}
+
+/* ==================================================
+   DESTINATION FAQ TABLET ENDED
+================================================== */
+
+/* ==================================================
+   DESTINATION FAQ MOBILE STARTED
+================================================== */
+
+@media (max-width: 700px) {
+  .destination-faq {
+    padding-block: 52px;
+  }
+
+  .destination-faq-container {
+    width: min(100% - 32px, 1180px);
+  }
+
+  /* Heading */
+
+  .destination-faq-heading {
+    text-align: left;
+  }
+
+  .destination-faq-eyebrow {
+    justify-content: flex-start;
+  }
+
+  .destination-faq-eyebrow > span {
+    display: none;
+  }
+
+  .destination-faq-heading h2 {
+    font-size: clamp(2.3rem, 10vw, 3.2rem);
+  }
+
+  .destination-faq-heading p {
+    margin-left: 0;
+  }
+
+  /* Main Layout */
+
+  .destination-faq-layout {
+    gap: 34px;
+  }
+
+  /* Visual */
+
+  .destination-faq-image-wrap {
+    width: 100%;
+    height: 390px;
+
+    margin-left: 0;
+  }
+
+  .destination-faq-image-shape {
+    width: 100%;
+  }
+
+  .destination-faq-quote-card {
+    top: auto;
+    right: 12px;
+    bottom: 20px;
+
+    width: 145px;
+  }
+
+  /* Accordion */
+
+  .destination-faq-trigger {
+    grid-template-columns: 42px 1fr 22px;
+
+    gap: 10px;
+
+    padding-inline: 10px;
+  }
+
+  .destination-faq-number {
+    width: 38px;
+    height: 38px;
+  }
+
+  .destination-faq-question {
+    font-size: 0.89rem;
+  }
+
+  .destination-faq-answer-inner p {
+    padding: 0 15px 15px 62px;
+  }
+}
+
+/* ==================================================
+   DESTINATION FAQ MOBILE ENDED
+================================================== */
+
+/* ==================================================
+   DESTINATION FAQ SECTION ENDED
+================================================== */
+
+/* ==================================================
+   PLAN YOUR INDIA JOURNEY CTA SECTION STARTED
+================================================== */
+
+.plan-india-journey {
+  min-height: calc(100vh - var(--header-height));
+
+  display: flex;
+  align-items: center;
+
+  padding-block: 34px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+}
+
+.plan-india-journey-container {
+  width: calc(100% - 264px);
+  max-width: 1336px;
+
+  margin-inline: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.9fr)
+    minmax(0, 1.1fr);
+
+  align-items: center;
+
+  gap: clamp(70px, 7vw, 110px);
+}
+
+/* ==================================================
+   PLAN INDIA LEFT CONTENT STARTED
+================================================== */
+
+.plan-india-journey-content {
+  max-width: 570px;
+}
+
+/* EYEBROW */
+
+.plan-india-journey-eyebrow {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 14px;
+
+  color: #078fa2;
+
+  font-size: 0.72rem;
+  font-weight: 700;
+
+  letter-spacing: 0.17em;
+
+  text-transform: uppercase;
+}
+
+.plan-india-journey-eyebrow > span {
+  width: 43px;
+  height: 1px;
+
+  background: #8ebdc8;
+}
+
+/* HEADING */
+
+.plan-india-journey-content h2 {
+  margin: 15px 0 0;
+
+  color: #082f49;
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(3rem, 4vw, 4.5rem);
+  font-weight: 400;
+
+  line-height: 0.98;
+}
+
+.plan-india-journey-content h2 span {
+  display: block;
+
+  color: #078aa7;
+}
+
+/* DESCRIPTION */
+
+.plan-india-journey-description {
+  max-width: 560px;
+
+  margin: 20px 0 0;
+
+  color: #718096;
+
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ==================================================
+   PLAN INDIA LEFT CONTENT ENDED
+================================================== */
+
+/* ==================================================
+   PLAN INDIA BENEFITS STARTED
+================================================== */
+
+.plan-india-journey-benefits {
+  display: grid;
+
+  grid-template-columns:
+    1fr auto
+    1fr auto
+    1fr;
+
+  align-items: center;
+
+  gap: 24px;
+
+  margin-top: 30px;
+}
+
+.plan-india-journey-benefit {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 9px;
+
+  text-align: center;
+}
+
+.plan-india-benefit-icon {
+  width: 64px;
+  height: 64px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  font-size: 1.55rem;
+  font-weight: 700;
+}
+
+.plan-india-benefit-blue {
+  color: #078fa8;
+
+  background: #e5f5fa;
+}
+
+.plan-india-benefit-orange {
+  color: #e79a00;
+
+  background: #fff2df;
+}
+
+.plan-india-benefit-green {
+  color: #159347;
+
+  background: #e7f7e9;
+}
+
+.plan-india-journey-benefit strong {
+  color: #082f49;
+
+  font-size: 0.84rem;
+  font-weight: 600;
+
+  line-height: 1.15;
+}
+
+.plan-india-journey-benefit strong span {
+  display: block;
+}
+
+.plan-india-journey-benefit-divider {
+  width: 1px;
+  height: 84px;
+
+  background: #dce9ed;
+}
+
+/* ==================================================
+   PLAN INDIA BENEFITS ENDED
+================================================== */
+
+/* ==================================================
+   PLAN INDIA ACTIONS STARTED
+================================================== */
+
+.plan-india-journey-actions {
+  display: flex;
+  align-items: center;
+
+  gap: 34px;
+
+  margin-top: 31px;
+}
+
+/* PRIMARY BUTTON */
+
+.plan-india-primary-btn {
+  min-height: 58px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+
+  padding-inline: 32px;
+
+  color: #082f49;
+
+  background: #ffb21d;
+
+  border-radius: 999px;
+
+  font-size: 0.92rem;
+  font-weight: 700;
+
+  box-shadow: 0 12px 28px rgba(255, 178, 29, 0.24);
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.plan-india-primary-btn:hover {
+  transform: translateY(-3px);
+
+  background: #ffbd38;
+
+  box-shadow: 0 17px 32px rgba(255, 178, 29, 0.28);
+}
+
+/* SECONDARY BUTTON */
+
+.plan-india-secondary-btn {
+  position: relative;
+
+  color: #0b4e72;
+
+  font-size: 0.87rem;
+  font-weight: 600;
+
+  padding-bottom: 4px;
+}
+
+.plan-india-secondary-btn::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 2px;
+
+  background: #129bb0;
+
+  transform-origin: left;
+
+  transition: transform 0.25s ease;
+}
+
+.plan-india-secondary-btn:hover::after {
+  transform: scaleX(0.72);
+}
+
+/* ==================================================
+   PLAN INDIA ACTIONS ENDED
+================================================== */
+
+/* ==================================================
+   PLAN INDIA VISUAL STARTED
+================================================== */
+
+.plan-india-journey-visual {
+  position: relative;
+
+  min-height: 500px;
+}
+
+.plan-india-journey-shape {
+  position: absolute;
+
+  width: 520px;
+  height: 420px;
+
+  top: 50%;
+  left: 47%;
+
+  transform: translate(-50%, -50%);
+
+  background: #edf8fb;
+
+  border-radius: 47% 53% 50% 50% / 42% 45% 55% 58%;
+}
+
+/* IMAGE */
+
+.plan-india-journey-image-wrap {
+  position: relative;
+
+  z-index: 2;
+
+  width: 600px;
+  height: 440px;
+
+  margin-left: 20px;
+
+  overflow: hidden;
+
+  border-radius: 42px;
+
+  box-shadow: 0 18px 42px rgba(8, 47, 73, 0.1);
+}
+
+.plan-india-journey-image-wrap img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+/* MESSAGE CARD */
+
+.plan-india-journey-message {
+  position: absolute;
+
+  z-index: 4;
+
+  top: 165px;
+  right: -30px;
+
+  width: 270px;
+
+  padding: 30px 28px;
+
+  background: #fffaf1;
+
+  border: 1px solid #fff0d8;
+  border-radius: 28px;
+
+  box-shadow: 0 16px 34px rgba(8, 47, 73, 0.08);
+}
+
+.plan-india-message-icon {
+  display: block;
+
+  color: #078fa8;
+
+  font-size: 1.6rem;
+}
+
+.plan-india-journey-message p {
+  margin: 13px 0 0;
+
+  color: #082f49;
+
+  font-family: var(--font-heading);
+
+  font-size: 1.4rem;
+  font-weight: 400;
+
+  line-height: 1.04;
+}
+
+.plan-india-journey-message p span {
+  display: block;
+}
+
+.plan-india-message-line {
+  display: block;
+
+  width: 48px;
+  height: 2px;
+
+  margin-top: 18px;
+
+  background: #f2a000;
+
+  transform: rotate(-4deg);
+}
+
+/* ==================================================
+   PLAN INDIA VISUAL ENDED
+================================================== */
+
+/* ==================================================
+   PLAN INDIA JOURNEY CTA DESKTOP HEIGHT FIX STARTED
+================================================== */
+
+@media (min-width: 1051px) {
+  .plan-india-journey {
+    min-height: calc(100vh - var(--header-height));
+    height: calc(100vh - var(--header-height));
+
+    padding-block: 12px;
+  }
+
+  .plan-india-journey-container {
+    height: 100%;
+
+    position: relative;
+    top: -4px;
+  }
+
+  .plan-india-journey-content h2 {
+    margin-top: 10px;
+
+    font-size: clamp(2.7rem, 3.55vw, 4rem);
+  }
+
+  .plan-india-journey-description {
+    margin-top: 14px;
+
+    font-size: 0.86rem;
+  }
+
+  .plan-india-journey-benefits {
+    margin-top: 23px;
+  }
+
+  .plan-india-benefit-icon {
+    width: 58px;
+    height: 58px;
+
+    font-size: 1.4rem;
+  }
+
+  .plan-india-journey-benefit-divider {
+    height: 72px;
+  }
+
+  .plan-india-journey-actions {
+    margin-top: 24px;
+  }
+
+  .plan-india-primary-btn {
+    min-height: 52px;
+  }
+
+  .plan-india-journey-visual {
+    min-height: 430px;
+  }
+
+  .plan-india-journey-image-wrap {
+    width: 565px;
+    height: 405px;
+  }
+
+  .plan-india-journey-shape {
+    width: 490px;
+    height: 390px;
+  }
+
+  .plan-india-journey-message {
+    top: 140px;
+    right: -22px;
+
+    width: 250px;
+
+    padding: 26px 25px;
+  }
+
+  .plan-india-journey-message p {
+    font-size: 1.28rem;
+  }
+}
+
+/* ==================================================
+   PLAN INDIA JOURNEY CTA DESKTOP HEIGHT FIX ENDED
+================================================== */
+
+/* ==================================================
+   PLAN INDIA JOURNEY CTA TABLET STARTED
+================================================== */
+
+@media (max-width: 1050px) {
+  .plan-india-journey {
+    min-height: auto;
+
+    padding-block: 60px;
+  }
+
+  .plan-india-journey-container {
+    width: min(100% - 48px, 1180px);
+
+    grid-template-columns: 1fr;
+
+    gap: 48px;
+  }
+
+  .plan-india-journey-content {
+    max-width: 720px;
+  }
+
+  .plan-india-journey-visual {
+    max-width: 720px;
+  }
+
+  .plan-india-journey-image-wrap {
+    width: 100%;
+
+    margin-left: 0;
+  }
+
+  .plan-india-journey-message {
+    right: 20px;
+  }
+}
+
+/* ==================================================
+   PLAN INDIA JOURNEY CTA TABLET ENDED
+================================================== */
+
+/* ==================================================
+   PLAN INDIA JOURNEY CTA MOBILE STARTED
+================================================== */
+
+@media (max-width: 700px) {
+  .plan-india-journey {
+    padding-block: 52px;
+  }
+
+  .plan-india-journey-container {
+    width: min(100% - 32px, 1180px);
+
+    gap: 38px;
+  }
+
+  .plan-india-journey-eyebrow > span {
+    display: none;
+  }
+
+  .plan-india-journey-content h2 {
+    font-size: clamp(2.6rem, 12vw, 3.6rem);
+  }
+
+  .plan-india-journey-description {
+    font-size: 0.92rem;
+  }
+
+  .plan-india-journey-benefits {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .plan-india-journey-benefit {
+    align-items: flex-start;
+
+    flex-direction: row;
+
+    text-align: left;
+  }
+
+  .plan-india-journey-benefit-divider {
+    width: 100%;
+    height: 1px;
+  }
+
+  .plan-india-journey-actions {
+    align-items: stretch;
+
+    flex-direction: column;
+
+    gap: 18px;
+  }
+
+  .plan-india-primary-btn {
+    width: 100%;
+  }
+
+  .plan-india-secondary-btn {
+    align-self: flex-start;
+  }
+
+  .plan-india-journey-visual {
+    min-height: auto;
+  }
+
+  .plan-india-journey-image-wrap {
+    height: 390px;
+  }
+
+  .plan-india-journey-shape {
+    width: 100%;
+    height: 340px;
+  }
+
+  .plan-india-journey-message {
+    position: relative;
+
+    top: auto;
+    right: auto;
+
+    width: calc(100% - 28px);
+
+    margin: -62px auto 0;
+
+    padding: 24px;
+
+    border-radius: 22px;
+  }
+}
+
+/* ==================================================
+   PLAN INDIA JOURNEY CTA MOBILE ENDED
+================================================== */
+
+/* ==================================================
+   PLAN YOUR INDIA JOURNEY CTA DESKTOP HEIGHT STARTED
+================================================== */
+
+@media (min-width: 1051px) {
+  .plan-india-journey {
+    min-height: 610px;
+    height: 610px;
+
+    padding-block: 20px;
+
+    overflow: hidden;
+  }
+
+  .plan-india-journey-container {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* ==================================================
+   PLAN YOUR INDIA JOURNEY CTA DESKTOP HEIGHT ENDED
+================================================== */
+
+/* ==================================================
+   PLAN YOUR INDIA JOURNEY CTA SECTION ENDED
+================================================== */
+
+/* ==================================================
+   DESTINATION ANCHOR SCROLL POSITION STARTED
+================================================== */
+
+#kashmir,
+#kerala,
+#rajasthan,
+#goa,
+#himachal-pradesh,
+#andaman-islands {
+  scroll-margin-top: 170px;
+}
+
+/* ==================================================
+   DESTINATION ANCHOR SCROLL POSITION ENDED
+================================================== */
+
+/* ==================================================
+   DESTINATIONS PAGE — ALL SECTION EYEBROWS STARTED
+================================================== */
+
+/* --------------------------------------------------
+   1. EYEBROW TEXT COLORS
+-------------------------------------------------- */
+
+/* Hero eyebrow — soft blue */
+.destinations-hero .destinations-hero-eyebrow {
+  color: var(--color-secondary-soft) !important;
+}
+
+/* Sections 2–10 — blue */
+.destination-regions-eyebrow,
+.popular-india-destinations-eyebrow,
+.india-seasons-eyebrow,
+.travel-experiences-interest-eyebrow,
+.india-map-destinations-eyebrow,
+.featured-india-journeys-eyebrow,
+.why-explore-roamora-eyebrow,
+.destination-faq-eyebrow,
+.plan-india-journey-eyebrow {
+  color: var(--color-secondary) !important;
+}
+
+/* --------------------------------------------------
+   2. EYEBROW MARK — ORANGE
+-------------------------------------------------- */
+
+.destinations-hero .destinations-hero-eyebrow > span,
+.destination-regions-eyebrow > span,
+.popular-india-destinations-eyebrow > span,
+.india-seasons-eyebrow > span,
+.travel-experiences-interest-eyebrow > span,
+.india-map-destinations-eyebrow > span,
+.featured-india-journeys-eyebrow > span,
+.why-explore-roamora-eyebrow > span,
+.destination-faq-eyebrow > span,
+.plan-india-journey-eyebrow > span {
+  color: var(--color-accent) !important;
+  margin-right: 6px;
+}
+
+/* --------------------------------------------------
+   3. REMOVE UNWANTED DECORATIVE LINES
+-------------------------------------------------- */
+
+.india-map-destinations-eyebrow::before,
+.india-map-destinations-eyebrow::after,
+.featured-india-journeys-eyebrow::before,
+.featured-india-journeys-eyebrow::after,
+.why-explore-roamora-eyebrow::before,
+.why-explore-roamora-eyebrow::after,
+.destination-faq-eyebrow::before,
+.destination-faq-eyebrow::after,
+.plan-india-journey-eyebrow::before,
+.plan-india-journey-eyebrow::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* --------------------------------------------------
+   4. RESET OLD DECORATIVE MARK STYLING
+-------------------------------------------------- */
+
+.india-map-destinations-eyebrow > span,
+.featured-india-journeys-eyebrow > span,
+.why-explore-roamora-eyebrow > span,
+.destination-faq-eyebrow > span,
+.plan-india-journey-eyebrow > span {
+  display: inline !important;
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 0 !important;
+  background: none !important;
+  border: none !important;
+  transform: none !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+
+/* --------------------------------------------------
+   5. INDIA MAP EYEBROW ALIGNMENT
+-------------------------------------------------- */
+
+.india-map-destinations-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.india-map-destinations-eyebrow > span {
+  margin-right: 0;
+}
+
+/* ==================================================
+   DESTINATIONS PAGE — ALL SECTION EYEBROWS ENDED
+================================================== */
+
+/* ==================================================
+   INDIA MAP SECTION HEIGHT ADJUSTMENT STARTED
+================================================== */
+
+.india-map-destinations {
+  min-height: 0 !important;
+  height: auto !important;
+  padding: 0 0 4px !important;
+}
+
+.india-map-destinations-heading {
+  margin-bottom: 8px !important;
+}
+
+.india-map-destinations-container {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* ==================================================
+   INDIA MAP SECTION HEIGHT ADJUSTMENT ENDED
+================================================== */
+
+/* ==================================================
+   INDIA MAP COMPACT CARDS STARTED
+================================================== */
+
+/* Reduce spacing below section heading */
+.india-map-destinations-heading {
+  margin-bottom: 8px !important;
+}
+
+/* Reduce image height */
+.india-map-destinations .india-map-card-image {
+  height: 135px !important;
+  min-height: 0 !important;
+  overflow: hidden;
+}
+
+.india-map-destinations .india-map-card-image img {
+  width: 100%;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+/* Keep card content compact */
+.india-map-destinations .india-map-card {
+  min-height: 0 !important;
+}
+
+.india-map-destinations .india-map-card-content {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+/* Reduce space between card rows */
+.india-map-destinations-grid {
+  row-gap: 10px !important;
+}
+
+/* Reduce space above CTA */
+.india-map-destinations-cta {
+  margin-top: 10px !important;
+  margin-bottom: 8px !important;
+}
+
+/* ==================================================
+   INDIA MAP COMPACT CARDS ENDED
+================================================== */
+
+/* ==================================================
+   PLAN INDIA JOURNEY SIX BENEFIT CARDS STARTED
+================================================== */
+
+.plan-india-journey-benefits {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 0 !important;
+}
+
+.plan-india-journey-benefit {
+  min-width: 0;
+  padding: 10px 6px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.plan-india-journey-benefit:nth-child(-n + 3) {
+  border-bottom: 1px solid #dbe7ec;
+}
+
+.plan-india-journey-benefit:not(:nth-child(3n)) {
+  border-right: 1px solid #dbe7ec;
+}
+
+.plan-india-journey-benefit-divider {
+  display: none !important;
+}
+
+.plan-india-journey-benefit .plan-india-benefit-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 7px;
+}
+
+.plan-india-journey-benefit strong {
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+/* ==================================================
+   PLAN INDIA JOURNEY SIX BENEFIT CARDS ENDED
+================================================== */
+
+/* ==================================================
+   PLAN INDIA JOURNEY SECTION SPACING STARTED
+================================================== */
+
+.plan-india-journey {
+  padding-top: 65px !important;
+  padding-bottom: 130px !important;
+  min-height: auto !important;
+  height: auto !important;
+}
+
+/* ==================================================
+   PLAN INDIA JOURNEY SECTION SPACING ENDED
+================================================== */
+
+/* ==================================================
+   PLAN INDIA JOURNEY RIGHT IMAGE HEIGHT STARTED
+================================================== */
+
+.plan-india-journey-image-wrap {
+  height: 510px !important;
+}
+
+.plan-india-journey-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ==================================================
+   PLAN INDIA JOURNEY RIGHT IMAGE HEIGHT ENDED
+================================================== */
+
+/* ==================================================
+   DESTINATIONS CTA BANNER SECTION STARTED
+================================================== */
+
+/* CTA SECTION */
+.destinations-cta {
+  background: #102f46;
+  padding: 65px 0;
+}
+
+/* CTA CONTAINER */
+.destinations-cta-container {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 60px;
+}
+
+/* CTA CONTENT */
+.destinations-cta-copy {
+  max-width: 800px;
+  min-width: 0;
+}
+
+/* EYEBROW */
+.destinations-cta-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-secondary) !important;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.destinations-cta-eyebrow-mark {
+  color: var(--color-accent) !important;
+}
+
+/* CTA HEADING */
+.destinations-cta-copy h2 {
+  margin: 22px 0 12px;
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(32px, 3vw, 46px);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.destinations-cta-copy h2 span {
+  display: block;
+  color: #a8eaf0;
+}
+
+/* CTA DESCRIPTION */
+.destinations-cta-copy p {
+  max-width: 660px;
+  margin: 0;
+  color: #d5e3ea;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* CTA TRUST HIGHLIGHTS */
+.destinations-cta-trust {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: fit-content;
+  max-width: 100%;
+  margin-top: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.destinations-cta-trust span {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 17px 18px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.destinations-cta-trust span + span {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.destinations-cta-trust b {
+  color: var(--color-accent);
+  font-size: 17px;
+}
+
+/* CTA BUTTON */
+.destinations-cta-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.destinations-cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 17px 28px;
+  border-radius: 50px;
+  background: #ffffff;
+  color: #102f46;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.destinations-cta-button:hover {
+  background: var(--color-accent);
+  color: #102f46;
+  transform: translateY(-2px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .destinations-cta-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .destinations-cta-action {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .destinations-cta {
+    padding: 48px 0;
+  }
+
+  .destinations-cta-trust {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .destinations-cta-trust span + span {
+    border-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* ==================================================
+   DESTINATIONS CTA BANNER SECTION ENDED
+================================================== */
+
+/* ==================================================
+   DESTINATIONS CTA SECONDARY CONTACT BUTTON STARTED
+================================================== */
+
+.destinations-cta-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.destinations-cta-contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 50px;
+  background: transparent;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.destinations-cta-contact-btn:hover {
+  background: #ffffff;
+  color: #0d3046;
+}
+
+/* ==================================================
+   DESTINATIONS CTA SECONDARY CONTACT BUTTON ENDED
+================================================== */
