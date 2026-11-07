@@ -786,6 +786,42 @@
 ================================================== */
 
 /* ==================================================
+   HERO MOBILE OVERFLOW FIX STARTED
+================================================== */
+
+@media (max-width: 640px) {
+  .hero-container,
+  .hero-content,
+  .hero-search-card {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .hero-title,
+  .hero-description {
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+
+  .hero-search-form,
+  .hero-search-row,
+  .hero-search-field,
+  .hero-field-control {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .hero-search-field select {
+    min-width: 0;
+    max-width: 100%;
+  }
+}
+
+/* ==================================================
+   HERO MOBILE OVERFLOW FIX ENDED
+================================================== */
+
+/* ==================================================
    HERO SECTION ENDED
 ================================================== */
 

@@ -28,6 +28,22 @@
      SEARCH ENGINE INDEXING STARTED
 ================================================== -->
     <meta name="robots" content="index, follow" />
+    <link
+      rel="canonical"
+      href="https://techglowsolutionsindia.github.io/roamora-travels/"
+    />
+    <meta
+      property="og:url"
+      content="https://techglowsolutionsindia.github.io/roamora-travels/"
+    />
+    <meta
+      property="og:image"
+      content="https://techglowsolutionsindia.github.io/roamora-travels/assets/images/blog/kashmir-spring-guide.webp"
+    />
+    <meta
+      name="twitter:image"
+      content="https://techglowsolutionsindia.github.io/roamora-travels/assets/images/blog/kashmir-spring-guide.webp"
+    />
     <!-- ==================================================
      SEARCH ENGINE INDEXING ENDED
 ================================================== -->
@@ -94,7 +110,11 @@
     <!-- ==================================================
        FAVICON STARTED
   ================================================== -->
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="assets/images/logo/favicon.svg"
+    />
     <!-- ==================================================
        FAVICON ENDED
   ================================================== -->
@@ -152,7 +172,7 @@
           aria-label="Roamora Travels home"
         >
           <img
-            src="assets/images/logo/roamora-logo.webp"
+            src="assets/images/logo/roamora-logo.svg"
             alt="Roamora Travels"
             loading="eager"
             decoding="async"
@@ -4059,7 +4079,11 @@
             <!-- ==================================================
      CUSTOM TRIP PLANNER FORM STARTED
 ================================================== -->
-            <form class="custom-trip-form" id="custom-trip-form">
+            <form
+              class="custom-trip-form"
+              id="custom-trip-form"
+              autocomplete="off"
+            >
               <!-- ==================================================
        CUSTOM TRIP ROW 1 STARTED
   ================================================== -->
@@ -4201,7 +4225,7 @@
                     id="planner-starting-city"
                     name="starting-city"
                     placeholder="e.g. Mumbai"
-                    autocomplete="address-level2"
+                    autocomplete="off"
                     required
                   />
                 </div>
@@ -4221,6 +4245,7 @@
                 <textarea
                   id="planner-trip-wishes"
                   name="trip-wishes"
+                  autocomplete="off"
                   rows="4"
                   placeholder="Places you'd love to visit, activities you're interested in, celebrations or anything you'd like us to consider."
                 ></textarea>
@@ -6945,8 +6970,13 @@
             class="footer-brand"
             aria-label="Roamora Travels home"
           >
-            <span class="footer-brand-name">Roamora</span>
-            <span class="footer-brand-subtitle">Travels</span>
+            <img
+              src="assets/images/logo/roamora-logo.svg"
+              alt="Roamora Travels"
+              class="footer-brand-logo"
+              loading="lazy"
+              decoding="async"
+            />
           </a>
 
           <p class="footer-brand-text">

@@ -6,6 +6,8 @@
 User-agent: *
 Allow: /
 
+Sitemap: https://techglowsolutionsindia.github.io/roamora-travels/sitemap.xml
+
 # ==================================================
 # ROAMORA TRAVELS - ROBOTS.TXT ENDED
 # ==================================================

@@ -14,17 +14,36 @@
 
   let resetTimer;
 
+  let resetTimer;
+  let isSubmitting = false;
+
+  const submitButton = newsletterForm.querySelector('button[type="submit"]');
+
   newsletterForm.addEventListener("submit", async function (event) {
     event.preventDefault();
+
+    if (isSubmitting) return;
 
     const email = emailInput.value.trim();
 
     if (!email) {
       newsletterMessage.textContent = "Please enter your email address.";
+      newsletterMessage.style.color = "";
+      emailInput.focus();
+      return;
+    }
+
+    if (!emailInput.checkValidity()) {
+      newsletterMessage.textContent = "Please enter a valid email address.";
+      newsletterMessage.style.color = "";
+      emailInput.focus();
       return;
     }
 
     clearTimeout(resetTimer);
+
+    isSubmitting = true;
+    if (submitButton) submitButton.disabled = true;
 
     newsletterMessage.textContent = "Subscribing...";
     newsletterMessage.style.color = "";
@@ -61,6 +80,9 @@
       newsletterMessage.textContent =
         "Unable to subscribe at the moment. Please try again.";
       newsletterMessage.style.color = "";
+    } finally {
+      isSubmitting = false;
+      if (submitButton) submitButton.disabled = false;
     }
   });
 })();

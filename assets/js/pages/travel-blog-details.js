@@ -162,9 +162,29 @@ function renderPageMeta(blog) {
     meta.setAttribute("content", content);
   });
 
-  // Do not invent canonical URLs, og:url, or social image URLs.
-  // Reliable per-journal social previews require HTML metadata
-  // available before client-side JavaScript runs.
+  // Dynamic Journal Canonical URL Started
+  const canonicalUrl = new URL(
+    "travel-blog-details.html",
+    window.location.href,
+  );
+
+  canonicalUrl.search = "";
+  canonicalUrl.searchParams.set("slug", blog.slug);
+  canonicalUrl.hash = "";
+
+  let canonical = document.querySelector('link[rel="canonical"]');
+
+  if (!canonical) {
+    canonical = document.createElement("link");
+    canonical.rel = "canonical";
+    document.head.appendChild(canonical);
+  }
+
+  canonical.href = canonicalUrl.href;
+
+  setMetaContent('meta[property="og:url"]', canonicalUrl.href);
+
+  // Dynamic Journal Canonical URL Ended
 }
 
 // ==================================================

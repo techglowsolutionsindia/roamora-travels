@@ -1247,3 +1247,69 @@ body {
 /* ==================================================
    PACKAGES CTA CONTACT BUTTON ENDED
 ================================================== */
+
+/* ==================================================
+   PACKAGES CTA CONTACT BUTTON ENDED
+================================================== */
+
+/* Packages Mobile Responsive Fixes Started */
+@media (max-width: 900px) {
+  .packages-hero-container,
+  .packages-cta-container {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .packages-hero-content,
+  .packages-cta-copy {
+    min-width: 0;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .packages-hero-container,
+  .packages-cta-container,
+  .all-packages-container {
+    width: 100%;
+    max-width: 100%;
+    padding-inline: 20px;
+    box-sizing: border-box;
+  }
+
+  .packages-hero-title {
+    font-size: clamp(2rem, 9vw, 2.7rem);
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+
+  .packages-hero-actions,
+  .packages-cta-action {
+    width: 100%;
+  }
+
+  .packages-cta-container {
+    gap: 28px;
+  }
+
+  .packages-cta-copy h2 {
+    font-size: clamp(2rem, 8vw, 2.5rem);
+    overflow-wrap: break-word;
+  }
+
+  .packages-cta-trust {
+    width: 100%;
+  }
+
+  .packages-cta-trust span {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .packages-cta-button,
+  .packages-cta-contact-btn {
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+  }
+}
+/* Packages Mobile Responsive Fixes Ended */

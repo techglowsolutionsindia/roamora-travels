@@ -1698,3 +1698,143 @@ section {
 /* ==================================================
    RELATED JOURNALS FOOTER ALIGNMENT ENDED
 ================================================== */
+
+/* ==================================================
+   RELATED JOURNALS FOOTER ALIGNMENT ENDED
+================================================== */
+
+/* ==================================================
+   BLOG DETAILS MOBILE RESPONSIVENESS STARTED
+================================================== */
+
+@media (max-width: 768px) {
+  #blog-hero .hero-container {
+    display: block;
+    width: 100%;
+    padding-inline: 20px;
+  }
+
+  #blog-hero .hero-content {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    transform: none;
+  }
+
+  #blog-hero .hero-title {
+    font-size: clamp(2rem, 8vw, 3rem);
+    line-height: 1.12;
+    overflow-wrap: break-word;
+  }
+
+  #blog-hero .hero-description {
+    font-size: 0.9rem;
+  }
+
+  #introduction .intro-container,
+  #main-article .main-article-container,
+  #photo-gallery .gallery-container,
+  #travel-tips .tips-container,
+  #plan-your-journey .cta-container {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    padding-inline: 20px;
+    box-sizing: border-box;
+  }
+
+  #introduction .intro-content,
+  #main-article .main-article-content,
+  #photo-gallery .gallery-left,
+  #photo-gallery .gallery-content,
+  #travel-tips .tips-content,
+  #travel-tips .tips-images,
+  #plan-your-journey .cta-content {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    transform: none;
+  }
+
+  #introduction .intro-features,
+  #photo-gallery .gallery-features,
+  #travel-tips .tips-card ul,
+  #plan-your-journey .cta-features {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #photo-gallery.gallery-section {
+    height: auto;
+    min-height: 0;
+    padding-block: 40px;
+  }
+
+  #photo-gallery .gallery-top {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #photo-gallery .gallery-main {
+    height: 280px;
+  }
+
+  #photo-gallery .gallery-stack {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: 110px;
+    gap: 10px;
+  }
+
+  #photo-gallery .gallery-bottom {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    height: auto;
+    gap: 10px;
+  }
+
+  #photo-gallery .gallery-bottom img {
+    height: 120px;
+  }
+
+  #photo-gallery .gallery-features {
+    max-height: none;
+  }
+
+  #travel-tips.tips-section {
+    margin-top: 0 !important;
+    padding-block: 40px !important;
+  }
+
+  #travel-tips .tips-info-bar {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  #plan-your-journey.cta-section {
+    min-height: 0;
+    margin-top: 0;
+    padding-block: 45px;
+  }
+
+  #plan-your-journey .cta-container {
+    transform: none;
+  }
+
+  #plan-your-journey .cta-image {
+    height: auto;
+    min-height: 0;
+  }
+
+  #plan-your-journey .cta-image img {
+    height: auto;
+    max-height: 350px;
+  }
+
+  #related-journals .related-journals-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* ==================================================
+   BLOG DETAILS MOBILE RESPONSIVENESS ENDED
+================================================== */

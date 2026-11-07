@@ -314,8 +314,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const destination = formData.get("destination");
     const travellers = formData.get("travellers");
+    const travelMonth = formData.get("travel-month");
     const travelWith = formData.get("travel-with");
     const style = formData.get("style");
+    const startingCity = formData.get("starting-city");
     const wishes = formData.get("trip-wishes");
 
     /* ==================================================
@@ -330,12 +332,20 @@ document.addEventListener("DOMContentLoaded", () => {
       params.set("travellers", travellers);
     }
 
+    if (travelMonth) {
+      params.set("travelMonth", travelMonth);
+    }
+
     if (travelWith) {
       params.set("travelWith", travelWith);
     }
 
     if (style) {
       params.set("style", style);
+    }
+
+    if (startingCity && startingCity.trim()) {
+      params.set("startingCity", startingCity.trim());
     }
 
     if (wishes && wishes.trim()) {

@@ -16,14 +16,31 @@
          SEARCH ENGINE AND SOCIAL META TAGS STARTED
     ================================================== -->
     <meta name="robots" content="index, follow" />
+    <link
+      rel="canonical"
+      href="https://techglowsolutionsindia.github.io/roamora-travels/custom-trip.html"
+    />
+
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Roamora Travels" />
     <meta property="og:locale" content="en_IN" />
-    <meta property="og:title" content="Plan a Custom India Trip | Roamora Travels" />
-    <meta property="og:description" content="Plan a personalised India trip with Roamora Travels. Share your travel preferences, budget and accommodation choices to request a custom journey." />
+    <meta
+      property="og:title"
+      content="Plan a Custom India Trip | Roamora Travels"
+    />
+    <meta
+      property="og:description"
+      content="Plan a personalised India trip with Roamora Travels. Share your travel preferences, budget and accommodation choices to request a custom journey."
+    />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Plan a Custom India Trip | Roamora Travels" />
-    <meta name="twitter:description" content="Share your travel preferences and request a personalised India journey with Roamora Travels." />
+    <meta
+      name="twitter:title"
+      content="Plan a Custom India Trip | Roamora Travels"
+    />
+    <meta
+      name="twitter:description"
+      content="Share your travel preferences and request a personalised India journey with Roamora Travels."
+    />
     <!-- ==================================================
          SEARCH ENGINE AND SOCIAL META TAGS ENDED
     ================================================== -->
@@ -31,7 +48,11 @@
     <!-- ==================================================
          FAVICON STARTED
     ================================================== -->
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="assets/images/logo/favicon.svg"
+    />
     <!-- ==================================================
          FAVICON ENDED
     ================================================== -->
@@ -88,7 +109,7 @@
           aria-label="Roamora Travels home"
         >
           <img
-            src="assets/images/logo/roamora-logo.webp"
+            src="assets/images/logo/roamora-logo.svg"
             alt="Roamora Travels"
             decoding="async"
           />
@@ -303,23 +324,33 @@
 
               <ul class="dropdown-menu">
                 <li>
-                  <a href="packages.html?filter=mountains#all-packages">Mountain Holidays</a>
+                  <a href="packages.html?filter=mountains#all-packages"
+                    >Mountain Holidays</a
+                  >
                 </li>
 
                 <li>
-                  <a href="packages.html?filter=nature#all-packages">Nature Holidays</a>
+                  <a href="packages.html?filter=nature#all-packages"
+                    >Nature Holidays</a
+                  >
                 </li>
 
                 <li>
-                  <a href="packages.html?filter=heritage#all-packages">Heritage Tours</a>
+                  <a href="packages.html?filter=heritage#all-packages"
+                    >Heritage Tours</a
+                  >
                 </li>
 
                 <li>
-                  <a href="packages.html?filter=islands#all-packages">Island Getaways</a>
+                  <a href="packages.html?filter=islands#all-packages"
+                    >Island Getaways</a
+                  >
                 </li>
 
                 <li>
-                  <a href="packages.html?filter=spiritual#all-packages">Spiritual Journeys</a>
+                  <a href="packages.html?filter=spiritual#all-packages"
+                    >Spiritual Journeys</a
+                  >
                 </li>
 
                 <li>
@@ -601,15 +632,25 @@
               </p>
             </div>
 
-            <form class="custom-trip-form" data-custom-trip-form>
+            <form
+              class="custom-trip-form"
+              data-custom-trip-form
+              autocomplete="off"
+            >
               <!-- ==================================================
          HIDDEN PAGE 1 PREFERENCES STARTED
     ================================================== -->
 
               <input type="hidden" name="destination" id="trip-destination" />
               <input type="hidden" name="travellers" id="trip-travellers" />
+              <input type="hidden" name="travel-month" id="trip-travel-month" />
               <input type="hidden" name="travel-with" id="trip-travel-with" />
               <input type="hidden" name="travel-style" id="trip-travel-style" />
+              <input
+                type="hidden"
+                name="starting-city"
+                id="trip-starting-city"
+              />
               <input type="hidden" name="trip-wishes" id="trip-wishes" />
 
               <!-- ==================================================
@@ -691,7 +732,7 @@
                   id="trip-name"
                   name="full-name"
                   placeholder="Enter your full name"
-                  autocomplete="name"
+                  autocomplete="off"
                   required
                 />
               </div>
@@ -703,9 +744,11 @@
                   type="tel"
                   id="trip-phone"
                   name="mobile"
-                  placeholder="Enter your mobile number"
-                  autocomplete="tel"
+                  value="+91 "
+                  placeholder="+91 9876543210"
+                  autocomplete="off"
                   inputmode="tel"
+                  maxlength="20"
                   required
                 />
               </div>
@@ -718,7 +761,7 @@
                   id="trip-email"
                   name="email"
                   placeholder="Enter your email address"
-                  autocomplete="email"
+                  autocomplete="off"
                   required
                 />
               </div>
@@ -777,25 +820,19 @@
                 <div class="custom-trip-success-icon" aria-hidden="true">✓</div>
 
                 <span class="custom-trip-success-eyebrow">
-                  JOURNEY REQUEST READY
+                  TRIP REQUEST SUBMITTED
                 </span>
 
-                <h3 id="trip-success-title">Your journey request is ready.</h3>
+                <h3 id="trip-success-title">
+                  Your trip request has been submitted successfully.
+                </h3>
 
                 <p>
-                  Roamora can now use these preferences to help shape your
-                  personalised India trip.
+                  Thank you for contacting Roamora Travels. Our team will review
+                  your enquiry and get in touch with you.
                 </p>
 
                 <div class="custom-trip-success-actions">
-                  <button
-                    type="button"
-                    class="custom-trip-success-edit"
-                    data-edit-trip
-                  >
-                    Edit My Preferences
-                  </button>
-
                   <button
                     type="button"
                     class="custom-trip-success-close"
@@ -803,6 +840,10 @@
                   >
                     Close
                   </button>
+
+                  <a href="packages.html" class="custom-trip-success-edit">
+                    Explore Tour Packages
+                  </a>
                 </div>
               </div>
             </div>
@@ -838,8 +879,13 @@
             class="footer-brand"
             aria-label="Roamora Travels home"
           >
-            <span class="footer-brand-name">Roamora</span>
-            <span class="footer-brand-subtitle">Travels</span>
+            <img
+              src="assets/images/logo/roamora-logo.svg"
+              alt="Roamora Travels"
+              class="footer-brand-logo"
+              loading="lazy"
+              decoding="async"
+            />
           </a>
 
           <p class="footer-brand-text">
@@ -1116,6 +1162,7 @@
 ================================================== -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/components/newsletter.js"></script>
+    <script src="assets/js/pages/custom-trip.js"></script>
     <!-- ==================================================
      JAVASCRIPT ENDED
 ================================================== -->

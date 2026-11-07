@@ -383,7 +383,16 @@
 
 @media (max-width: 700px) {
   .destinations-hero-container {
-    padding-block: 55px;
+    width: 100%;
+    max-width: 100%;
+    padding: 55px 20px;
+    box-sizing: border-box;
+  }
+
+  .destinations-hero-content {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
   }
 
   .destinations-hero-title {
@@ -643,6 +652,10 @@
     padding-block: 60px;
   }
 
+  .destination-regions-container {
+    width: min(100% - 48px, 1180px);
+  }
+
   .destination-regions-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-auto-rows: 230px;
@@ -656,6 +669,10 @@
 @media (max-width: 700px) {
   .destination-regions {
     padding-block: 52px;
+  }
+
+  .destination-regions-container {
+    width: min(100% - 32px, 1180px);
   }
 
   .destination-regions-heading {
